@@ -1,0 +1,7 @@
+C:\Users\sumeet kumar\documents\visual studio 2012\Projects\Katas\Katas_UnitTests\bin\Debug\Katas_UnitTests.dll
+C:\Users\sumeet kumar\documents\visual studio 2012\Projects\Katas\Katas_UnitTests\bin\Debug\Katas_UnitTests.pdb
+C:\Users\sumeet kumar\documents\visual studio 2012\Projects\Katas\Katas_UnitTests\bin\Debug\Katas_Console.exe
+C:\Users\sumeet kumar\documents\visual studio 2012\Projects\Katas\Katas_UnitTests\bin\Debug\Katas_Console.pdb
+C:\Users\sumeet kumar\documents\visual studio 2012\Projects\Katas\Katas_UnitTests\obj\Debug\Katas_UnitTests.csprojResolveAssemblyReference.cache
+C:\Users\sumeet kumar\documents\visual studio 2012\Projects\Katas\Katas_UnitTests\obj\Debug\Katas_UnitTests.dll
+C:\Users\sumeet kumar\documents\visual studio 2012\Projects\Katas\Katas_UnitTests\obj\Debug\Katas_UnitTests.pdb
