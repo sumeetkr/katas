@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas", "..\Katas_Console\Katas.csproj", "{2AF686CE-20DE-4729-B6CC-E696D9E6067F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas_UnitTestV10", "..\Katas_UnitTestV10\Katas_UnitTestV10.csproj", "{0AA5855F-AA8A-4108-93A9-4896EB644054}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{467E12D4-2F8F-4DF4-9A1D-B3C66779E3A7}"
+	ProjectSection(SolutionItems) = preProject
+		KatasV10.vsmdi = KatasV10.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{B373B46A-B089-44D7-96CA-CD150D098BC8}") = "KatasInRuby", "KatasInRuby\KatasInRuby.rbproj", "{B5FE9A04-11EB-423C-BC0C-6C43053D3F0D}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = KatasV10.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AF686CE-20DE-4729-B6CC-E696D9E6067F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AF686CE-20DE-4729-B6CC-E696D9E6067F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AF686CE-20DE-4729-B6CC-E696D9E6067F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2AF686CE-20DE-4729-B6CC-E696D9E6067F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2AF686CE-20DE-4729-B6CC-E696D9E6067F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2AF686CE-20DE-4729-B6CC-E696D9E6067F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AF686CE-20DE-4729-B6CC-E696D9E6067F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AF686CE-20DE-4729-B6CC-E696D9E6067F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2AF686CE-20DE-4729-B6CC-E696D9E6067F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2AF686CE-20DE-4729-B6CC-E696D9E6067F}.Release|x86.ActiveCfg = Release|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Release|x86.ActiveCfg = Release|Any CPU
+		{B5FE9A04-11EB-423C-BC0C-6C43053D3F0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5FE9A04-11EB-423C-BC0C-6C43053D3F0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5FE9A04-11EB-423C-BC0C-6C43053D3F0D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{B5FE9A04-11EB-423C-BC0C-6C43053D3F0D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{B5FE9A04-11EB-423C-BC0C-6C43053D3F0D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B5FE9A04-11EB-423C-BC0C-6C43053D3F0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5FE9A04-11EB-423C-BC0C-6C43053D3F0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5FE9A04-11EB-423C-BC0C-6C43053D3F0D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{B5FE9A04-11EB-423C-BC0C-6C43053D3F0D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{B5FE9A04-11EB-423C-BC0C-6C43053D3F0D}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

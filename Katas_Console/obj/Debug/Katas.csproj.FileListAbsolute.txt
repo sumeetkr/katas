@@ -3,3 +3,9 @@ C:\Users\sumeet kumar\documents\visual studio 2012\Projects\Katas\Katas_Console\
 C:\Users\sumeet kumar\documents\visual studio 2012\Projects\Katas\Katas_Console\bin\Debug\Katas_Console.pdb
 C:\Users\sumeet kumar\documents\visual studio 2012\Projects\Katas\Katas_Console\obj\Debug\Katas_Console.exe
 C:\Users\sumeet kumar\documents\visual studio 2012\Projects\Katas\Katas_Console\obj\Debug\Katas_Console.pdb
+C:\Users\Sumeet\Documents\Visual Studio 2010\Projects\Katas\Katas_Console\bin\Debug\Katas_Console.exe.config
+C:\Users\Sumeet\Documents\Visual Studio 2010\Projects\Katas\Katas_Console\bin\Debug\Katas_Console.exe
+C:\Users\Sumeet\Documents\Visual Studio 2010\Projects\Katas\Katas_Console\bin\Debug\Katas_Console.pdb
+C:\Users\Sumeet\Documents\Visual Studio 2010\Projects\Katas\Katas_Console\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Sumeet\Documents\Visual Studio 2010\Projects\Katas\Katas_Console\obj\Debug\Katas_Console.exe
+C:\Users\Sumeet\Documents\Visual Studio 2010\Projects\Katas\Katas_Console\obj\Debug\Katas_Console.pdb
