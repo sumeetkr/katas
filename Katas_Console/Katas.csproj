@@ -42,8 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="LargestMeasuringSubSequenceSolver.cs" />
+    <Compile Include="FibonacciSeriesGenerator.cs" />
+    <Compile Include="LongestIncreasingSubSequenceSolver.cs" />
     <Compile Include="MaximumSubArraySolver.cs" />
+    <Compile Include="PermutationsOfAString.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpiralTraversal.cs" />
