@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas", "Katas_Console\Katas.csproj", "{2AF686CE-20DE-4729-B6CC-E696D9E6067F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas_UnitTests", "Katas_UnitTests\Katas_UnitTests.csproj", "{F32E13E3-0BBE-43D5-9D84-E986A5FE338F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas_UnitTestV10", "Katas_UnitTestV10\Katas_UnitTestV10.csproj", "{0AA5855F-AA8A-4108-93A9-4896EB644054}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,10 @@ Global
 		{2AF686CE-20DE-4729-B6CC-E696D9E6067F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2AF686CE-20DE-4729-B6CC-E696D9E6067F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2AF686CE-20DE-4729-B6CC-E696D9E6067F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F32E13E3-0BBE-43D5-9D84-E986A5FE338F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F32E13E3-0BBE-43D5-9D84-E986A5FE338F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F32E13E3-0BBE-43D5-9D84-E986A5FE338F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F32E13E3-0BBE-43D5-9D84-E986A5FE338F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
