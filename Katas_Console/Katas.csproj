@@ -43,12 +43,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FibonacciSeriesGenerator.cs" />
+    <Compile Include="HeaviestPathInMatrixFinder.cs" />
     <Compile Include="LongestIncreasingSubSequenceSolver.cs" />
     <Compile Include="MaximumSubArraySolver.cs" />
     <Compile Include="PermutationsOfAString.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SpiralTraversal.cs" />
+    <Compile Include="TheGameOfLife.cs" />
     <Compile Include="WeighingWithStonesSolver.cs" />
   </ItemGroup>
   <ItemGroup>

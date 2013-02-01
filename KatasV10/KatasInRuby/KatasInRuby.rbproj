@@ -12,6 +12,7 @@
     <AssemblyName>KatasInRuby</AssemblyName>
     <Name>KatasInRuby</Name>
     <RootNamespace>KatasInRuby</RootNamespace>
+    <IsWindowsApplication>True</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +23,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <None Include="Program.rb" />
     <None Include="Program.rb" />
     <None Include="Program.rb" />
   </ItemGroup>

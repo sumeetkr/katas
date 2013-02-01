@@ -5,7 +5,9 @@ using System.Text;
 
 namespace Katas_Console
 {
-    public class LargestMeasuringSubSequenceSolver
+    public class LongestIncreasingSubSequenceSolver
     {
+
+
     }
 }

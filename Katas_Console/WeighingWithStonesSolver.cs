@@ -28,19 +28,21 @@ namespace Katas_Console
             // return a list of 3^0, 3^1, 3^2, ... less than weight
 
             List<int> weights = new List<int>();
-            for (int i = 0; Math.Pow(3,i) < weight; i++)
+            for (int i = 0; Math.Pow(3, i) < weight; i++)
             {
-                weights.Add(Convert.ToInt32( Math.Pow(3,i)));
+                weights.Add(Convert.ToInt32(Math.Pow(3, i)));
             }
 
             return weights;
         }
 
-        public bool CheckIfStonesCanMeasureThisWeight(int weight, List<int> dividedWeights)
+        public bool CanStonesMeasureThisWeight(int weight,
+                                                List<int> dividedWeights)
         {
             //boundry cases
             if (dividedWeights.Count == 0) return false;
-            if (dividedWeights.Count == 1) return weight == dividedWeights.First();
+            if (dividedWeights.Count == 1)
+                return weight == dividedWeights.First();
 
             int maxWeight = 0;
             int totalWeight = 0;
@@ -52,15 +54,16 @@ namespace Katas_Console
             }
             if (weight > totalWeight) return false;
 
-            //make calculations
             bool isMeasurable = false;
             //they could be there, not there, or are there but on the other side, e.g. 1, 0, -1
-            Operation(dividedWeights, 0, weight, 0, ref isMeasurable);
-           
+            Operate(dividedWeights, 0, weight, 0, ref isMeasurable);
+
             return isMeasurable;
         }
 
-        private void Operation(List<int> values, int listCurrentIndex, int desiredValue, int currentSum, ref bool matchFound)
+        private void Operate(List<int> values, int listCurrentIndex,
+                            int desiredValue,
+                            int currentSum, ref bool matchFound)
         {
             if (currentSum == desiredValue)
             {
@@ -78,15 +81,15 @@ namespace Katas_Console
             listCurrentIndex++;
 
             //+1
-            if(!matchFound) Operation(values, listCurrentIndex, desiredValue, currentSum + val, ref matchFound);
+            if (!matchFound) Operate(values, listCurrentIndex, desiredValue, currentSum + val, ref matchFound);
 
             //-1
-            if (!matchFound) Operation(values, listCurrentIndex, desiredValue, currentSum - val, ref matchFound);
+            if (!matchFound) Operate(values, listCurrentIndex, desiredValue, currentSum - val, ref matchFound);
             //0
 
-            if (!matchFound) Operation(values, listCurrentIndex, desiredValue, currentSum, ref matchFound);
+            if (!matchFound) Operate(values, listCurrentIndex, desiredValue, currentSum, ref matchFound);
 
         }
     }
-    
+
 }

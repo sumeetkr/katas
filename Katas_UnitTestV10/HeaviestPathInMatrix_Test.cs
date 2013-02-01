@@ -8,13 +8,13 @@ using Katas_Console;
 namespace Katas_UnitTestV10
 {
     [TestClass]
-    public class LargestMeasuringSubSequence_Test
+    public class HeaviestPathInMatrix_Test
     {
         [TestMethod]
         public void TestMethod1()
         {
-            List<int> sequence = new List<int> { 2, 5, -3, 7, 8, 2, -10, 2, -2, 4 };
-            var sequenceSolver = new LargestMeasuringSubSequenceSolver();
+            var heaviestPathFinder = new HeaviestPathInMatrixFinder();
+            //heaviestPathFinder.PrintBoard();
         }
     }
 }

@@ -42,7 +42,7 @@ namespace Katas_UnitTests
             List<int> dividedWeights = GetDividedWeights(weight);
 
             var weighingWithStonesSolver = new WeighingWithStonesSolver();
-            bool isMeasured = weighingWithStonesSolver.CheckIfStonesCanMeasureThisWeight(17, dividedWeights);
+            bool isMeasured = weighingWithStonesSolver.CanStonesMeasureThisWeight(17, dividedWeights);
 
             Assert.IsTrue(isMeasured);
         }
@@ -58,7 +58,7 @@ namespace Katas_UnitTests
             bool isMeasurable = true;
             for (int i = 0; i < weight; i++)
             {
-                isMeasurable = weighingWithStonesSolver.CheckIfStonesCanMeasureThisWeight(i, dividedWeights);
+                isMeasurable = weighingWithStonesSolver.CanStonesMeasureThisWeight(i, dividedWeights);
                 Assert.IsTrue(isMeasurable);
             }
 
@@ -74,7 +74,7 @@ namespace Katas_UnitTests
 
             bool isMeasurable = true;
 
-             isMeasurable = weighingWithStonesSolver.CheckIfStonesCanMeasureThisWeight(15, dividedWeights);
+             isMeasurable = weighingWithStonesSolver.CanStonesMeasureThisWeight(15, dividedWeights);
                 Assert.IsFalse(isMeasurable);
 
         }

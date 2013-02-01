@@ -12,17 +12,43 @@ namespace Katas_Console
             //4,6,-3,2,-1
             //shorten the array 10,-3,2, -1
             //formaula after discussion with Sean. Max(n) = Max{Max(n-1) + a(n), a(n)}
-
             int maxSum = 0;
             int sum = 0;
-            List<int> maxSeq  = new List<int>();
-            
-            foreach (var item in seq)
+
+            int startIndexOfMaxSubArray = 0;
+            int endIndexOfMaxSubArray = 0;
+
+            for (int i = 0; i < seq.Count; i++)
             {
-                sum = sum > item ? sum : item;
-                maxSum = sum > maxSum ? sum : maxSum;
+                int startIndex = startIndexOfMaxSubArray;
+                int endIndex = endIndexOfMaxSubArray;
+
+                if (sum + seq[i] > seq[i])
+                {
+                    sum = sum + seq[i];
+                    endIndex = i;
+                }
+                else
+                {
+                    sum = seq[i];
+                    startIndex = i;
+                    endIndex = i;
+                }
+
+                if (sum > maxSum)
+                {
+                    maxSum = sum;
+
+                    startIndexOfMaxSubArray = startIndex;
+                    endIndexOfMaxSubArray = endIndex;
+                }
             }
 
+            List<int> maxSeq = new List<int>();
+            for (int i = startIndexOfMaxSubArray; i < endIndexOfMaxSubArray; i++)
+            {
+                maxSeq.Add(seq[i]);
+            }
             return maxSeq;
         }
 
@@ -31,13 +57,26 @@ namespace Katas_Console
             int maxSum = 0;
             int sum = 0;
 
-            foreach (var item in seq)
+            for (int i = 0; i < seq.Count; i++)
             {
-                sum = sum +item > item ? sum + item : item;
-                maxSum = sum > maxSum ? sum : maxSum;
+
+                if (sum + seq[i] > seq[i])
+                {
+                    sum = sum + seq[i];
+                }
+                else
+                {
+                    sum = seq[i];
+                }
+
+                if (sum > maxSum)
+                {
+                    maxSum = sum;
+                }
             }
 
             return maxSum;
         }
+
     }
 }
