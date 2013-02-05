@@ -23,7 +23,7 @@ namespace Katas_Console
         //They are measured in one session (otherwise, you could measure forty pounds with a one pound stone by performing forty measurements).
         //If there is no solution (the farmer might be bad at math), show the four weights that allow to measure the most weights between one and forty pounds.
 
-        public List<int> GetWeights(int weight)
+        public List<int> GetStones(int weight)
         {
             // return a list of 3^0, 3^1, 3^2, ... less than weight
 
@@ -37,17 +37,17 @@ namespace Katas_Console
         }
 
         public bool CanStonesMeasureThisWeight(int weight,
-                                                List<int> dividedWeights)
+                                                List<int> stones)
         {
             //boundry cases
-            if (dividedWeights.Count == 0) return false;
-            if (dividedWeights.Count == 1)
-                return weight == dividedWeights.First();
+            if (stones.Count == 0) return false;
+            if (stones.Count == 1)
+                return weight == stones.First();
 
             int maxWeight = 0;
             int totalWeight = 0;
 
-            foreach (var dividedWeight in dividedWeights)
+            foreach (var dividedWeight in stones)
             {
                 totalWeight = totalWeight + dividedWeight;
                 if (maxWeight < dividedWeight) maxWeight = dividedWeight;
@@ -56,7 +56,7 @@ namespace Katas_Console
 
             bool isMeasurable = false;
             //they could be there, not there, or are there but on the other side, e.g. 1, 0, -1
-            Operate(dividedWeights, 0, weight, 0, ref isMeasurable);
+            Operate(stones, 0, weight, 0, ref isMeasurable);
 
             return isMeasurable;
         }

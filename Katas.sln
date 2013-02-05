@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas", "Katas_Console\Kata
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Katas_UnitTestV10", "Katas_UnitTestV10\Katas_UnitTestV10.csproj", "{0AA5855F-AA8A-4108-93A9-4896EB644054}"
 EndProject
+Project("{B373B46A-B089-44D7-96CA-CD150D098BC8}") = "Katas_Ruby", "Katas_Ruby\Katas_Ruby.rbproj", "{664691E2-56F9-4CC1-A34E-1E4F6629F590}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AA5855F-AA8A-4108-93A9-4896EB644054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{664691E2-56F9-4CC1-A34E-1E4F6629F590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664691E2-56F9-4CC1-A34E-1E4F6629F590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664691E2-56F9-4CC1-A34E-1E4F6629F590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664691E2-56F9-4CC1-A34E-1E4F6629F590}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -11,7 +11,7 @@ namespace Katas_UnitTests
         private List<int> GetDividedWeights(int initialWeight)
         {
             var weighingWithStonesSolver = new WeighingWithStonesSolver();
-            List<int> dividedWeights = weighingWithStonesSolver.GetWeights(initialWeight);
+            List<int> dividedWeights = weighingWithStonesSolver.GetStones(initialWeight);
             return dividedWeights;
         }
 

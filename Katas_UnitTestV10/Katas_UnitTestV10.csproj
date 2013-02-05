@@ -48,11 +48,14 @@
     <Compile Include="FibonacciSeriesGenerator_Test.cs" />
     <Compile Include="HeaviestPathInMatrix_Test.cs" />
     <Compile Include="MaximumSubArray_Test.cs" />
+    <Compile Include="MedianOfSortedArrays_Test.cs" />
+    <Compile Include="Sorters_Test.cs" />
     <Compile Include="PermutaionsOfAString_Test.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="LongestIncreasingSubSequence_Test.cs" />
     <Compile Include="SpiralTraversal_Test.cs" />
     <Compile Include="TheGameOfLife_Test.cs" />
+    <Compile Include="UnimodalArray_Test.cs" />
     <Compile Include="WeighingWithStonesSolver_Test.cs" />
   </ItemGroup>
   <ItemGroup>

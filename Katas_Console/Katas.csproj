@@ -49,8 +49,10 @@
     <Compile Include="PermutationsOfAString.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sorters.cs" />
     <Compile Include="SpiralTraversal.cs" />
     <Compile Include="TheGameOfLife.cs" />
+    <Compile Include="UnimodalArray.cs" />
     <Compile Include="WeighingWithStonesSolver.cs" />
   </ItemGroup>
   <ItemGroup>
