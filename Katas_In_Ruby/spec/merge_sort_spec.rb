@@ -1,4 +1,5 @@
-require "rspec"
+require "spec_helper"
+require "../Katas/merge_sort"
 
 describe "MergeSort" do
 
