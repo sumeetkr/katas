@@ -27,4 +27,11 @@ describe "InversionsInArray" do
     InversionsInArray.count_inversions(array).should == 11
   end
 
+  it "should populate array from file" do
+    array = InversionsInArray.populate_array_with_file_content('../Katas/IntegerArray.txt')
+    array.length.should > 0
+    inversions = InversionsInArray.count_inversions(array)
+    inversions.should == 1000
+  end
+
 end
