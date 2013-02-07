@@ -1,5 +1,7 @@
 class MergeSort
 
+  @@number_of_inversions = 0
+
   def self.merge_sort(array)
 
     if array.length <= 1
@@ -42,10 +44,17 @@ class MergeSort
       else
         merged_array[i] = right_array[right_index]
         right_index += 1
+        @@number_of_inversions += left_array.length - left_index
       end
     end
 
     return merged_array
+  end
+
+  def self.count_inversions_while_sorting(array)
+    @@number_of_inversions = 0
+    merge_sort(array)
+    return @@number_of_inversions
   end
 
 
