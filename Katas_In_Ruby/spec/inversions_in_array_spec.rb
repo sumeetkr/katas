@@ -31,7 +31,7 @@ describe "InversionsInArray" do
     array = InversionsInArray.populate_array_with_file_content('../Katas/IntegerArray.txt')
     array.length.should > 0
     inversions = InversionsInArray.count_inversions(array)
-    inversions.should == 1000
+    inversions.should == 2407905288
   end
 
 end
