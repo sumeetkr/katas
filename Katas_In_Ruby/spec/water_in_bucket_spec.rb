@@ -15,7 +15,6 @@ describe "WaterInBucket" do
 
     indices_array[0].should == 0
     indices_array[1].should == 3
-
   end
 
   it "should do maximize the bucket size" do
