@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="435c0da1-a8e7-4f2a-bdb3-460b5a249c0b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Katas/plates_stacking.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/plates_stacking_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Katas/array_problems.rb" afterPath="$PROJECT_DIR$/Katas/array_problems.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/array_problems_spec.rb" afterPath="$PROJECT_DIR$/spec/array_problems_spec.rb" />
     </list>
     <ignored path="Katas_In_Ruby.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,37 +23,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="linked_list_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/linked_list_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="52" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="linked_list.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/linked_list.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="7" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="array_problems_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="array_problems_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/array_problems_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="3" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
+            <state line="9" column="0" selection-start="255" selection-end="255" vertical-scroll-proportion="0.020710059">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="array_problems.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="custom_require.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/rvm/rubies/ruby-1.9.3-p286/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="array_problems.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Katas/array_problems.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="6" selection-start="698" selection-end="698" vertical-scroll-proportion="0.6449704">
+            <state line="33" column="0" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Tests/inversions_in_array_spec.rb" />
         <option value="$PROJECT_DIR$/Tests/merge_sort_spec.rb" />
         <option value="$PROJECT_DIR$/spec/merge_sort_spec.rb" />
         <option value="$PROJECT_DIR$/Katas/merge_sort.rb" />
@@ -143,6 +132,7 @@
         <option value="$PROJECT_DIR$/Katas/string_problems.rb" />
         <option value="$PROJECT_DIR$/Katas/plates_stacking.rb" />
         <option value="$PROJECT_DIR$/Katas/array_problems.rb" />
+        <option value="$PROJECT_DIR$/spec/array_problems_spec.rb" />
       </list>
     </option>
   </component>
@@ -261,41 +251,7 @@
       <recent name="$PROJECT_DIR$/Katas" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.My behaviour should reverse the words">
-    <configuration default="false" name="should have no duplicates should traverse the list" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="Katas_In_Ruby" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/spec" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/linked_list_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="should have no duplicates should traverse the list" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyDebugRunner" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.My behaviour should return the maximum element of unimodal array">
     <configuration default="false" name="My behaviour should return closest indices to sort" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="Katas_In_Ruby" />
@@ -424,6 +380,38 @@
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="My behaviour should return the maximum element of unimodal array" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="Katas_In_Ruby" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/spec" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/array_problems_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="My behaviour should return the maximum element of unimodal array" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="" />
@@ -524,19 +512,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="RSpec.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.should have no duplicates should traverse the list" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.My behaviour should return closest indices to sort" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.My behaviour" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.WaterInBucket" />
-      <item index="5" class="java.lang.String" itemvalue="RSpec.My behaviour should reverse the words" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.My behaviour should return closest indices to sort" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.My behaviour" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.WaterInBucket" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.My behaviour should reverse the words" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.My behaviour should return the maximum element of unimodal array" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.My behaviour should reverse the words" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.WaterInBucket" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.My behaviour" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.My behaviour should return closest indices to sort" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.should have no duplicates should traverse the list" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.My behaviour should return the maximum element of unimodal array" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.My behaviour should reverse the words" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.WaterInBucket" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.My behaviour" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.My behaviour should return closest indices to sort" />
       </list>
     </recent_temporary>
   </component>
@@ -589,7 +577,11 @@
       <created>1360392573770</created>
       <updated>1360392573770</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added plates stacking problem.">
+      <created>1360568459928</created>
+      <updated>1360568459929</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -651,7 +643,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added string problems, reverse words in a string" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added plates stacking problem." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -670,14 +662,11 @@
     <MESSAGE value="added logic to read text file and count inversions in it" />
     <MESSAGE value="added water in bucket and some other problems" />
     <MESSAGE value="added string problems, reverse words in a string" />
+    <MESSAGE value="Added plates stacking problem." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/spec/array_problems_spec.rb</url>
-          <line>9</line>
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/spec/water_in_bucket_spec.rb</url>
           <line>15</line>
@@ -690,15 +679,14 @@
           <url>file://$PROJECT_DIR$/spec/water_in_bucket_spec.rb</url>
           <line>33</line>
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/Katas/array_problems.rb</url>
+          <line>33</line>
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/merge_sort_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="10" selection-start="63" selection-end="63" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Katas/merge_sort.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="23" selection-start="976" selection-end="976" vertical-scroll-proportion="0.0">
@@ -725,13 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/rvm/rubies/ruby-1.9.3-p286/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Katas/linked_list.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="7" selection-start="282" selection-end="282" vertical-scroll-proportion="0.0">
@@ -742,13 +723,6 @@
     <entry file="file://$PROJECT_DIR$/spec/linked_list_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="52" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/array_problems_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="3" selection-start="296" selection-end="296" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -795,9 +769,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/rvm/rubies/ruby-1.9.3-p286/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="1040" selection-end="1040" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p286@cmucourse/gems/rspec-core-2.12.1/lib/rspec/core/example.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="0" selection-start="4188" selection-end="4188" vertical-scroll-proportion="0.3323077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Katas/array_problems.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="6" selection-start="698" selection-end="698" vertical-scroll-proportion="0.6449704">
+        <state line="33" column="0" selection-start="1065" selection-end="1065" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/array_problems_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="255" selection-end="255" vertical-scroll-proportion="0.020710059">
           <folding />
         </state>
       </provider>
