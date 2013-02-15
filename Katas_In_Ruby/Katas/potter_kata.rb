@@ -42,10 +42,20 @@ class PotterKata
                               fifth_book_count)
 
     book_sets_count = get_count_of_sets_of_books(@book_cart)
+
+    #edge case
+    while book_sets_count[4]>0 && book_sets_count[2]>0
+      book_sets_count[4] = book_sets_count[4] - 1
+      book_sets_count[2] = book_sets_count[2] - 1
+
+      book_sets_count[3] = book_sets_count[3] + 2
+    end
+
+    #calculate discounted price
     price = (book_sets_count[0] +
         book_sets_count[1] *2* 0.95+
-        book_sets_count[2] *3* 0.9+
-        book_sets_count[3] *4* 0.8+
+        book_sets_count[2] *3* 0.90+
+        book_sets_count[3] *4* 0.80+
         book_sets_count[4] *5* 0.75
     ) * PRICE_OF_ONE_BOOK
 
@@ -69,6 +79,16 @@ class PotterKata
                               array_of_grouped_books[4])
 
     book_sets_count = get_count_of_sets_of_books(@book_cart)
+
+
+    #edge case
+    while book_sets_count[4]>0 && book_sets_count[2]>0
+      book_sets_count[4] = book_sets_count[4] - 1
+      book_sets_count[2] = book_sets_count[2] - 1
+
+      book_sets_count[3] = book_sets_count[3] + 2
+    end
+
     price = (book_sets_count[0] +
         book_sets_count[1] *2* 0.95+
         book_sets_count[2] *3* 0.9+
@@ -84,7 +104,9 @@ class PotterKata
 
   def self.get_count_of_sets_of_books(book_cart)
 
-    set_of_books = [0, 0, 0, 0, 0] #set_of_one_count, set_of_two_count, set_of_three_count, set_of_four_count, set_of_five_count
+    #set_of_one_count, set_of_two_count, set_of_three_count, set_of_four_count, set_of_five_count
+    set_of_books = [0, 0, 0, 0, 0]
+
 
     while book_cart.first_book_count > 0 || book_cart.second_book_count > 0 || book_cart.third_book_count > 0 || book_cart.fourth_book_count > 0 || book_cart.fifth_book_count > 0
 

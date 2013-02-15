@@ -1,7 +1,7 @@
 require "spec_helper"
 require "../Katas/potter_kata"
 
-describe "My behaviour" do
+describe "PotterKata behaviour" do
 
 #Problem Description
 #Once upon a time there was a series of 5 books about a very English hero called Harry.
@@ -94,18 +94,18 @@ describe "My behaviour" do
 
     it "should calculate correct price for books " do
       price = PotterKata.calculate_price(2, 2, 2, 1, 1)
-      price.should == 51.20
+      price = 4*8*0.8*2
     end
   end
 
   context "test edge cases" do
     it "should successfully test edge cases" do
-      PotterKata.price([0, 0, 1, 1, 2, 2, 3, 4]).should equal (2 * (8 * 4 * 0.8))
+      PotterKata.price([0, 0, 1, 1, 2, 2, 3, 4]).should == (2 * (8 * 4 * 0.8))
       PotterKata.price([0, 0, 0, 0, 0,
                         1, 1, 1, 1, 1,
                         2, 2, 2, 2,
                         3, 3, 3, 3, 3,
-                        4, 4, 4, 4]).should equal (3 * (8 * 5 * 0.75) + 2 * (8 * 4 * 0.8))
+                        4, 4, 4, 4]).should == (3 * (8 * 5 * 0.75) + 2 * (8 * 4 * 0.8))
 
     end
 

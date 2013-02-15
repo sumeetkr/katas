@@ -19,4 +19,26 @@ describe "should have no duplicates" do
 
     arr.length.should == 5
   end
+
+  #Given a linked list, remove the nth node from the end of list and return its head.
+  context "remove the nth node from last" do
+    it "should decrease the count by one" do
+      head = Node.new(1, Node.new(2, Node.new(3, Node.new(4, Node.new(5, nil)))))
+
+      list = LinkedList.remove_n_from_last(head, 2);
+
+      LinkedList.traverse(list).length == 4
+    end
+
+    it "should decrease the count by one" do
+      head = Node.new(1, Node.new(2, Node.new(3, Node.new(4, Node.new(5, Node.new(6, nil))))))
+
+      list = LinkedList.remove_n_from_last(head, 2);
+      list = LinkedList.remove_n_from_last(list, 2);
+
+      LinkedList.traverse(list).length == 4
+    end
+
+  end
+
 end

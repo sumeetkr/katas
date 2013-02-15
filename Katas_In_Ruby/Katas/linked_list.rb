@@ -23,11 +23,36 @@ class LinkedList
 
     node = head
     until node.nil?
-      array<<node.get_value()
+      array << node.get_value()
       node = node.next
     end
 
     return array
+
+  end
+
+  def self.remove_n_from_last(head, n)
+
+    current_node = head
+    nth_previous_node = head
+    count_of_traveresed = 0
+
+    until current_node.nil?
+
+      if (count_of_traveresed > n)
+        nth_previous_node = nth_previous_node.next
+      end
+
+      count_of_traveresed += 1
+      current_node =current_node.next
+    end
+
+    # drop the next node of nth_previous_node, and reconnect
+    next_to_nth_previous_node = nth_previous_node.next
+    next_to_next_to_nth_previous_node = next_to_nth_previous_node.next
+    nth_previous_node.set_next(next_to_next_to_nth_previous_node)
+
+    return head
 
   end
 end
@@ -43,6 +68,10 @@ class Node
 
   def next
     return @next_list
+  end
+
+  def set_next(node_to_be_next)
+    @next_list = node_to_be_next
   end
 
   def get_value
