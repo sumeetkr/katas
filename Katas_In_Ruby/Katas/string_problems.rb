@@ -37,4 +37,23 @@ class StringProblems
 
     return reverse_chars.join
   end
+
+  def self.get_min_window(complete_string, sub_string)
+    array_of_string = complete_string.split(//)
+    array_of_substring = sub_string.split(//)
+
+    i = 0
+    while i < array_of_string.length
+      if (array_of_string[i]== "A")
+        array_of_string[i] == 3
+        if (array_of_string[i]== "B")
+          array_of_string[i] == 5
+        else
+          array_of_string[i] == 0
+        end
+      end
+    end
+
+    return array_of_string.join
+  end
 end
