@@ -27,23 +27,39 @@ describe "solves graph problems" do
 
     it "should read the text file and create a graph" do
       init()
-      @graph_populated_with_test_data.vertices.length.should > 0
+      @graph_populated_with_test_data.nodes.length.should > 0
     end
 
     it "should find a cut on contraction" do
       init()
       graph_clone = @graph_populated_with_test_data.deep_clone
-      graph_clone.make_a_random_cut()
-      graph_clone.vertices.length.should == 2
+      GraphProblemsSolver.randomly_contract_the_graph_till_it_is_left_with_two_edges(graph_clone)
+      graph_clone.nodes.length.should == 2
     end
 
     it "should run for a number of times to find the min cut" do
       init()
       graph_clone = @graph_populated_with_test_data.deep_clone
-      parallel_edges_on_min_cut = graph_clone.find_cut_with_min_parallel_edges_count(1000)
-      parallel_edges_on_min_cut.should == 20
+      parallel_edges_on_min_cut = GraphProblemsSolver.find_cut_with_min_parallel_edges_count(graph_clone, 10)
+      parallel_edges_on_min_cut.should == 17
     end
 
+  end
+
+  context "graph problems solver" do
+    it "contract the graph till left with two edges" do
+      graph = init_graph_with_five_edges()
+
+      GraphProblemsSolver.randomly_contract_the_graph_till_it_is_left_with_two_edges(graph)
+
+      graph.nodes.length.should == 2
+    end
+
+    it "finds a cut with minimum parallel edges" do
+      graph = init_graph_with_five_edges()
+      min_edges_count = GraphProblemsSolver.find_cut_with_min_parallel_edges_count(graph, 20)
+      min_edges_count.should == 1
+    end
   end
 
   context "vertex" do
@@ -56,34 +72,33 @@ describe "solves graph problems" do
     end
   end
 
+  def init_graph_with_five_edges()
+    vertices_array = [Vertex.new(0, [1, 3]),
+                      Vertex.new(1, [0, 2, 3, 4]),
+                      Vertex.new(2, [1, 3]),
+                      Vertex.new(4, [1]),
+                      Vertex.new(3, [0, 2, 1])]
+    return Graph.new(vertices_array)
+
+  end
+
   context "graph with 5 edges" do
 
-    def init_graph_with_five_edges()
-      vertices_array = [Vertex.new(0, [1, 3]),
-                        Vertex.new(1, [0, 2, 3, 4]),
-                        Vertex.new(2, [1, 3]),
-                        Vertex.new(4, [1]),
-                        Vertex.new(3, [0, 2, 1])]
-      @graph_with_five_edge = Graph.new(vertices_array)
-
-    end
-
-
     it "should initialize graph" do
-      init_graph_with_five_edges()
-      @graph_with_five_edge.should respond_to(:vertices)
-      @graph_with_five_edge.vertices.length.should == 5
+      @graph_with_five_edge = init_graph_with_five_edges()
+      @graph_with_five_edge.should respond_to(:nodes)
+      @graph_with_five_edge.nodes.length.should == 5
     end
 
-    it "should contract graph by one vertex" do
-      init_graph_with_five_edges()
-      @graph_with_five_edge.make_a_random_cut()
-      @graph_with_five_edge.vertices.length.should == 2
+    it "should contract the graph" do
+      @graph_with_five_edge = init_graph_with_five_edges()
+      GraphProblemsSolver.randomly_contract_the_graph_till_it_is_left_with_two_edges(@graph_with_five_edge)
+      @graph_with_five_edge.nodes.length.should == 2
     end
 
     it "should find min cut" do
-      init_graph_with_five_edges()
-      parallel_edges_on_min_cut = @graph_with_five_edge.find_cut_with_min_parallel_edges_count(100)
+      @graph_with_five_edge = init_graph_with_five_edges()
+      parallel_edges_on_min_cut = GraphProblemsSolver.find_cut_with_min_parallel_edges_count(@graph_with_five_edge, 100)
       parallel_edges_on_min_cut.should == 1
     end
 
@@ -102,20 +117,20 @@ describe "solves graph problems" do
 
 
     it "should initialize graph" do
-      init_graph_with_four_edges()
-      @graph_with_four_edge.should respond_to(:vertices)
-      @graph_with_four_edge.vertices.length.should == 4
+      @graph_with_four_edge = init_graph_with_four_edges()
+      @graph_with_four_edge.should respond_to(:nodes)
+      @graph_with_four_edge.nodes.length.should == 4
     end
 
-    it "should contract graph by one vertex" do
-      init_graph_with_four_edges()
-      @graph_with_four_edge.make_a_random_cut()
-      @graph_with_four_edge.vertices.length.should == 2
+    it "should contract the graph" do
+      @graph_with_four_edge = init_graph_with_four_edges()
+      GraphProblemsSolver.randomly_contract_the_graph_till_it_is_left_with_two_edges(@graph_with_four_edge)
+      @graph_with_four_edge.nodes.length.should == 2
     end
 
     it "should find min cut" do
-      init_graph_with_four_edges()
-      parallel_edges_on_min_cut = @graph_with_four_edge.find_cut_with_min_parallel_edges_count(30)
+      @graph_with_four_edge = init_graph_with_four_edges()
+      parallel_edges_on_min_cut = GraphProblemsSolver.find_cut_with_min_parallel_edges_count(@graph_with_four_edge, 30)
       parallel_edges_on_min_cut.should == 2
     end
 
@@ -123,7 +138,7 @@ describe "solves graph problems" do
 
   context "graph with 3 edges" do
 
-    before(:all) do
+    before(:each) do
       vertices_array = [Vertex.new(0, [1, 3]),
                         Vertex.new(1, [0, 3]),
                         Vertex.new(3, [0, 1])]
@@ -133,14 +148,14 @@ describe "solves graph problems" do
 
     it "should initialize graph" do
 
-      @graph_with_three_edge.should respond_to(:vertices)
-      @graph_with_three_edge.vertices.length.should == 3
+      @graph_with_three_edge.should respond_to(:nodes)
+      @graph_with_three_edge.nodes.length.should == 3
     end
 
-    it "should contract graph by one vertex" do
-      @graph_with_three_edge.make_a_random_cut()
-      @graph_with_three_edge.vertices.length.should == 2
-      @graph_with_three_edge.vertices[0].neighbour_vertices_number.length.should == 2
+    it "should contract the graph" do
+      GraphProblemsSolver.randomly_contract_the_graph_till_it_is_left_with_two_edges(@graph_with_three_edge)
+      @graph_with_three_edge.nodes.length.should == 2
+      @graph_with_three_edge.nodes[0].neighbour_vertices_number.length.should == 2
     end
   end
 end
