@@ -43,11 +43,12 @@ class Graph
     #a cut of a graph is dividing a graph in two parts
 
     random_number_generator = Random.new()
-    first_vertex = @vertices[(random_number_generator.rand(0..(vertices.length - 1)))]
 
     while vertices.length > 2
-      neighbour_number = first_vertex.neighbour_vertices_number[(random_number_generator.rand(0..(first_vertex.neighbour_vertices_number.length - 1)))]
-      second_vertex = @vertices.select { |vertex| vertex.number == neighbour_number }.first
+      first_vertex = @vertices[(random_number_generator.rand(0..(vertices.length - 1)))]
+      random_neighbour_number = first_vertex.neighbour_vertices_number[
+          (random_number_generator.rand(0..(first_vertex.neighbour_vertices_number.length - 1)))]
+      second_vertex = @vertices.select { |vertex| vertex.number == random_neighbour_number }.first
 
       if (!second_vertex.nil? && first_vertex.number != second_vertex.number)
         contract(first_vertex, second_vertex)
