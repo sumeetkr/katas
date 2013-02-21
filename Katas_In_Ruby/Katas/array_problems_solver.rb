@@ -1,5 +1,4 @@
-class ArrayProblems
-  # To change this template use File | Settings | File Templates.
+class ArrayProblemsSolver
   #Given an array of integers, write a method to find indices m and n such that
   #if you sorted elements m through n, the entire array would be sorted.
   # Minimize n - m (that is, find the smallest such sequence).
@@ -19,6 +18,14 @@ class ArrayProblems
     end
 
     return start_index, end_index
+
+  end
+
+  def self.select_ith_order_statistics(array, ith_order)
+    #the 3rd order statistics of array = [8, 3, 2, 5] is 5
+    #  use the idea of quicksort, the pivot gets placed ate the right position
+    #  the solution is linear time :)
+
 
   end
 

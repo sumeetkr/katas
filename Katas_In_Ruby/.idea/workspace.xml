@@ -2,15 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="435c0da1-a8e7-4f2a-bdb3-460b5a249c0b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Katas/QuickSort_SampleData.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Katas/helpers.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Katas/matrix_problems.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/matrix_problems_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Katas/graph_problems_solver.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Katas/stack_problems_solver.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Katas/tree_problems_solver.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sample_Data/kargerMinCut.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/graph_problems_solver_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/stack_problems_solver_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/tree_problems_solver_spec.rb" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Katas/IntegerArray.txt" afterPath="$PROJECT_DIR$/Sample_Data/IntegerArray.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Katas/QuickSort_SampleData.txt" afterPath="$PROJECT_DIR$/Sample_Data/QuickSort_SampleData.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Katas/array_problems.rb" afterPath="$PROJECT_DIR$/Katas/array_problems_solver.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Katas/quick_sort.rb" afterPath="$PROJECT_DIR$/Katas/quick_sort.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Katas/string_problems.rb" afterPath="$PROJECT_DIR$/Katas/string_problems.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Katas/helpers.rb" afterPath="$PROJECT_DIR$/Katas/helpers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/array_problems_spec.rb" afterPath="$PROJECT_DIR$/spec/array_problems_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/quick_sort_spec.rb" afterPath="$PROJECT_DIR$/spec/quick_sort_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/string_problems_spec.rb" afterPath="$PROJECT_DIR$/spec/string_problems_spec.rb" />
     </list>
     <ignored path="Katas_In_Ruby.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,91 +34,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="quick_sort.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/quick_sort.rb">
+      <file leaf-file-name="graph_problems_solver_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/graph_problems_solver_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="0" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.0">
+            <state line="136" column="0" selection-start="4816" selection-end="4816" vertical-scroll-proportion="3.890187">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inversions_in_array_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/inversions_in_array_spec.rb">
+      <file leaf-file-name="graph_problems_solver.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Katas/graph_problems_solver.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="30" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quick_sort_spec.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/spec/quick_sort_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="26" selection-start="2730" selection-end="2730" vertical-scroll-proportion="3.6464088">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="string_problems.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/string_problems.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="7" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matrix_problems.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/matrix_problems.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="65" selection-start="23" selection-end="86" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="matrix_problems_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/matrix_problems_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="34" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="merge_sort_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/merge_sort_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="0" selection-start="320" selection-end="514" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="merge_sort.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/merge_sort.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inversions_in_array.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/inversions_in_array.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="86" selection-end="261" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="helpers.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/helpers.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="43" selection-start="26" selection-end="58" vertical-scroll-proportion="0.0">
+            <state line="48" column="150" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -132,22 +65,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/water_in_bucket_spec.rb" />
-        <option value="$PROJECT_DIR$/Katas/plates_stacking.rb" />
-        <option value="$PROJECT_DIR$/Katas/array_problems.rb" />
-        <option value="$PROJECT_DIR$/spec/array_problems_spec.rb" />
-        <option value="$PROJECT_DIR$/Tests/potter_kata_test.rb" />
-        <option value="$PROJECT_DIR$/Katas/potter_kata.rb" />
-        <option value="$PROJECT_DIR$/spec/potter_kata_spec.rb" />
-        <option value="$PROJECT_DIR$/Katas/linked_list.rb" />
-        <option value="$PROJECT_DIR$/spec/linked_list_spec.rb" />
         <option value="$PROJECT_DIR$/spec/string_problems_spec.rb" />
         <option value="$PROJECT_DIR$/Katas/string_problems.rb" />
         <option value="$PROJECT_DIR$/Katas/matrix_problems.rb" />
         <option value="$PROJECT_DIR$/spec/matrix_problems_spec.rb" />
-        <option value="$PROJECT_DIR$/Katas/helpers.rb" />
         <option value="$PROJECT_DIR$/Katas/quick_sort.rb" />
+        <option value="$PROJECT_DIR$/Katas/tree_problems_solver.rb" />
+        <option value="$PROJECT_DIR$/Katas/stack_problems_solver.rb" />
+        <option value="$PROJECT_DIR$/spec/stack_problems_solver_spec.rb" />
+        <option value="$PROJECT_DIR$/Katas/array_problems.rb" />
+        <option value="$PROJECT_DIR$/spec/array_problems_spec.rb" />
+        <option value="$PROJECT_DIR$/Katas/array_problems_solver.rb" />
         <option value="$PROJECT_DIR$/spec/quick_sort_spec.rb" />
+        <option value="$PROJECT_DIR$/spec/tree_problems_solver_spec.rb" />
+        <option value="$PROJECT_DIR$/Katas/helpers.rb" />
+        <option value="$PROJECT_DIR$/spec/graph_problems_solver_spec.rb" />
+        <option value="$PROJECT_DIR$/Katas/graph_problems_solver.rb" />
       </list>
     </option>
   </component>
@@ -242,6 +175,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Sample_Data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Katas_In_Ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Katas_In_Ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Katas" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -265,9 +212,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Katas" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Sample_Data" />
+    </key>
   </component>
-  <component name="RunManager" selected="RSpec.QuickSort_SampleData behaviour">
-    <configuration default="false" name="QuickSort_SampleData behaviour should sort array" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+  <component name="RunManager" selected="RSpec.solves graph problems">
+    <configuration default="false" name="solves graph problems" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="Katas_In_Ruby" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -285,10 +235,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/quick_sort_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/graph_problems_solver_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="QuickSort behaviour should sort array" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="solves graph problems" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -296,10 +246,12 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="My behaviour minimum window substring " type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="solves graph problems graph with 5 edges" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="Katas_In_Ruby" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -317,10 +269,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/string_problems_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/graph_problems_solver_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="My behaviour minimum window substring " />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="solves graph problems graph with 5 edges" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -328,10 +280,12 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="QuickSort_SampleData behaviour should partition the array" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="solves graph problems min cut problem should run for a number of times to find the min cut" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="Katas_In_Ruby" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -349,10 +303,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/quick_sort_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/graph_problems_solver_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="QuickSort behaviour should partition the array" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="solves graph problems min cut problem should run for a number of times to find the min cut" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -360,10 +314,12 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="QuickSort_SampleData behaviour should partition the array also" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="solves graph problems graph with 3 edges" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="Katas_In_Ruby" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -381,21 +337,21 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/quick_sort_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/graph_problems_solver_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="QuickSort behaviour should partition the array also" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="solves graph problems graph with 3 edges" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyDebugRunner" />
-      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="QuickSort_SampleData behaviour" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="solves graph problems graph with 4 edges" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="Katas_In_Ruby" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -413,10 +369,10 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/quick_sort_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/graph_problems_solver_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="QuickSort behaviour" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="solves graph problems graph with 4 edges" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -424,7 +380,9 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
     <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
@@ -527,19 +485,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="RSpec.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.QuickSort_SampleData behaviour should sort array" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.My behaviour minimum window substring " />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.QuickSort_SampleData behaviour should partition the array" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.QuickSort_SampleData behaviour should partition the array also" />
-      <item index="5" class="java.lang.String" itemvalue="RSpec.QuickSort_SampleData behaviour" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.solves graph problems" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.solves graph problems graph with 5 edges" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.solves graph problems min cut problem should run for a number of times to find the min cut" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.solves graph problems graph with 3 edges" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.solves graph problems graph with 4 edges" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.QuickSort_SampleData behaviour" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.QuickSort_SampleData behaviour should partition the array" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.QuickSort_SampleData behaviour should sort array" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.QuickSort_SampleData behaviour should partition the array also" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.My behaviour minimum window substring " />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.solves graph problems" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.solves graph problems min cut problem should run for a number of times to find the min cut" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.solves graph problems graph with 4 edges" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.solves graph problems graph with 3 edges" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.solves graph problems graph with 5 edges" />
       </list>
     </recent_temporary>
   </component>
@@ -608,7 +566,11 @@
       <created>1360957437694</created>
       <updated>1360957437694</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added Quick Sort related problems">
+      <created>1361232176918</created>
+      <updated>1361232176918</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -618,18 +580,18 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26666668" sideWeight="0.6035242" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39647576" sideWeight="0.9398374" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26666668" sideWeight="0.6872247" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37738618" sideWeight="0.9398374" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.50406504" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31277534" sideWeight="0.4902439" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31277534" sideWeight="0.4902439" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -670,7 +632,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a linked list problem and quick sort problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Quick Sort related problems" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -693,6 +655,7 @@
     <MESSAGE value="Added maximum element in unimodal array" />
     <MESSAGE value="Added potter_kata" />
     <MESSAGE value="Added a linked list problem and quick sort problem" />
+    <MESSAGE value="Added Quick Sort related problems" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -710,8 +673,8 @@
           <line>33</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/Katas/array_problems.rb</url>
-          <line>33</line>
+          <url>file://$PROJECT_DIR$/Katas/array_problems_solver.rb</url>
+          <line>40</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/Katas/string_problems.rb</url>
@@ -733,97 +696,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Katas/potter_kata.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="0" selection-start="3416" selection-end="3416" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/potter_kata_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="5" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p286@cmucourse/gems/rspec-core-2.12.1/lib/rspec/core/example.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="0" selection-start="4188" selection-end="4188" vertical-scroll-proportion="0.37974682">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/linked_list.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="0" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/linked_list_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="5" selection-start="567" selection-end="574" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/string_problems_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="598" selection-end="605" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/string_problems.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="7" selection-start="1140" selection-end="1140" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/matrix_problems.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="65" selection-start="23" selection-end="86" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/matrix_problems_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/merge_sort_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="320" selection-end="514" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/merge_sort.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/inversions_in_array.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="86" selection-end="261" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/helpers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="43" selection-start="26" selection-end="58" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/inversions_in_array_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="30" selection-start="710" selection-end="710" vertical-scroll-proportion="0.0">
@@ -831,16 +703,107 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/quick_sort.rb">
+    <entry file="file://$PROJECT_DIR$/Katas/tree_problems_solver.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="0" selection-start="2943" selection-end="2943" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Katas/stack_problems_solver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="65" selection-start="28" selection-end="91" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Katas/array_problems_solver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="0" selection-start="865" selection-end="865" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/quick_sort_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="26" selection-start="2730" selection-end="2730" vertical-scroll-proportion="3.6464088">
+        <state line="87" column="6" selection-start="2556" selection-end="2663" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Katas/quick_sort.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="63" selection-start="269" selection-end="320" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/stack_problems_solver_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/tree_problems_solver_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="3" selection-start="450" selection-end="450" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p286@cmucourse/gems/rspec-core-2.12.1/lib/rspec/core/example.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="0" selection-start="4188" selection-end="4188" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p286@cmucourse/gems/rspec-core-2.12.1/lib/rspec/core/example_group.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="320" column="0" selection-start="12063" selection-end="12063" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/array_problems_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="4" selection-start="1144" selection-end="1164" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Katas/helpers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="48" selection-start="417" selection-end="417" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Data/QuickSort_SampleData.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sample_Data/kargerMinCut.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="199" column="3" selection-start="18287" selection-end="18287" vertical-scroll-proportion="0.92990655">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Katas/graph_problems_solver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="150" selection-start="1307" selection-end="1307" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/graph_problems_solver_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="136" column="0" selection-start="4816" selection-end="4816" vertical-scroll-proportion="3.890187">
           <folding />
         </state>
       </provider>

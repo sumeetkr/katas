@@ -85,7 +85,7 @@ describe "QuickSort behaviour" do
 
 
     it "should count total number of comparisons in file" do
-      num = QuickSort.total_number_of_comparisons_in_sorting_from_file('../Katas/QuickSort_SampleData.txt')
+      num = QuickSort.total_number_of_comparisons_in_sorting_from_file('../Sample_Data/QuickSort_SampleData.txt')
 
       num.should == 162085
       num.should == 164123

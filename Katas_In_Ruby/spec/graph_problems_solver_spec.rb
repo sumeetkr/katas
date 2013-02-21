@@ -1,0 +1,146 @@
+require "spec_helper"
+require "../Katas/graph_problems_solver"
+require "../Katas/helpers"
+
+describe "solves graph problems" do
+  context "min cut problem" do
+    #  The file "KargerMinCut.txt" contains the adjacency list representation of a simple undirected graph.
+    # There are 200 vertices labeled 1 to 200. The first column in the file represents
+    #the vertex label, and the particular row (other entries except the first column)
+    # tells all the vertices that the vertex is adjacent to. So for example, the 6th
+    #row looks like : "6	155	56	52	120	......". This just means that the vertex
+    #with label 6 is adjacent to (i.e., shares an edge with) the vertices with labels
+    #155,56,52,120,......,etc
+
+    #Your task is to code up and run the randomized contraction algorithm for the min cut
+    #problem and use it on the above graph to compute the min cut. (HINT: Note that you'll
+    # have to figure out an implementation of edge contractions. Initially, you might want
+    #to do this naively, creating a new graph from the old every time there's an edge contraction.
+    #But you should also think about more efficient implementations.) (WARNING: As per the
+    #video lectures, please make sure to run the algorithm many times with different random seeds,
+    #and remember the smallest cut that you ever find.) Write your numeric answer in the
+    #space provided. So e.g., if your answer is 5, just type 5 in the space provided.
+
+    def init()
+      @graph_populated_with_test_data = Helpers.populate_graph_with_file_content('../Sample_Data/KargerMinCut.txt')
+    end
+
+    it "should read the text file and create a graph" do
+      init()
+      @graph_populated_with_test_data.vertices.length.should > 0
+    end
+
+    it "should find a cut on contraction" do
+      init()
+      graph_clone = @graph_populated_with_test_data.deep_clone
+      graph_clone.make_a_random_cut()
+      graph_clone.vertices.length.should == 2
+    end
+
+    it "should run for a number of times to find the min cut" do
+      init()
+      graph_clone = @graph_populated_with_test_data.deep_clone
+      parallel_edges_on_min_cut = graph_clone.find_cut_with_min_parallel_edges_count(1000)
+      parallel_edges_on_min_cut.should == 20
+    end
+
+  end
+
+  context "vertex" do
+    it "defines vertex" do
+      vertex = Vertex.new(0, [1, 3, 6, 8])
+
+      vertex.should respond_to(:number)
+      vertex.should respond_to(:neighbour_vertices_number)
+      vertex.neighbour_vertices_number.length.should == 4
+    end
+  end
+
+  context "graph with 5 edges" do
+
+    def init_graph_with_five_edges()
+      vertices_array = [Vertex.new(0, [1, 3]),
+                        Vertex.new(1, [0, 2, 3, 4]),
+                        Vertex.new(2, [1, 3]),
+                        Vertex.new(4, [1]),
+                        Vertex.new(3, [0, 2, 1])]
+      @graph_with_five_edge = Graph.new(vertices_array)
+
+    end
+
+
+    it "should initialize graph" do
+      init_graph_with_five_edges()
+      @graph_with_five_edge.should respond_to(:vertices)
+      @graph_with_five_edge.vertices.length.should == 5
+    end
+
+    it "should contract graph by one vertex" do
+      init_graph_with_five_edges()
+      @graph_with_five_edge.make_a_random_cut()
+      @graph_with_five_edge.vertices.length.should == 2
+    end
+
+    it "should find min cut" do
+      init_graph_with_five_edges()
+      parallel_edges_on_min_cut = @graph_with_five_edge.find_cut_with_min_parallel_edges_count(100)
+      parallel_edges_on_min_cut.should == 1
+    end
+
+  end
+
+  context "graph with 4 edges" do
+
+    def init_graph_with_four_edges()
+      vertices_array = [Vertex.new(0, [1, 3]),
+                        Vertex.new(1, [0, 2, 3]),
+                        Vertex.new(2, [1, 3]),
+                        Vertex.new(3, [0, 2, 1])]
+      @graph_with_four_edge = Graph.new(vertices_array)
+
+    end
+
+
+    it "should initialize graph" do
+      init_graph_with_four_edges()
+      @graph_with_four_edge.should respond_to(:vertices)
+      @graph_with_four_edge.vertices.length.should == 4
+    end
+
+    it "should contract graph by one vertex" do
+      init_graph_with_four_edges()
+      @graph_with_four_edge.make_a_random_cut()
+      @graph_with_four_edge.vertices.length.should == 2
+    end
+
+    it "should find min cut" do
+      init_graph_with_four_edges()
+      parallel_edges_on_min_cut = @graph_with_four_edge.find_cut_with_min_parallel_edges_count(30)
+      parallel_edges_on_min_cut.should == 2
+    end
+
+  end
+
+  context "graph with 3 edges" do
+
+    before(:all) do
+      vertices_array = [Vertex.new(0, [1, 3]),
+                        Vertex.new(1, [0, 3]),
+                        Vertex.new(3, [0, 1])]
+      @graph_with_three_edge = Graph.new(vertices_array)
+
+    end
+
+    it "should initialize graph" do
+
+      @graph_with_three_edge.should respond_to(:vertices)
+      @graph_with_three_edge.vertices.length.should == 3
+    end
+
+    it "should contract graph by one vertex" do
+      @graph_with_three_edge.make_a_random_cut()
+      @graph_with_three_edge.vertices.length.should == 2
+      @graph_with_three_edge.vertices[0].neighbour_vertices_number.length.should == 2
+    end
+  end
+end
