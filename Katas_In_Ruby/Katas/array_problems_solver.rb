@@ -1,4 +1,30 @@
 class ArrayProblemsSolver
+
+
+  def self.rotate_an_array_k_times(array, times_to_be_rotated)
+
+    k = times_to_be_rotated
+
+    reverse_an_array(array, 0, k)
+    reverse_an_array(array, k + 1, array.length - 1)
+    reverse_an_array(array, 0, array.length - 1)
+
+  end
+
+  def self.reverse_an_array(array, start_index, end_index)
+    i = start_index
+
+    while i < (start_index+ end_index + 1)/2
+      #  swap i with , end_index - i
+      tmp = array[i]
+      array[i] = array[start_index + end_index - i]
+      array[end_index + start_index - i] = tmp
+
+      i += 1
+    end
+  end
+
+
   #Given an array of integers, write a method to find indices m and n such that
   #if you sorted elements m through n, the entire array would be sorted.
   # Minimize n - m (that is, find the smallest such sequence).
@@ -28,7 +54,6 @@ class ArrayProblemsSolver
 
 
   end
-
 
   def self.get_max_element_of_unimodal_array(array)
 

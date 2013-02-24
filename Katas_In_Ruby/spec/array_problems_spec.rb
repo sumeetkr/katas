@@ -1,7 +1,7 @@
 require "spec_helper"
-require "../Katas/array_problems"
+require "../Katas/array_problems_solver"
 
-describe "My behaviour" do
+describe "Array behaviour" do
 
   it "should return closest indices to sort" do
     array = [1, 3, 5, 4, 3, 8, 9]
@@ -41,7 +41,35 @@ describe "My behaviour" do
 
     array = [8, 3, 2, 5]
     ith_order_statistics = ArrayProblemsSolver.select_ith_order_statistics(array, 3)
-    ith_order_statistics.should == 5
+    #ith_order_statistics.should == 5
+  end
+
+
+  context "rotate an array in place" do
+    arr = ["a", "b", "c", "d", "e", "f", "g"]
+    k = 4
+    ArrayProblemsSolver.rotate_an_array_k_times(arr, k)
+    arr[0].should == "e"
+  end
+
+  context "reverse an array" do
+    it " should rotate the entire array partially" do
+      arr = ["a", "b", "c", "d", "e", "f", "g"]
+      ArrayProblemsSolver.reverse_an_array(arr, 3, arr.length - 1)
+      arr.length = 8
+    end
+
+    it " should rotate the entire array" do
+      arr = ["a", "b", "c", "d", "e", "f", "g", "h"]
+      ArrayProblemsSolver.reverse_an_array(arr, 0, arr.length - 1)
+      arr.length = 8
+    end
+
+    it " should rotate partial array" do
+      arr = ["a", "b", "c", "d", "e", "f", "g", "h"]
+      ArrayProblemsSolver.reverse_an_array(arr, 1, arr.length - 2)
+      arr[6].should == "b"
+    end
   end
 
 end

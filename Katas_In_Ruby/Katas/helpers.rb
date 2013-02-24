@@ -22,7 +22,7 @@ class Helpers
 
       first = array[0]
       rest = array[1..(array.length - 1)]
-      vertex = Node.new(first, rest)
+      vertex = GraphNode.new(first, rest)
       vertices.insert(vertices.length - 1, vertex)
     end
     return @graph = Graph.new(vertices)

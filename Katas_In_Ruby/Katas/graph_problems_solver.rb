@@ -4,7 +4,7 @@ class GraphProblemsSolver
 
     min = 2000
 
-    (1..number_of_times_to_be_run).each do |i|
+    for i in 1..number_of_times_to_be_run
       graph_clone = graph.deep_clone
       randomly_contract_the_graph_till_it_is_left_with_two_edges(graph_clone)
       parralel_edges_count = graph_clone.nodes[graph_clone.nodes.keys.first].neighbour_nodes_numbers.length
@@ -39,7 +39,7 @@ class GraphProblemsSolver
   end
 end
 
-class Node
+class GraphNode
   attr_accessor :number, :neighbour_nodes_numbers
 
   def initialize(node_number, neighbour_nodes_number_array)

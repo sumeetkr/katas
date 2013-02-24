@@ -40,8 +40,8 @@ describe "solves graph problems" do
     it "should run for a number of times to find the min cut" do
       init()
       graph_clone = @graph_populated_with_test_data.deep_clone
-      #parallel_edges_on_min_cut = GraphProblemsSolver.find_cut_with_min_parallel_edges_count(graph_clone, 2)
-      #parallel_edges_on_min_cut.should == 17
+      parallel_edges_on_min_cut = GraphProblemsSolver.find_cut_with_min_parallel_edges_count(graph_clone, 10)
+      parallel_edges_on_min_cut.should == 17
     end
 
   end
@@ -64,7 +64,7 @@ describe "solves graph problems" do
 
   context "vertex" do
     it "defines vertex" do
-      vertex = Node.new(0, [1, 3, 6, 8])
+      vertex = GraphNode.new(0, [1, 3, 6, 8])
 
       vertex.should respond_to(:number)
       vertex.should respond_to(:neighbour_nodes_numbers)
@@ -73,11 +73,11 @@ describe "solves graph problems" do
   end
 
   def init_graph_with_five_edges()
-    vertices_array = [Node.new(0, [1, 3]),
-                      Node.new(1, [0, 2, 3, 4]),
-                      Node.new(2, [1, 3]),
-                      Node.new(4, [1]),
-                      Node.new(3, [0, 2, 1])]
+    vertices_array = [GraphNode.new(0, [1, 3]),
+                      GraphNode.new(1, [0, 2, 3, 4]),
+                      GraphNode.new(2, [1, 3]),
+                      GraphNode.new(4, [1]),
+                      GraphNode.new(3, [0, 2, 1])]
     return Graph.new(vertices_array)
 
   end
@@ -98,7 +98,7 @@ describe "solves graph problems" do
 
     it "should find min cut" do
       @graph_with_five_edge = init_graph_with_five_edges()
-      parallel_edges_on_min_cut = GraphProblemsSolver.find_cut_with_min_parallel_edges_count(@graph_with_five_edge, 100)
+      parallel_edges_on_min_cut = GraphProblemsSolver.find_cut_with_min_parallel_edges_count(@graph_with_five_edge, 10)
       parallel_edges_on_min_cut.should == 1
     end
 
@@ -107,10 +107,10 @@ describe "solves graph problems" do
   context "graph with 4 edges" do
 
     def init_graph_with_four_edges()
-      vertices_array = [Node.new(0, [1, 3]),
-                        Node.new(1, [0, 2, 3]),
-                        Node.new(2, [1, 3]),
-                        Node.new(3, [0, 2, 1])]
+      vertices_array = [GraphNode.new(0, [1, 3]),
+                        GraphNode.new(1, [0, 2, 3]),
+                        GraphNode.new(2, [1, 3]),
+                        GraphNode.new(3, [0, 2, 1])]
       @graph_with_four_edge = Graph.new(vertices_array)
 
     end
@@ -130,7 +130,7 @@ describe "solves graph problems" do
 
     it "should find min cut" do
       @graph_with_four_edge = init_graph_with_four_edges()
-      parallel_edges_on_min_cut = GraphProblemsSolver.find_cut_with_min_parallel_edges_count(@graph_with_four_edge, 30)
+      parallel_edges_on_min_cut = GraphProblemsSolver.find_cut_with_min_parallel_edges_count(@graph_with_four_edge, 2)
       parallel_edges_on_min_cut.should == 2
     end
 
@@ -139,9 +139,9 @@ describe "solves graph problems" do
   context "graph with 3 edges" do
 
     before(:each) do
-      vertices_array = [Node.new(0, [1, 3]),
-                        Node.new(1, [0, 3]),
-                        Node.new(3, [0, 1])]
+      vertices_array = [GraphNode.new(0, [1, 3]),
+                        GraphNode.new(1, [0, 3]),
+                        GraphNode.new(3, [0, 1])]
       @graph_with_three_edge = Graph.new(vertices_array)
 
     end
