@@ -37,14 +37,16 @@ class GraphProblemsSolver
       end
     end
   end
+
 end
 
 class GraphNode
-  attr_accessor :number, :neighbour_nodes_numbers
+  attr_accessor :number, :neighbour_nodes_numbers, :is_explored
 
   def initialize(node_number, neighbour_nodes_number_array)
     @number = node_number
     @neighbour_nodes_numbers = neighbour_nodes_number_array
+    @is_explored = false
   end
 end
 
@@ -58,6 +60,65 @@ class Graph
       @nodes[node.number] = node
     end
 
+    @nodes_traversed =[]
+  end
+
+  def depth_first_search(start_node)
+    #  it aggressively explores the graph, returning only when no option left
+    # add the traversed nodes in a stack, mark it explored
+    # check a random neighbour, if it has not been explored,
+    # if no unexlored neighbour, back track the stack, call dfs on this node
+    # if not explored, call dfs on this neighbour node
+
+    start_node.is_explored = true
+    @nodes_traversed.push(start_node)
+
+    for neighbour_node in get_neighbours_of_a_node(start_node)
+      unless (@nodes_traversed.include?(neighbour_node))
+        depth_first_search(neighbour_node)
+      end
+    end
+    @nodes_traversed.pop()
+  end
+
+  def breadth_first_search(start_node)
+    #  it aggressively explores the graph, exploring all neighbours of a node before moving to the next level
+    # add the traversed nodes in a queue or mark it explored
+    # check a random neighbour, if it has not been explored,
+    # if no unexlored neighbour, back track the queue, call bfs on this node
+    # if not explored, call bfs on this neighbour node
+
+    start_node.is_explored = true
+    #@nodes_traversed.push(start_node)
+
+    for neighbour_node in get_neighbours_of_a_node(start_node)
+      unless (neighbour_node.is_explored)
+        breadth_first_search(neighbour_node)
+      end
+    end
+    #@nodes_traversed.pop()
+  end
+
+  def is_graph_completely_searched()
+    is_completely_searched = true
+
+    for node in @nodes.values
+      if (node.is_explored == false)
+        is_completely_searched = false
+      end
+    end
+
+    return is_completely_searched
+  end
+
+  def get_neighbours_of_a_node(node)
+    neighbours = []
+
+    for node_number in node.neighbour_nodes_numbers
+      neighbours.push(@nodes[node_number])
+    end
+
+    return neighbours
   end
 
   def contract(first_node, second_node)
@@ -69,7 +130,6 @@ class Graph
 
     @nodes.delete(second_node.number)
   end
-
 
   def update_node_neighbours_to_point_to_different_node(first_node, second_node)
 

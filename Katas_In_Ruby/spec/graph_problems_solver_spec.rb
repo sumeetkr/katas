@@ -158,4 +158,49 @@ describe "solves graph problems" do
       @graph_with_three_edge.nodes.values.first.neighbour_nodes_numbers.length.should == 2
     end
   end
+
+  context "depth first search" do
+    before(:each) do
+      nodes_array = [GraphNode.new(0, [1, 3]),
+                     GraphNode.new(1, [0, 2, 3, 4]),
+                     GraphNode.new(2, [1, 3]),
+                     GraphNode.new(4, [1]),
+                     GraphNode.new(3, [0, 2, 1])]
+
+      @graph_with_five_edges = Graph.new(nodes_array)
+    end
+
+    #  it aggressively explores the graph, returning only when no option left
+    it "should search all nodes" do
+      @graph_with_five_edges.depth_first_search(@graph_with_five_edges.nodes.values[0])
+      @graph_with_five_edges.is_graph_completely_searched().should == true
+    end
+
+    it "should search the second neighbour only when all paths of the 1st neighbour has been explored" do
+
+    end
+  end
+
+
+  context "breadth first search" do
+    before(:each) do
+      nodes_array = [GraphNode.new(0, [1, 3]),
+                     GraphNode.new(1, [0, 2, 3, 4]),
+                     GraphNode.new(2, [1, 3]),
+                     GraphNode.new(4, [1]),
+                     GraphNode.new(3, [0, 2, 1])]
+
+      @graph_with_five_edges = Graph.new(nodes_array)
+    end
+
+    #  it aggressively explores the graph, returning only when no option left
+    it "should search all nodes" do
+      @graph_with_five_edges.breadth_first_search(@graph_with_five_edges.nodes.values[0])
+      @graph_with_five_edges.is_graph_completely_searched().should == true
+    end
+
+    it "should search the second neighbour only when all paths of the 1st neighbour has been explored" do
+
+    end
+  end
 end
