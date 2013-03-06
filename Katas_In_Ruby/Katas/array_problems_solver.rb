@@ -1,6 +1,50 @@
 class ArrayProblemsSolver
 
 
+  def self.two_sum_problem_extended(array, sum_min, sum_max)
+    # The goal of this problem is to implement a variant of the 2-SUM algorithm (covered in the Week 6
+    # lecture on hash table applications).
+    # The file contains 500,000 positive integers (there might be some repetitions!).This is your array of
+    # integers, with the ith row of the file specifying the ith entry of the array.                                                                                                                                                                                    Your task is to compute the number of target values t in the interval [2500,4000]
+    # (inclusive) such that there are distinct numbers x,y in the input file that satisfy x+y=t.
+    # (NOTE: ensuring distinctness requires a one-line addition to the algorithm from lecture.)
+
+    hash = Hash.new
+
+    for number in array
+      hash[number] = false #true does not add any value
+    end
+
+    count_of_solution = 0
+    for sum in sum_min..sum_max
+      count_of_solution += two_sum_problem(array, sum, hash)
+    end
+
+    return count_of_solution
+  end
+
+  def self.two_sum_problem(array, sum, hash = nil)
+    count_of_solution = 0
+
+    if (hash.nil?)
+      hash = Hash.new
+
+      for number in array
+        hash[number] = false #true does not add any value
+      end
+    end
+
+    for number in array
+      if (hash.has_key?(sum - number) && hash[number] == false && hash[sum-number] == false)
+        hash[number] = true
+        hash[sum-number] = true
+        count_of_solution += 1
+      end
+    end
+
+    return count_of_solution #as a pair will be counted twice
+  end
+
   def self.rotate_an_array_k_times(array, times_to_be_rotated)
 
     k = times_to_be_rotated

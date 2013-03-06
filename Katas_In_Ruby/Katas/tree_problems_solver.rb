@@ -17,6 +17,38 @@ class Tree
 
   end
 
+  def find_min()
+
+  end
+
+  def find_max()
+
+  end
+
+  def find_predecessor_of_node(node)
+
+  end
+
+  def find_successor_of_a_node(node)
+
+  end
+
+  def get_keys_in_order_traversal(root_node)
+    #  print keys in increasing order
+  end
+
+  def delete_node(root_node, node_to_be_deleted)
+
+  end
+
+  def find_rank_of_node(root_node, node)
+
+  end
+
+  def find_ith_order_statistic(root_node)
+
+  end
+
 
 end
 
