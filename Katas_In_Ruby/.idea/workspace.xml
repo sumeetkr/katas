@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="435c0da1-a8e7-4f2a-bdb3-460b5a249c0b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Katas/hash_table_problems.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sample_Data/HashInt.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sample_Data/Median.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sample_Data/dijkstraData.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Katas/dijkstra_shortest_path_finder.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Katas/find_longest_word_made_of_other_words.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sample_Data/HashInt2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sample_Data/Median2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sample_Data/dijkstraData2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Sample_Data/dijkstraData3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/dijkstra_shortest_path_fnder_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/spec/find_longest_word_made_of_other_words_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Katas/array_problems_solver.rb" afterPath="$PROJECT_DIR$/Katas/array_problems_solver.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Katas/tree_problems_solver.rb" afterPath="$PROJECT_DIR$/Katas/tree_problems_solver.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Katas/heap_problems_solver.rb" afterPath="$PROJECT_DIR$/Katas/heap_problems_solver.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/array_problems_spec.rb" afterPath="$PROJECT_DIR$/spec/array_problems_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/heap_problems_solver_spec.rb" afterPath="$PROJECT_DIR$/spec/heap_problems_solver_spec.rb" />
     </list>
     <ignored path="Katas_In_Ruby.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,10 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="heap_problems_solver_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/heap_problems_solver_spec.rb">
+      <file leaf-file-name="find_longest_word_made_of_other_words.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Katas/find_longest_word_made_of_other_words.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="69" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.0">
+            <state line="31" column="0" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -46,64 +51,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="heap_problems_solver.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Katas/heap_problems_solver.rb">
+      <file leaf-file-name="find_longest_word_made_of_other_words_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/find_longest_word_made_of_other_words_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="21" selection-start="415" selection-end="415" vertical-scroll-proportion="-0.44117647">
+            <state line="59" column="0" selection-start="1693" selection-end="1693" vertical-scroll-proportion="2.5953078">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tree_problems_solver.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/tree_problems_solver.rb">
+      <file leaf-file-name="example.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p286@cmucourse/gems/rspec-core-2.12.1/lib/rspec/core/example.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="0" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+            <state line="119" column="0" selection-start="4242" selection-end="4242" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hash_table_problems.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/hash_table_problems.rb">
+      <file leaf-file-name="method_missing.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p286@cmucourse/gems/rspec-expectations-2.12.0/lib/rspec/matchers/method_missing.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="array_problems_solver.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/array_problems_solver.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="0" selection-start="3442" selection-end="3442" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="array_problems_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/array_problems_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="helpers.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/helpers.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HashInt.txt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sample_Data/HashInt.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="8" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -122,22 +91,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/spec/coin_changer_spec.rb" />
-        <option value="$PROJECT_DIR$/spec/graph_problems_solver_spec.rb" />
-        <option value="$PROJECT_DIR$/Katas/graph_problems_solver.rb" />
-        <option value="$PROJECT_DIR$/Sample_Data/SCC_Graph_Problem2.txt" />
-        <option value="$PROJECT_DIR$/Sample_Data/Results.txt" />
-        <option value="$PROJECT_DIR$/Katas/helpers.rb" />
-        <option value="$PROJECT_DIR$/Sample_Data/SCC_Graph_Problem3.txt" />
-        <option value="$PROJECT_DIR$/spec/strongly_connected_component_in_graph_finder_spec.rb" />
-        <option value="$PROJECT_DIR$/Sample_Data/SCC_Results.txt" />
-        <option value="$PROJECT_DIR$/Katas/strongly_connected_component_in_graph_finder.rb" />
-        <option value="$PROJECT_DIR$/spec/heap_problems_solver_spec.rb" />
-        <option value="$PROJECT_DIR$/Katas/heap_problems_solver.rb" />
-        <option value="$PROJECT_DIR$/Katas/tree_problems_solver.rb" />
-        <option value="$PROJECT_DIR$/Katas/hash_table_problems.rb" />
+        <option value="$PROJECT_DIR$/Sample_Data/HashInt2.txt" />
         <option value="$PROJECT_DIR$/Katas/array_problems_solver.rb" />
         <option value="$PROJECT_DIR$/spec/array_problems_spec.rb" />
+        <option value="$PROJECT_DIR$/Katas/heap_problems_solver.rb" />
+        <option value="$PROJECT_DIR$/Sample_Data/Median2.txt" />
+        <option value="$PROJECT_DIR$/spec/heap_problems_solver_spec.rb" />
+        <option value="$PROJECT_DIR$/Katas/d_jkstra_shortest_path_finder.rb" />
+        <option value="$PROJECT_DIR$/Katas/djkstra_shortest_path_finder.rb" />
+        <option value="$PROJECT_DIR$/Sample_Data/dijkstraData2.txt" />
+        <option value="$PROJECT_DIR$/spec/djkstra_shortest_path_fnder_spec.rb" />
+        <option value="$PROJECT_DIR$/Katas/helpers.rb" />
+        <option value="$PROJECT_DIR$/Katas/dijkstra_shortest_path_finder.rb" />
+        <option value="$PROJECT_DIR$/spec/dijkstra_shortest_path_fnder_spec.rb" />
+        <option value="$PROJECT_DIR$/Sample_Data/dijkstraData3.txt" />
+        <option value="$PROJECT_DIR$/Katas/find_longest_word_made_of_other_words.rb" />
+        <option value="$PROJECT_DIR$/spec/find_longest_word_made_of_other_words_spec.rb" />
       </list>
     </option>
   </component>
@@ -258,13 +227,13 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
-    <property name="restartRequiresConfirmation" value="true" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$USER_HOME$/RubymineProjects/GoogleMaps_d3" />
+    <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -277,109 +246,7 @@
       <recent name="$PROJECT_DIR$/Sample_Data" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.Array behaviour 2 sum problem">
-    <configuration default="false" name="ChangeCalculator" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="Katas_In_Ruby" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/spec" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/coin_changer_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="ChangeCalculator" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyDebugRunner" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="solves graph problems depth first search should search all nodes" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="Katas_In_Ruby" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/spec" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/graph_problems_solver_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="solves graph problems depth first search should search all nodes" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyDebugRunner" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="graph behaviour" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
-      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-      <module name="Katas_In_Ruby" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/spec" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/strongly_connected_component_in_graph_finder_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="graph behaviour" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <RunnerSettings RunnerId="RubyDebugRunner" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="RSpec.find longest word behaviour">
     <configuration default="false" name="Heap problems behaviour" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="Katas_In_Ruby" />
@@ -414,7 +281,7 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <configuration default="false" name="Array behaviour 2 sum problem" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+    <configuration default="false" name="Heap problems behaviour Heap" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
       <predefined_log_file id="RUBY_RSPEC" enabled="true" />
       <module name="Katas_In_Ruby" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -432,10 +299,112 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/array_problems_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/heap_problems_solver_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Array behaviour 2 sum problem" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Heap problems behaviour Heap" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Heap problems behaviour Heap should do heap rebalancing on get" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="Katas_In_Ruby" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/spec" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/heap_problems_solver_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Heap problems behaviour Heap should do heap rebalancing on get" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="My behaviour" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="Katas_In_Ruby" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/spec" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/dijkstra_shortest_path_fnder_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="My behaviour" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="find longest word behaviour" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="Katas_In_Ruby" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$/spec" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$PROJECT_DIR$/spec/find_longest_word_made_of_other_words_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="find longest word behaviour" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -548,19 +517,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="RSpec.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.ChangeCalculator" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.solves graph problems depth first search should search all nodes" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.graph behaviour" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.Heap problems behaviour" />
-      <item index="5" class="java.lang.String" itemvalue="RSpec.Array behaviour 2 sum problem" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.Heap problems behaviour" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.Heap problems behaviour Heap" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.Heap problems behaviour Heap should do heap rebalancing on get" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.My behaviour" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.find longest word behaviour" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="RSpec.Array behaviour 2 sum problem" />
-        <item index="1" class="java.lang.String" itemvalue="RSpec.Heap problems behaviour" />
-        <item index="2" class="java.lang.String" itemvalue="RSpec.graph behaviour" />
-        <item index="3" class="java.lang.String" itemvalue="RSpec.solves graph problems depth first search should search all nodes" />
-        <item index="4" class="java.lang.String" itemvalue="RSpec.ChangeCalculator" />
+        <item index="0" class="java.lang.String" itemvalue="RSpec.find longest word behaviour" />
+        <item index="1" class="java.lang.String" itemvalue="RSpec.My behaviour" />
+        <item index="2" class="java.lang.String" itemvalue="RSpec.Heap problems behaviour" />
+        <item index="3" class="java.lang.String" itemvalue="RSpec.Heap problems behaviour Heap should do heap rebalancing on get" />
+        <item index="4" class="java.lang.String" itemvalue="RSpec.Heap problems behaviour Heap" />
       </list>
     </recent_temporary>
   </component>
@@ -680,14 +649,13 @@
     <frame x="0" y="22" width="1276" height="778" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599118" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2804878" sideWeight="0.19793205" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28536585" sideWeight="0.59030837" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.40969163" sideWeight="0.9991896" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2902439" sideWeight="0.5917768" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4082232" sideWeight="0.9991896" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28536585" sideWeight="0.17474303" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.50406504" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29955947" sideWeight="0.9634146" order="2" side_tool="false" content_ui="tabs" />
@@ -695,6 +663,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -810,63 +779,123 @@
           <line>106</line>
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/Katas/heap_problems_solver.rb</url>
-          <line>52</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/Katas/heap_problems_solver.rb</url>
-          <line>49</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/Katas/heap_problems_solver.rb</url>
-          <line>45</line>
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/Katas/array_problems_solver.rb</url>
-          <line>22</line>
+          <line>24</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spec/heap_problems_solver_spec.rb</url>
+          <line>285</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/Katas/heap_problems_solver.rb</url>
+          <line>123</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/Katas/heap_problems_solver.rb</url>
+          <line>151</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/Katas/heap_problems_solver.rb</url>
+          <line>189</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spec/dijkstra_shortest_path_fnder_spec.rb</url>
+          <line>50</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/Katas/dijkstra_shortest_path_finder.rb</url>
+          <line>124</line>
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/spec/find_longest_word_made_of_other_words_spec.rb</url>
+          <line>59</line>
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sample_Data/SCC_Results.txt">
+    <entry file="file://$PROJECT_DIR$/Sample_Data/Median2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+        <state line="4999" column="4" selection-start="23892" selection-end="23892" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Katas/array_problems_solver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="34" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.9267734">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/array_problems_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="0" selection-start="4480" selection-end="4480" vertical-scroll-proportion="-0.73333335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/heap_problems_solver_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="6" selection-start="572" selection-end="654" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#3014#3644#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Katas/graph_problems_solver.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="26" selection-start="2425" selection-end="2425" vertical-scroll-proportion="1.0512129">
+        <state line="18" column="41" selection-start="548" selection-end="548" vertical-scroll-proportion="0.6506024">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/strongly_connected_component_in_graph_finder.rb">
+    <entry file="file://$PROJECT_DIR$/Sample_Data/HashInt2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="0" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0">
+        <state line="99" column="3" selection-start="384" selection-end="384" vertical-scroll-proportion="3.4696262">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/strongly_connected_component_in_graph_finder_spec.rb">
+    <entry file="file://$PROJECT_DIR$/Sample_Data/dijkstraData2.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="2591" selection-end="2703" vertical-scroll-proportion="0.3970588">
+        <state line="4" column="1" selection-start="62" selection-end="62" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/graph_problems_solver_spec.rb">
+    <entry file="file://$PROJECT_DIR$/Sample_Data/dijkstraData3.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="200" column="0" selection-start="7456" selection-end="7456" vertical-scroll-proportion="0.5441989">
+        <state line="0" column="16" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/local/rvm/rubies/ruby-1.9.3-p286/lib/ruby/site_ruby/1.9.1/rubygems/custom_require.rb">
+    <entry file="file://$PROJECT_DIR$/spec/dijkstra_shortest_path_fnder_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="7" selection-start="1599" selection-end="1599" vertical-scroll-proportion="0.73333335">
+        <state line="34" column="0" selection-start="1702" selection-end="1702" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Katas/dijkstra_shortest_path_finder.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="0" selection-start="3138" selection-end="3138" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Katas/helpers.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="6" selection-start="700" selection-end="742" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p286@cmucourse/gems/rspec-expectations-2.12.0/lib/rspec/matchers/method_missing.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -878,65 +907,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/heap_problems_solver_spec.rb">
+    <entry file="file://$PROJECT_DIR$/Katas/find_longest_word_made_of_other_words.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="69" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.0">
+        <state line="31" column="0" selection-start="1006" selection-end="1006" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/tree_problems_solver.rb">
+    <entry file="file:///usr/local/rvm/gems/ruby-1.9.3-p286@cmucourse/gems/rspec-core-2.12.1/lib/rspec/core/example.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="598" selection-end="598" vertical-scroll-proportion="0.0">
+        <state line="119" column="0" selection-start="4242" selection-end="4242" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/hash_table_problems.rb">
+    <entry file="file://$PROJECT_DIR$/spec/find_longest_word_made_of_other_words_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sample_Data/HashInt.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/helpers.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sample_Data/Median.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/array_problems_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="768" selection-end="768" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/array_problems_solver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="0" selection-start="3442" selection-end="3442" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/heap_problems_solver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="21" selection-start="415" selection-end="415" vertical-scroll-proportion="-0.44117647">
+        <state line="59" column="0" selection-start="1693" selection-end="1693" vertical-scroll-proportion="2.5953078">
           <folding />
         </state>
       </provider>

@@ -9,8 +9,8 @@ class HeapProblemsSolver
     last_median = nil
 
     for i in 0..(sequence_of_nodes.length - 1)
-      last_median = find_median_solver.insert_new_node_and_return_median_node(sequence_of_nodes[i])
-
+      median = find_median_solver.insert_new_node_and_return_median_node(sequence_of_nodes[i])
+      last_median = median #for debugging
     end
 
     return last_median
@@ -25,37 +25,54 @@ class FindMedianSolver
   end
 
   def insert_new_node_and_return_median_node(node)
+    check_if_both_heaps_are_almost_equal
+
     #boundary case, first insert
-    if (@min_heap.count == 0)
-      @min_heap.insert(node)
+    if (@max_heap.count == 0)
+      @max_heap.insert(node)
       return node
     end
 
-    median_node = nil
-
-    if (node.key < @min_heap.find_root_node.key)
+    if (node.key < @max_heap.find_root_node.key)
       @max_heap.insert(node)
-      median_node = @max_heap.find_root_node
     else
       @min_heap.insert(node)
-      median_node = @min_heap.find_root_node
     end
 
+    diff = @max_heap.count - @min_heap.count
 
-    # the two heaps should be of same size (or 1 size difference), to return median correctly
-    if ((@min_heap.count - @max_heap.count).abs > 1)
-      if (@min_heap.count > @max_heap.count)
+    case diff
+      when -2
         @max_heap.insert(@min_heap.get_root_node)
-
-        median_node = @max_heap.find_root_node
-      else
+      when -1
+        @max_heap.insert(@min_heap.get_root_node)
+      when 2
         @min_heap.insert(@max_heap.get_root_node)
-        median_node = @min_heap.find_root_node
-      end
-
     end
 
+    ## the two heaps should be of same size or max heap should be 1 more than min heap
+    #while (@min_heap.count + 1) < @max_heap.count
+    #  @min_heap.insert(@max_heap.get_root_node)
+    #end
+    #
+    #while @max_heap.count < @min_heap.count
+    #  @max_heap.insert(@min_heap.get_root_node)
+    #end
+
+    check_if_both_heaps_are_almost_equal
+
+    median_node = @max_heap.find_root_node
     return median_node
+  end
+
+  def total_count
+    return @max_heap.count + @min_heap.count
+  end
+
+  def check_if_both_heaps_are_almost_equal
+    if ((@max_heap.count - @min_heap.count).abs > 1)
+      raise "unbalanced heap"
+    end
   end
 end
 
@@ -74,6 +91,11 @@ class Heap
     child_index = @internal_array_of_nodes.length - 1
 
     bubble_up(child_index)
+
+    if (!is_heap)
+      raise "bad heap"
+    end
+
   end
 
   def find_root_node()
@@ -86,13 +108,22 @@ class Heap
     last_index = @internal_array_of_nodes.length - 1
     @internal_array_of_nodes[0] = @internal_array_of_nodes[last_index]
     @internal_array_of_nodes.delete_at(last_index)
+    #@internal_array_of_nodes.delete(min_node)
 
     settle_down()
+
+    if (!is_heap)
+      raise "bad heap"
+    end
 
     return min_node
   end
 
   def compare(first_node, second_node)
+    if (first_node.nil? || second_node.nil?)
+      raise "bad input"
+    end
+
     if (@is_min_heap)
       return first_node.key < second_node.key
     else
@@ -106,12 +137,19 @@ class Heap
   end
 
   def is_heap()
+    #boundary case
+    if (@internal_array_of_nodes.length <= 1)
+      return true
+    end
+
     # check if for all nodes, the parent node is less than the child nodes
     is_heap_property_satisfied = true
     count = @internal_array_of_nodes.length - 1
+
     for current_index in count..1
       if compare(@internal_array_of_nodes[current_index], @internal_array_of_nodes[(current_index -1)/ 2])
         is_heap_property_satisfied = false
+        raise "bad heap"
       end
       current_index -= 1
     end
@@ -134,6 +172,11 @@ class Heap
 
       child_index = parent_index
     end
+
+    if (!is_heap)
+      raise "bad heap"
+    end
+
   end
 
   def settle_down()
@@ -144,27 +187,52 @@ class Heap
     second_child_index = 2 * (parent_index +1)
 
 
-    while first_child_index < last_index && second_child_index < last_index
-      min_child_index = compare(@internal_array_of_nodes[first_child_index], @internal_array_of_nodes[second_child_index]) ? first_child_index : second_child_index
-      #if min child is more than parent, then swap
-      if compare(@internal_array_of_nodes[min_child_index], @internal_array_of_nodes[parent_index])
-        #  swap parent and child nodes
-        temp = @internal_array_of_nodes[min_child_index]
-        @internal_array_of_nodes[min_child_index] = @internal_array_of_nodes[parent_index]
-        @internal_array_of_nodes[parent_index] = temp
-      end
+    while first_child_index <= last_index && second_child_index <= last_index + 1
 
-      parent_index = min_child_index
-      first_child_index = 2 * (parent_index +1) -1
-      second_child_index = 2 * (parent_index +1)
+      if second_child_index > last_index
+        #  compare parent and first child only
+        if compare(@internal_array_of_nodes[first_child_index], @internal_array_of_nodes[parent_index])
+          swap_paent_with_child(first_child_index, parent_index)
+        end
+
+        parent_index = first_child_index
+        first_child_index = 2 * (parent_index +1) -1
+        second_child_index = 2 * (parent_index +1)
+
+      else
+        min_child_index = compare(@internal_array_of_nodes[first_child_index], @internal_array_of_nodes[second_child_index]) ? first_child_index : second_child_index
+        #if min child is more than parent, then swap
+        if compare(@internal_array_of_nodes[min_child_index], @internal_array_of_nodes[parent_index])
+          #  swap parent and child nodes
+          swap_paent_with_child(min_child_index, parent_index)
+        end
+
+        parent_index = min_child_index
+        first_child_index = 2 * (parent_index +1) -1
+        second_child_index = 2 * (parent_index +1)
+      end
 
     end
 
+    check_is_heap_property_maintained
+
+  end
+
+  def swap_paent_with_child(child_index, parent_index)
+    temp = @internal_array_of_nodes[child_index]
+    @internal_array_of_nodes[child_index] = @internal_array_of_nodes[parent_index]
+    @internal_array_of_nodes[parent_index] = temp
+  end
+
+  def check_is_heap_property_maintained
+    if (!is_heap)
+      raise "bad heap"
+    end
   end
 
 end
 
-class Node
+class HeapNode
   attr_accessor :key, :value
 
   def initialize(key, value = nil)

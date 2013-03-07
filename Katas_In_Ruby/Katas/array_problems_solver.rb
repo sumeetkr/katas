@@ -17,14 +17,16 @@ class ArrayProblemsSolver
 
     count_of_solution = 0
     for sum in sum_min..sum_max
-      count_of_solution += two_sum_problem(array, sum, hash)
+      if (two_sum_problem(array, sum, hash))
+        count_of_solution += 1
+      end
     end
 
     return count_of_solution
   end
 
   def self.two_sum_problem(array, sum, hash = nil)
-    count_of_solution = 0
+    is_there_a_solution = false
 
     if (hash.nil?)
       hash = Hash.new
@@ -35,14 +37,12 @@ class ArrayProblemsSolver
     end
 
     for number in array
-      if (hash.has_key?(sum - number) && hash[number] == false && hash[sum-number] == false)
-        hash[number] = true
-        hash[sum-number] = true
-        count_of_solution += 1
+      if (number != (sum - number)) && hash.has_key?(sum - number)
+        is_there_a_solution = true
       end
     end
 
-    return count_of_solution #as a pair will be counted twice
+    return is_there_a_solution #as a pair will be counted twice
   end
 
   def self.rotate_an_array_k_times(array, times_to_be_rotated)

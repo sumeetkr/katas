@@ -86,24 +86,24 @@ describe "Array behaviour" do
       array = [10, 12, 15, 20, 25, 34, 47]
       sum = 45
 
-      count_of_solutions = ArrayProblemsSolver.two_sum_problem(array, sum)
-      count_of_solutions.should == 1
+      is_there_a_solution = ArrayProblemsSolver.two_sum_problem(array, sum)
+      is_there_a_solution.should be_true
     end
 
     it "should find the correct integers that make the sum when there are 2 solutions" do
       array = [10, 12, 15, 20, 25, 34, 47, 63, 100]
       sum = 110
 
-      count_of_solutions = ArrayProblemsSolver.two_sum_problem(array, sum)
-      count_of_solutions.should == 2
+      is_there_a_solution = ArrayProblemsSolver.two_sum_problem(array, sum)
+      is_there_a_solution.should be_true
     end
 
     it "should find the correct integers that make the sum when there are 2 distinct solutions" do
-      array = [10, 12, 15, 20, 25, 34, 47, 3, 35, 25]
+      array = [10, 12, 15, 20, 25, 34, 47, 3, 35, 25, 40]
       sum = 50
 
-      count_of_solutions = ArrayProblemsSolver.two_sum_problem(array, sum)
-      count_of_solutions.should == 3
+      is_there_a_solution = ArrayProblemsSolver.two_sum_problem(array, sum)
+      is_there_a_solution.should be_true
     end
 
     it "should read all the elements from the file" do
@@ -138,8 +138,39 @@ describe "Array behaviour" do
       array_filtered_and_sorted.sort()
 
       count_of_solutions = ArrayProblemsSolver.two_sum_problem_extended(array_filtered_and_sorted, 2500, 4000)
-      count_of_solutions.should == 75
-      #count_of_solutions.should == 50
+      count_of_solutions.should == 1477
+    end
+
+    it " should find all distinct integers whose sum is in the range 30 - 60" do
+
+      array = Helpers.populate_array_with_file_content("../Sample_Data/HashInt2.txt")
+      array_filtered_and_sorted = []
+
+      for number in array
+        if (number <= 60)
+          array_filtered_and_sorted << number
+        end
+      end
+      array_filtered_and_sorted.sort()
+
+      count_of_solutions = ArrayProblemsSolver.two_sum_problem_extended(array_filtered_and_sorted, 30, 60)
+      count_of_solutions.should == 9
+    end
+
+    it " should find all distinct integers whose sum is in the range 60 - 100" do
+
+      array = Helpers.populate_array_with_file_content("../Sample_Data/HashInt2.txt")
+      array_filtered_and_sorted = []
+
+      for number in array
+        if (number <= 100)
+          array_filtered_and_sorted << number
+        end
+      end
+      array_filtered_and_sorted.sort()
+
+      count_of_solutions = ArrayProblemsSolver.two_sum_problem_extended(array_filtered_and_sorted, 60, 100)
+      count_of_solutions.should == 28
     end
 
   end
