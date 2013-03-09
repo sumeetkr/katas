@@ -121,7 +121,7 @@ class Node
   def add_edge(other_node_number, weight)
 
     for edge in edges
-      if (edge.second_node_number == other_node_number && edge.weight != weight)
+      if ((edge.first_node_number == other_node_number || edge.second_node_number == other_node_number) && edge.weight != weight)
         raise "duplicate edge is being inserted"
       end
     end
