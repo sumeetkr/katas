@@ -24,15 +24,12 @@ describe "dijkstra shortest path finder behaviour" do
 
     it " should expand covered node" do
       graph = DijkstraShortestPathFinder.populate_dijkastra_graph_with_file_content("../Sample_Data/dijkstraData2.txt")
-      graph.nodes_count.should == 5
 
       finder = DijkstraShortestPathFinder.new
       first_node = graph.nodes_hash[1]
-      first_node.shortest_path_distance_from_1st_node = 0
 
       finder.expand_covered_graph(graph, first_node)
-
-      finder.covered_nodes.count.should == 5
+      finder.covered_nodes.count.should == graph.nodes_count
     end
   end
 
@@ -40,15 +37,12 @@ describe "dijkstra shortest path finder behaviour" do
 
     it " should expand covered node" do
       graph = DijkstraShortestPathFinder.populate_dijkastra_graph_with_file_content("../Sample_Data/dijkstraData3.txt")
-      graph.nodes_count.should == 5
 
       finder = DijkstraShortestPathFinder.new
       first_node = graph.nodes_hash[1]
-      first_node.shortest_path_distance_from_1st_node = 0
 
       finder.expand_covered_graph(graph, first_node)
-
-      finder.covered_nodes.count.should == 5
+      finder.covered_nodes.count.should == graph.nodes_count.should
     end
   end
 
@@ -60,11 +54,10 @@ describe "dijkstra shortest path finder behaviour" do
 
       finder = DijkstraShortestPathFinder.new
       first_node = graph.nodes_hash[141]
-      first_node.shortest_path_distance_from_1st_node = 0
 
       finder.expand_covered_graph(graph, first_node)
 
-      finder.covered_nodes.count.should == 200
+      finder.covered_nodes.count.should == graph.nodes_count
 
       array_shortest_distance = []
       for i in [3, 22, 27, 28, 32, 33, 35, 47, 55, 59, 71, 95, 114, 124, 136, 139, 179, 186, 188, 194]

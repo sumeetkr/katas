@@ -8,7 +8,7 @@ class DijkstraShortestPathFinder
     @boundary_nodes = Hash.new
   end
 
-  def self.populate_dijkastra_graph_with_file_content(file_path)
+  def self.populate_dijkastra_graph_with_file_content(file_path, is_directed = false)
 
     graph = Graph.new
 
@@ -22,6 +22,10 @@ class DijkstraShortestPathFinder
         second_node_number = array[0]
         edge_weight = array[1]
         graph.create_edge(node_number, second_node_number, edge_weight)
+
+        if !is_directed
+          graph.create_edge(second_node_number,node_number , edge_weight)
+        end
       end
 
     end
@@ -30,6 +34,11 @@ class DijkstraShortestPathFinder
   end
 
   def expand_covered_graph(graph, node)
+
+    #first node case
+    if(node.shortest_path_distance_from_1st_node == MAX_NODE_DISTANCE)
+      node.shortest_path_distance_from_1st_node = 0
+    end
 
     #termination condition
     if (@covered_nodes.has_key?(node.number))
@@ -53,6 +62,7 @@ class DijkstraShortestPathFinder
     end
 
     #find the node with min distance and include it in covered graph
+    #should use a heap data structure
     node_with_least_distance = nil
     shortest_distance = MAX_NODE_DISTANCE
     for node in @boundary_nodes.values
@@ -66,13 +76,7 @@ class DijkstraShortestPathFinder
       expand_covered_graph(graph, node_with_least_distance)
     end
 
-
   end
-
-  def compute_shortest_path(graph, first_node, second_node)
-
-  end
-
 end
 
 class Graph
@@ -139,4 +143,14 @@ class Edge
     @second_node_number = second_node_number
     @weight = weight
   end
+
+  def get_other_node_number(node_number)
+
+    if(@first_node_number = node_number)
+      other_node_number = second_node_number
+    else
+      other_node_number = first_node_number
+    end
+  end
+
 end

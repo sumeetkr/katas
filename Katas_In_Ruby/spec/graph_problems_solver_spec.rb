@@ -198,9 +198,5 @@ describe "solves graph problems" do
       @graph_with_five_edges.breadth_first_search(@graph_with_five_edges.nodes.values[0])
       @graph_with_five_edges.is_graph_completely_searched().should == true
     end
-
-    it "should search the second neighbour only when all paths of the 1st neighbour has been explored" do
-
-    end
   end
 end
