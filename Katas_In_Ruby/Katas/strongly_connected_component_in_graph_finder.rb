@@ -150,7 +150,7 @@ class Node
     @finishing_time = 0
   end
 
-  def add_neighbour(neighbour_node_numbers)
+  def add_edge(neighbour_node_numbers)
     @neighbour_node_numbers << neighbour_node_numbers
   end
 

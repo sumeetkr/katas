@@ -37,14 +37,14 @@ describe "MinimumSpanningTreeSolver" do
     it "expands to cover the nearest node with least edge cost" do
       random_node_to_start = @graph.nodes_hash.values.sample()
       min_spanning_tree_graph = @solver.expand(random_node_to_start)
-      @solver.min_spanning_tree.nodes_hash.values.should include(random_node_to_start)
-      @solver.min_spanning_tree.nodes_hash.values.should include(random_node_to_start)
+      @solver.min_spanning_tree_graph.nodes_hash.values.should include(random_node_to_start)
+      @solver.min_spanning_tree_graph.nodes_hash.values.should include(random_node_to_start)
     end
 
     it "expands increases the covered node count by 1" do
       random_node_to_start = @graph.nodes_hash.values.sample()
-      expect{@solver.expand(random_node_to_start)}.to change { @solver.min_spanning_tree.nodes_hash.values.count }.by(2)
-      expect{@solver.expand(random_node_to_start)}.to change { @solver.min_spanning_tree.nodes_hash.values.count }.by(0)
+      expect{@solver.expand(random_node_to_start)}.to change { @solver.min_spanning_tree_graph.nodes_hash.values.count }.by(2)
+      expect{@solver.expand(random_node_to_start)}.to change { @solver.min_spanning_tree_graph.nodes_hash.values.count }.by(0)
     end
 
 

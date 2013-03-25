@@ -1,3 +1,0 @@
-class MaxIndependentSetFinder
-
-end
