@@ -108,3 +108,5 @@ Backup*/
 UpgradeLog*.XML
 /NewFolder/Katas/nbproject/private/
 /NewFolder/Katas/build/
+/Katas_in_JS/nbproject/private/
+/Katas_in_JavaScript/nbproject/private/
