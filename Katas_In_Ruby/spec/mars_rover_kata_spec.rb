@@ -38,7 +38,8 @@ describe "MarsRover behaviour" do
 
   context "Rover" do
     before(:each) do
-      @rover = Rover.new(5, 5)
+      grid = Grid.new(10)
+      @rover = Rover.new(grid, 5, 5)
     end
     subject { @rover }
 
@@ -58,17 +59,31 @@ describe "MarsRover behaviour" do
 
     it "should move" do
       lambda {
-        @rover.move(1, 0)
+        @rover.change_location(1, 0)
       }.should change(@rover, :x).by(1)
 
       lambda {
-        @rover.move(0, 1)
+        @rover.change_location(0, 1)
       }.should change(@rover, :y).by(1)
     end
+
+
+    it "should wrap" do
+      @rover.x = 10
+      lambda {
+        @rover.change_location(1, 0)
+      }.should change(@rover, :x).by( -9)
+
+      @rover.y = 10
+      lambda {
+        @rover.change_location(0, 1)
+      }.should change(@rover, :y).by( -9)
+    end
+
   end
 
   context "MarsRoverGame" do
-    before(:each)do
+    before(:each) do
       @game = MarsRoverGame.new()
     end
     subject { @game }
@@ -77,28 +92,28 @@ describe "MarsRover behaviour" do
     it { should respond_to(:grid) }
 
     it "should change state of rover - case 1" do
-      @game.move(MotionDirection::F)
+      @game.rover.move(MotionDirection::F)
       @game.rover.x == 1
       @game.rover.y == 0
     end
 
     it "should change state of rover - case 2" do
-      @game.move(MotionDirection::L)
+      @game.rover.move(MotionDirection::L)
       @game.rover.x == 0
       @game.rover.y == 0
       @game.rover.direction == Direction::N
     end
 
     it "should change state of rover - case 3" do
-      @game.move(MotionDirection::L)
-      @game.move(MotionDirection::F)
-      @game.move(MotionDirection::F)
-      @game.move(MotionDirection::F)
+      @game.rover.move(MotionDirection::L)
+      @game.rover.move(MotionDirection::F)
+      @game.rover.move(MotionDirection::F)
+      @game.rover.move(MotionDirection::F)
       @game.rover.x == 0
       @game.rover.y == 2
       @game.rover.direction == Direction::N
     end
-    
+
   end
 
 end

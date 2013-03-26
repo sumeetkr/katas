@@ -18,35 +18,37 @@ class MarsRoverGame
 
   def initialize
     @grid = Grid.new(10)
-    @rover = Rover.new(0, 0)
-  end
-
-  def move(motion_direction)
-    if (motion_direction == MotionDirection::L || motion_direction == MotionDirection::R)
-      @rover.turn(motion_direction)
-    else
-      case motion_direction
-        when (MotionDirection::F && @rover.direction == Direction::N) || (MotionDirection::B && @rover.direction == Direction::S)
-          @rover.move(0, 1)
-        when (MotionDirection::F && @rover.direction == Direction::S) || (MotionDirection::B && @rover.direction == Direction::N)
-          @rover.move(0, -1)
-        when (MotionDirection::F && @rover.direction == Direction::E) || (MotionDirection::B && @rover.direction == Direction::W)
-          @rover.move(1, 0)
-        when (MotionDirection::F && @rover.direction == Direction::W) || (MotionDirection::B && @rover.direction == Direction::E)
-          @rover.move(-1, 0)
-      end
-    end
+    @rover = Rover.new(@grid, 0, 0)
   end
 
 end
 
 class Rover
   attr_accessor :direction, :x, :y
+  @grid
 
-  def initialize(x, y)
-    @direction = Direction::E
+  def initialize(grid, x = 0, y = 0, direction = Direction::E)
+    @direction = direction
+    @grid = grid
     @x = x
     @y = y
+  end
+
+  def move(motion_direction)
+    if (motion_direction == MotionDirection::L || motion_direction == MotionDirection::R)
+      turn(motion_direction)
+    else
+      case motion_direction
+        when (MotionDirection::F && @direction == Direction::N) || (MotionDirection::B && @direction == Direction::S)
+          change_location(0, 1)
+        when (MotionDirection::F && @direction == Direction::S) || (MotionDirection::B && @direction == Direction::N)
+          change_location(0, -1)
+        when (MotionDirection::F && @direction == Direction::E) || (MotionDirection::B && @direction == Direction::W)
+          change_location(1, 0)
+        when (MotionDirection::F && @direction == Direction::W) || (MotionDirection::B && @direction == Direction::E)
+          change_location(-1, 0)
+      end
+    end
   end
 
   def turn(turn_direction)
@@ -64,18 +66,38 @@ class Rover
     end
   end
 
-  def move(x_change, y_change)
-    @x += x_change
-    @y += y_change
+  def change_location(x_change, y_change)
+    if(@x + x_change > @grid.grid_width)
+      new_x = (@x + x_change) % @grid.grid_width
+    else
+      new_x = @x + x_change
+    end
+
+    if(@y + y_change > @grid.grid_height)
+      new_y = (@y + y_change) % @grid.grid_height
+    else
+      new_y = @y + y_change
+    end
+
+    if(is_cell_free(new_x, new_y))
+      @x = new_x
+      @y = new_y
+    else
+      puts("next cell in blocked")
+    end
+  end
+
+  def is_cell_free(x, y)
+    @grid.is_cell_free(x,y)
   end
 end
 
 class Grid
-  attr_accessor :cell_array
+  attr_accessor :cell_array, :grid_height, :grid_width
 
   def initialize(size)
-    grid_height = size
-    grid_width = size
+    @grid_height = size
+    @grid_width = size
 
     @cell_array = Array.new(grid_height) { Array.new(grid_width) }
 
@@ -84,19 +106,20 @@ class Grid
         @cell_array[i][j] = Cell.new(i, j)
       end
     end
-
-    @cell_array
   end
 
+  def is_cell_free(x, y)
+    cell = (@cell_array[x - 1])[y - 1]
+    return cell.is_free
+  end
 end
 
 class Cell
   attr_accessor :x_location, :y_location, :is_free
 
-  def initialize(x, y)
+  def initialize(x, y, is_free = true)
     @x_location = x
     @y_location = y
-    @is_free = true
+    @is_free = is_free
   end
-
 end
