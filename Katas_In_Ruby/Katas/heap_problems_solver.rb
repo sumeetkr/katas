@@ -15,7 +15,6 @@ class HeapProblemsSolver
 
     return last_median
   end
-
 end
 
 class FindMedianSolver
@@ -50,15 +49,6 @@ class FindMedianSolver
         @min_heap.insert(@max_heap.get_root_node)
     end
 
-    ## the two heaps should be of same size or max heap should be 1 more than min heap
-    #while (@min_heap.count + 1) < @max_heap.count
-    #  @min_heap.insert(@max_heap.get_root_node)
-    #end
-    #
-    #while @max_heap.count < @min_heap.count
-    #  @max_heap.insert(@min_heap.get_root_node)
-    #end
-
     check_if_both_heaps_are_almost_equal
 
     median_node = @max_heap.find_root_node
@@ -77,44 +67,34 @@ class FindMedianSolver
 end
 
 class Heap
-  @internal_array_of_nodes
-  @is_min_heap
+  attr_accessor :array_of_nodes
+  attr_reader :is_min_heap
 
   def initialize(is_min_heap = true)
-    @internal_array_of_nodes = []
+    @array_of_nodes = []
     @is_min_heap = is_min_heap
   end
 
   def insert(node)
     #inserts at the last cell and than rebalances the heap
-    @internal_array_of_nodes << node
-    child_index = @internal_array_of_nodes.length - 1
+    @array_of_nodes << node
+    child_index = @array_of_nodes.length - 1
 
     bubble_up(child_index)
-
-    if (!is_heap)
-      raise "bad heap"
-    end
-
   end
 
   def find_root_node()
-    return @internal_array_of_nodes[0]
+    return @array_of_nodes[0]
   end
 
   def get_root_node()
-    min_node = @internal_array_of_nodes[0]
+    min_node = @array_of_nodes[0]
 
-    last_index = @internal_array_of_nodes.length - 1
-    @internal_array_of_nodes[0] = @internal_array_of_nodes[last_index]
-    @internal_array_of_nodes.delete_at(last_index)
-    #@internal_array_of_nodes.delete(min_node)
+    last_index = @array_of_nodes.length - 1
+    @array_of_nodes[0] = @array_of_nodes[last_index]
+    @array_of_nodes.delete_at(last_index)
 
     settle_down()
-
-    if (!is_heap)
-      raise "bad heap"
-    end
 
     return min_node
   end
@@ -129,25 +109,24 @@ class Heap
     else
       return first_node.key > second_node.key
     end
-
   end
 
   def count
-    return @internal_array_of_nodes.length
+    return @array_of_nodes.length
   end
 
   def is_heap()
     #boundary case
-    if (@internal_array_of_nodes.length <= 1)
+    if (@array_of_nodes.length <= 1)
       return true
     end
 
     # check if for all nodes, the parent node is less than the child nodes
     is_heap_property_satisfied = true
-    count = @internal_array_of_nodes.length - 1
+    count = @array_of_nodes.length - 1
 
     for current_index in count..1
-      if compare(@internal_array_of_nodes[current_index], @internal_array_of_nodes[(current_index -1)/ 2])
+      if compare(@array_of_nodes[current_index], @array_of_nodes[(current_index -1)/ 2])
         is_heap_property_satisfied = false
         raise "bad heap"
       end
@@ -163,26 +142,24 @@ class Heap
     while child_index > 0
       parent_index = (child_index-1)/2
 
-      if compare(@internal_array_of_nodes[child_index], @internal_array_of_nodes[parent_index])
+      if compare(@array_of_nodes[child_index], @array_of_nodes[parent_index])
         #  swap parent and child nodes
-        temp = @internal_array_of_nodes[child_index]
-        @internal_array_of_nodes[child_index] = @internal_array_of_nodes[parent_index]
-        @internal_array_of_nodes[parent_index] = temp
+        temp = @array_of_nodes[child_index]
+        @array_of_nodes[child_index] = @array_of_nodes[parent_index]
+        @array_of_nodes[parent_index] = temp
       end
 
       child_index = parent_index
     end
 
-    if (!is_heap)
-      raise "bad heap"
-    end
+    check_is_heap_property_maintained
 
   end
 
   def settle_down()
     #settles the root node element at the right place in the heap
     parent_index = 0
-    last_index = @internal_array_of_nodes.length - 1
+    last_index = @array_of_nodes.length - 1
     first_child_index = 2 * (parent_index +1) -1
     second_child_index = 2 * (parent_index +1)
 
@@ -191,7 +168,7 @@ class Heap
 
       if second_child_index > last_index
         #  compare parent and first child only
-        if compare(@internal_array_of_nodes[first_child_index], @internal_array_of_nodes[parent_index])
+        if compare(@array_of_nodes[first_child_index], @array_of_nodes[parent_index])
           swap_paent_with_child(first_child_index, parent_index)
         end
 
@@ -200,9 +177,9 @@ class Heap
         second_child_index = 2 * (parent_index +1)
 
       else
-        min_child_index = compare(@internal_array_of_nodes[first_child_index], @internal_array_of_nodes[second_child_index]) ? first_child_index : second_child_index
+        min_child_index = compare(@array_of_nodes[first_child_index], @array_of_nodes[second_child_index]) ? first_child_index : second_child_index
         #if min child is more than parent, then swap
-        if compare(@internal_array_of_nodes[min_child_index], @internal_array_of_nodes[parent_index])
+        if compare(@array_of_nodes[min_child_index], @array_of_nodes[parent_index])
           #  swap parent and child nodes
           swap_paent_with_child(min_child_index, parent_index)
         end
@@ -219,9 +196,9 @@ class Heap
   end
 
   def swap_paent_with_child(child_index, parent_index)
-    temp = @internal_array_of_nodes[child_index]
-    @internal_array_of_nodes[child_index] = @internal_array_of_nodes[parent_index]
-    @internal_array_of_nodes[parent_index] = temp
+    temp = @array_of_nodes[child_index]
+    @array_of_nodes[child_index] = @array_of_nodes[parent_index]
+    @array_of_nodes[parent_index] = temp
   end
 
   def check_is_heap_property_maintained

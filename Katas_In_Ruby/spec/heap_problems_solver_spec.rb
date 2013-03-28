@@ -4,7 +4,14 @@ require "../Katas/helpers"
 
 describe "Heap problems behaviour" do
 
-  context "Heap" do
+  describe "Node" do
+    subject { HeapNode.new(10) }
+
+    it { should respond_to(:key) }
+    it { should respond_to(:value) }
+  end
+
+  describe "Heap" do
 
     before() do
       @heap = Heap.new()
@@ -12,8 +19,11 @@ describe "Heap problems behaviour" do
     subject { @heap }
 
     it { should_not be_nil }
+    it { should respond_to(:array_of_nodes) }
+    it { should respond_to(:is_min_heap) }
+    its(:is_min_heap) {should be_true}
 
-    it "insert, insert node increases heap size" do
+    it "insert, inserts node, increases heap size" do
       lambda {
         subject.insert(HeapNode.new(1))
         subject.insert(HeapNode.new(15))
@@ -22,13 +32,13 @@ describe "Heap problems behaviour" do
       }.should change(@heap, :count).by(4)
     end
 
-    it "find, finds min node" do
+    it "find, finds min node, no change in size" do
       lambda {
         subject.find_root_node
       }.should change(@heap, :count).by(0)
     end
 
-    it "should do heap rebalancing on insert" do
+    it "should rebalance on insert" do
       heap = Heap.new()
       heap.insert(HeapNode.new(5))
       heap.find_root_node.key.should == 5
@@ -56,7 +66,7 @@ describe "Heap problems behaviour" do
 
     end
 
-    it "should do heap rebalancing on get" do
+    it "should do heap rebalance on get - case 1" do
       heap = Heap.new()
       heap.insert(HeapNode.new(5))
       heap.insert(HeapNode.new(6))
@@ -102,7 +112,7 @@ describe "Heap problems behaviour" do
     end
 
 
-    it "should do heap rebalancing on get" do
+    it "should rebalance on get - case 2" do
       heap = Heap.new()
       heap.insert(HeapNode.new(3))
       heap.insert(HeapNode.new(5))
@@ -164,13 +174,6 @@ describe "Heap problems behaviour" do
 
   end
 
-  context "Node" do
-    subject { HeapNode.new(10) }
-
-    it { should respond_to(:key) }
-    it { should respond_to(:value) }
-  end
-
   context "find_median_of_an_array_in_ith_step" do
 
     it "should return the right median at any insertion" do
@@ -190,7 +193,7 @@ describe "Heap problems behaviour" do
 
     end
 
-    it "should return the right median" do
+    it "should return the right median - case 1" do
       sequence = [HeapNode.new(1), HeapNode.new(0), HeapNode.new(10), HeapNode.new(5), HeapNode.new(8),
                   HeapNode.new(2), HeapNode.new(4), HeapNode.new(12), HeapNode.new(15)]
       median_node = HeapProblemsSolver.find_median_of_an_array_of_nodes_in_ith_step(sequence)
@@ -198,7 +201,7 @@ describe "Heap problems behaviour" do
       median_node.key.should == 5
     end
 
-    it "should return the right median" do
+    it "should return the right median - case 2" do
       sequence = [HeapNode.new(1), HeapNode.new(10), HeapNode.new(2), HeapNode.new(9), HeapNode.new(3),
                   HeapNode.new(8), HeapNode.new(4), HeapNode.new(7), HeapNode.new(5)]
       median_node = HeapProblemsSolver.find_median_of_an_array_of_nodes_in_ith_step(sequence)
@@ -239,7 +242,12 @@ describe "Heap problems behaviour" do
       median.key.should == 5
     end
 
-    it "should find the right sum of medians" do
+    it "should read the file" do
+      array = Helpers.populate_array_with_file_content("../Sample_Data/Median.txt")
+      array.length.should == 10000
+    end
+
+    it "should find the right sum of medians - case 1" do
       array = [9, 6, 14, 19, 8, 4]
 
       @median_solver = FindMedianSolver.new
@@ -254,12 +262,7 @@ describe "Heap problems behaviour" do
       sum_of_median.should == 50
     end
 
-    it "should read the file" do
-      array = Helpers.populate_array_with_file_content("../Sample_Data/Median.txt")
-      array.length.should == 10000
-    end
-
-    it "should find the sum of medians" do
+    it "should find the sum of medians - case 2" do
       array = Helpers.populate_array_with_file_content("../Sample_Data/Median2.txt")
 
       median_solver = FindMedianSolver.new
@@ -273,7 +276,7 @@ describe "Heap problems behaviour" do
       sum_of_median.should == 12588046
     end
 
-    it "should find the sum of medians" do
+    it "should find the sum of medians - case 3" do
       array = Helpers.populate_array_with_file_content("../Sample_Data/Median.txt")
 
       median_solver = FindMedianSolver.new
@@ -283,7 +286,6 @@ describe "Heap problems behaviour" do
         sum_of_median += median_solver.insert_new_node_and_return_median_node(HeapNode.new(i)).key
       end
 
-      #median.should == 5001
       sum_of_median.should == 46831213
     end
 

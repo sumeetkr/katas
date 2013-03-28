@@ -33,7 +33,7 @@ describe "dijkstra shortest path finder behaviour" do
     end
   end
 
-  context "dijkstra_shortest path finder 2" do
+  context "dijkstra_shortest path finder- case 2" do
 
     it " should expand covered node" do
       graph = DijkstraShortestPathFinder.populate_dijkastra_graph_with_file_content("../Sample_Data/dijkstraData3.txt")
@@ -46,7 +46,7 @@ describe "dijkstra shortest path finder behaviour" do
     end
   end
 
-  context "dijkstra_shortest path finder 3" do
+  context "dijkstra_shortest path finder- case 3" do
 
     it " should expand covered node" do
       graph = DijkstraShortestPathFinder.populate_dijkastra_graph_with_file_content("../Sample_Data/dijkstraData.txt")
