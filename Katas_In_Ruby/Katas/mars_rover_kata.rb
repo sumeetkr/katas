@@ -10,7 +10,6 @@ module MotionDirection
   B = 2
   L = 3
   R = 4
-
 end
 
 class MarsRoverGame

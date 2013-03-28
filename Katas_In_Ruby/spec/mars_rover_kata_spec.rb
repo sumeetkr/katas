@@ -93,15 +93,15 @@ describe "MarsRover behaviour" do
 
     it "should change state of rover - case 1" do
       @game.rover.move(MotionDirection::F)
-      @game.rover.x == 1
-      @game.rover.y == 0
+      @game.rover.x.should == 1
+      @game.rover.y.should == 0
     end
 
     it "should change state of rover - case 2" do
       @game.rover.move(MotionDirection::L)
       @game.rover.x == 0
       @game.rover.y == 0
-      @game.rover.direction == Direction::N
+      @game.rover.direction.should == Direction::N
     end
 
     it "should change state of rover - case 3" do
@@ -111,9 +111,23 @@ describe "MarsRover behaviour" do
       @game.rover.move(MotionDirection::F)
       @game.rover.x == 0
       @game.rover.y == 2
-      @game.rover.direction == Direction::N
+      @game.rover.direction.should == Direction::N
     end
 
+    context "mars rover should detect collision" do
+      before(:each) do
+        @game = MarsRoverGame.new()
+      end
+      subject { @game }
+
+      it "should detect obstacle 3" do
+        (@game.grid.cell_array[2])[2].is_free = false
+        @game.rover.move(MotionDirection::L)
+        @game.rover.x == 0
+        @game.rover.y == 2
+        @game.rover.direction == Direction::N
+      end
+    end
   end
 
 end
