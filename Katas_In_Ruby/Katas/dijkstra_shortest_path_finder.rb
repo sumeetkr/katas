@@ -15,7 +15,7 @@ class DijkstraShortestPathFinder
     File.open(file_path).each do |line|
       line = line.split(' ').map { |x| x.to_s }
       node_number = line[0].to_i
-      edges_info = line[1..(line.length - 1)]
+      edges_info = line[1..(line.height - 1)]
 
       for edge_info in edges_info
         array = edge_info.split(',').map { |x| x.to_i }

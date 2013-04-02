@@ -7,7 +7,7 @@ class KnapSackProblemSolver
     @items = items
     @items_hash = Hash.new
 
-    for i in 1..items.length
+    for i in 1..items.height
       @items_hash[i] = @items[i-1]
     end
   end
@@ -21,7 +21,7 @@ class KnapSackProblemSolver
   def solve_iteratively(max_weight)
     max_value = 0;
     value = 0;
-    for i in 1..@items.length
+    for i in 1..@items.height
       for weight in 0..max_weight
         value = get_value_that_maximizes_total_value(i, weight)
 

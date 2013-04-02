@@ -31,8 +31,8 @@ describe "MarsRover behaviour" do
 
     it { should respond_to(:cell_array) }
     it "should have the initialized width and height" do
-      @grid.cell_array.length == 10
-      @grid.cell_array[0].length == 10
+      @grid.cell_array.height == 10
+      @grid.cell_array[0].height == 10
     end
   end
 

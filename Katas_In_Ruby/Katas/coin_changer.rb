@@ -22,7 +22,7 @@ class ChangeCalculator
     available_coin_denominations.each { |coin| coins_count_hash[coin] = 0 }
 
     current_sum = sum
-    current_index = available_coin_denominations.length - 1
+    current_index = available_coin_denominations.height - 1
 
     while (current_index > 0 && current_sum > 0)
       coin_value = available_coin_denominations[current_index]

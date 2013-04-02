@@ -19,7 +19,7 @@ describe "MaxIndependentSet behaviour" do
     it "add edge should increase the neighbour numbers" do
       lambda {
         @mis_node.add_edge(10)
-      }.should change(@mis_node.neighbour_numbers, :length).by(1)
+      }.should change(@mis_node.neighbour_numbers, :height).by(1)
     end
 
   end
@@ -37,14 +37,14 @@ describe "MaxIndependentSet behaviour" do
       lambda {
         @mis_graph.add_node(10, 5)
         @mis_graph.add_node(9, 6)
-      }.should change(@mis_graph.nodes_hash, :length).by(2)
+      }.should change(@mis_graph.nodes_hash, :height).by(2)
     end
 
     it "create edge should increase the neighbour nodes count of nodes" do
       lambda {
         @mis_graph.add_node(6, 6)
         @mis_graph.create_edge(5, 6)
-      }.should change(@mis_graph.nodes_hash[5].neighbour_numbers, :length).by(1)
+      }.should change(@mis_graph.nodes_hash[5].neighbour_numbers, :height).by(1)
     end
 
   end

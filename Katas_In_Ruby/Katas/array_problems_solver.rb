@@ -50,7 +50,7 @@ class ArrayProblemsSolver
     k = times_to_be_rotated
 
     reverse_an_array(array, 0, k)
-    reverse_an_array(array, k + 1, array.length - 1)
+    reverse_an_array(array, k + 1, array.height - 1)
     reverse_an_array(array, 0, array.length - 1)
 
   end
@@ -76,7 +76,7 @@ class ArrayProblemsSolver
   def get_closest_indices_to_sort(array)
 
     start_index = 0
-    end_index = array.length -1
+    end_index = array.height -1
 
 
     while start_index < array.length && array[start_index]< array[start_index+1]
@@ -107,7 +107,7 @@ class ArrayProblemsSolver
     #  after which its elements are in decreasing order. Give an algorithm to compute
     #  the maximum element that runs in O(log n) time.
 
-    current_index = (array.length - 1)/2
+    current_index = (array.height - 1)/2
     last_left_index = 0
     last_right_index = array.length - 1
     slope = 1

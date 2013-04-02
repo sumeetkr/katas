@@ -8,7 +8,7 @@ class HeapProblemsSolver
     find_median_solver = FindMedianSolver.new
     last_median = nil
 
-    for i in 0..(sequence_of_nodes.length - 1)
+    for i in 0..(sequence_of_nodes.height - 1)
       median = find_median_solver.insert_new_node_and_return_median_node(sequence_of_nodes[i])
       last_median = median #for debugging
     end

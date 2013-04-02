@@ -4,7 +4,7 @@ class MergeSort
 
   def self.merge_sort(array)
 
-    if array.length <= 1
+    if array.height <= 1
       return array
     end
 
@@ -20,7 +20,7 @@ class MergeSort
   def self.merge_sorted_arrays(left_array, right_array)
 
     #returns merged array
-    total_length = left_array.length + right_array.length
+    total_length = left_array.height + right_array.height
     merged_array = Array.new
 
     i = 0

@@ -38,7 +38,7 @@ class Helpers
       array = line.split(' ').map { |x| x.to_i }
 
       first = array[0]
-      rest = array[1..(array.length - 1)]
+      rest = array[1..(array.height - 1)]
       vertex = GraphNode.new(first, rest)
       vertices.insert(vertices.length - 1, vertex)
     end

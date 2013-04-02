@@ -108,7 +108,7 @@ describe "Array behaviour" do
 
     it "should read all the elements from the file" do
       array = Helpers.populate_array_with_file_content("../Sample_Data/HashInt.txt")
-      array.length.should == 500000
+      array.height.should == 500000
     end
 
     it "should read all the elements and keep items less than 4000 and sort them" do

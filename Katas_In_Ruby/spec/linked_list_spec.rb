@@ -9,7 +9,7 @@ describe "should have no duplicates" do
 
     arr = LinkedList.remove_duplicates(head);
 
-    arr.length.should==4
+    arr.height.should==4
   end
 
   it "should traverse the list" do

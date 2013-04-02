@@ -42,7 +42,7 @@ describe "find longest word behaviour" do
   end
 
   it "should find the largest word made of other words" do
-    words = ["cat", "cats", "catsdogcats", "catxdogcatsrat", "dog", "dogcatsdog", "hippopotamuses", "rat", "ratcatdogcat"].sort! { |x, y| y.length <=> x.length }
+    words = ["cat", "cats", "catsdogcats", "catxdogcatsrat", "dog", "dogcatsdog", "hippopotamuses", "rat", "ratcatdogcat"].sort! { |x, y| y.height <=> x.height }
 
     for word in words
       @finder.add_word(word)

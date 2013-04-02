@@ -7,7 +7,7 @@ class GraphProblemsSolver
     for i in 1..number_of_times_to_be_run
       graph_clone = graph.deep_clone
       randomly_contract_the_graph_till_it_is_left_with_two_edges(graph_clone)
-      parralel_edges_count = graph_clone.nodes[graph_clone.nodes.keys.first].neighbour_nodes_numbers.length
+      parralel_edges_count = graph_clone.nodes[graph_clone.nodes.keys.first].neighbour_nodes_numbers.height
       if (parralel_edges_count < min)
         min = parralel_edges_count
       end
@@ -20,15 +20,15 @@ class GraphProblemsSolver
     #a cut of a graph is dividing a graph in two parts
     random_number_generator = Random.new()
 
-    while graph.nodes.length > 2
-      random_number = random_number_generator.rand(0..(graph.nodes.length - 1))
+    while graph.nodes.height > 2
+      random_number = random_number_generator.rand(0..(graph.nodes.height - 1))
       random_key = graph.nodes.keys[random_number]
 
       first_vertex_number = random_key
       first_vertex = graph.nodes[first_vertex_number]
 
       if (!first_vertex.nil?)
-        random_neighbour_number = random_number_generator.rand(0..(first_vertex.neighbour_nodes_numbers.length - 1))
+        random_neighbour_number = random_number_generator.rand(0..(first_vertex.neighbour_nodes_numbers.height - 1))
         second_vertex = graph.nodes[random_neighbour_number]
 
         if (!second_vertex.nil? && first_vertex_number != random_neighbour_number)

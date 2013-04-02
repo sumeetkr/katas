@@ -27,14 +27,14 @@ describe "solves graph problems" do
 
     it "should read the text file and create a graph" do
       init()
-      @graph_populated_with_test_data.nodes.length.should > 0
+      @graph_populated_with_test_data.nodes.height.should > 0
     end
 
     it "should find a cut on contraction" do
       init()
       graph_clone = @graph_populated_with_test_data.deep_clone
       GraphProblemsSolver.randomly_contract_the_graph_till_it_is_left_with_two_edges(graph_clone)
-      graph_clone.nodes.length.should == 2
+      graph_clone.nodes.height.should == 2
     end
 
     it "should run for a number of times to find the min cut" do
@@ -52,7 +52,7 @@ describe "solves graph problems" do
 
       GraphProblemsSolver.randomly_contract_the_graph_till_it_is_left_with_two_edges(graph)
 
-      graph.nodes.length.should == 2
+      graph.nodes.height.should == 2
     end
 
     it "finds a cut with minimum parallel edges" do
@@ -68,7 +68,7 @@ describe "solves graph problems" do
 
       vertex.should respond_to(:number)
       vertex.should respond_to(:neighbour_nodes_numbers)
-      vertex.neighbour_nodes_numbers.length.should == 4
+      vertex.neighbour_nodes_numbers.height.should == 4
     end
   end
 
@@ -87,13 +87,13 @@ describe "solves graph problems" do
     it "should initialize graph" do
       @graph_with_five_edge = init_graph_with_five_edges()
       @graph_with_five_edge.should respond_to(:nodes)
-      @graph_with_five_edge.nodes.length.should == 5
+      @graph_with_five_edge.nodes.height.should == 5
     end
 
     it "should contract the graph" do
       @graph_with_five_edge = init_graph_with_five_edges()
       GraphProblemsSolver.randomly_contract_the_graph_till_it_is_left_with_two_edges(@graph_with_five_edge)
-      @graph_with_five_edge.nodes.length.should == 2
+      @graph_with_five_edge.nodes.height.should == 2
     end
 
     it "should find min cut" do
@@ -119,13 +119,13 @@ describe "solves graph problems" do
     it "should initialize graph" do
       @graph_with_four_edge = init_graph_with_four_edges()
       @graph_with_four_edge.should respond_to(:nodes)
-      @graph_with_four_edge.nodes.length.should == 4
+      @graph_with_four_edge.nodes.height.should == 4
     end
 
     it "should contract the graph" do
       @graph_with_four_edge = init_graph_with_four_edges()
       GraphProblemsSolver.randomly_contract_the_graph_till_it_is_left_with_two_edges(@graph_with_four_edge)
-      @graph_with_four_edge.nodes.length.should == 2
+      @graph_with_four_edge.nodes.height.should == 2
     end
 
     it "should find min cut" do
@@ -149,13 +149,13 @@ describe "solves graph problems" do
     it "should initialize graph" do
 
       @graph_with_three_edge.should respond_to(:nodes)
-      @graph_with_three_edge.nodes.length.should == 3
+      @graph_with_three_edge.nodes.height.should == 3
     end
 
     it "should contract the graph" do
       GraphProblemsSolver.randomly_contract_the_graph_till_it_is_left_with_two_edges(@graph_with_three_edge)
-      @graph_with_three_edge.nodes.length.should == 2
-      @graph_with_three_edge.nodes.values.first.neighbour_nodes_numbers.length.should == 2
+      @graph_with_three_edge.nodes.height.should == 2
+      @graph_with_three_edge.nodes.values.first.neighbour_nodes_numbers.height.should == 2
     end
   end
 

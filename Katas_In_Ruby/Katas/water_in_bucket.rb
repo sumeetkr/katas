@@ -12,7 +12,7 @@ class WaterInBucket
 
   def self.consider_next_wall_in_max_bucket(array, start, close, wall_index)
 
-    if (wall_index == array.length)
+    if (wall_index == array.height)
       return start, close
     end
 
