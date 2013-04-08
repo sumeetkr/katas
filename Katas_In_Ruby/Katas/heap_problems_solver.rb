@@ -8,7 +8,7 @@ class HeapProblemsSolver
     find_median_solver = FindMedianSolver.new
     last_median = nil
 
-    for i in 0..(sequence_of_nodes.height - 1)
+    for i in 0..(sequence_of_nodes.size - 1)
       median = find_median_solver.insert_new_node_and_return_median_node(sequence_of_nodes[i])
       last_median = median #for debugging
     end
@@ -19,48 +19,56 @@ end
 
 class FindMedianSolver
   def initialize
-    @min_heap = Heap.new()
-    @max_heap = Heap.new(false)
+    @bigger_numbers = Heap.new()
+    @smaller_numbers = Heap.new(false)
   end
 
   def insert_new_node_and_return_median_node(node)
     check_if_both_heaps_are_almost_equal
 
     #boundary case, first insert
-    if (@max_heap.count == 0)
-      @max_heap.insert(node)
+    if (@smaller_numbers.count == 0)
+      @smaller_numbers.insert(node)
       return node
     end
 
-    if (node.key < @max_heap.find_root_node.key)
-      @max_heap.insert(node)
+    if (node.key < @smaller_numbers.find_root_node.key)
+      @smaller_numbers.insert(node)
     else
-      @min_heap.insert(node)
+      @bigger_numbers.insert(node)
     end
 
-    diff = @max_heap.count - @min_heap.count
-
-    case diff
-      when -2
-        @max_heap.insert(@min_heap.get_root_node)
-      when -1
-        @max_heap.insert(@min_heap.get_root_node)
-      when 2
-        @min_heap.insert(@max_heap.get_root_node)
-    end
+    resize_heaps_to_make_their_size_almost_same()
 
     check_if_both_heaps_are_almost_equal
 
-    median_node = @max_heap.find_root_node
+    median_node = get_smaller_numbers_root_as_two_heaps_are_equal_or_smaller_numbers_is_one_size_bigger()
     return median_node
   end
 
+  def get_smaller_numbers_root_as_two_heaps_are_equal_or_smaller_numbers_is_one_size_bigger
+    @smaller_numbers.find_root_node
+  end
+
+  def resize_heaps_to_make_their_size_almost_same
+    diff = @smaller_numbers.count - @bigger_numbers.count
+
+    case diff
+      when -2
+        @smaller_numbers.insert(@bigger_numbers.get_root_node)
+      when -1
+        @smaller_numbers.insert(@bigger_numbers.get_root_node)
+      when 2
+        @bigger_numbers.insert(@smaller_numbers.get_root_node)
+    end
+  end
+
   def total_count
-    return @max_heap.count + @min_heap.count
+    return @smaller_numbers.count + @bigger_numbers.count
   end
 
   def check_if_both_heaps_are_almost_equal
-    if ((@max_heap.count - @min_heap.count).abs > 1)
+    if ((@smaller_numbers.count - @bigger_numbers.count).abs > 1)
       raise "unbalanced heap"
     end
   end
