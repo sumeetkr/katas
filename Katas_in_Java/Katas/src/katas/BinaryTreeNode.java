@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicReference;
 
 import sun.tools.tree.ThisExpression;
 
-public class BinaryTreeNode<T> {
+public class BinaryTreeNode<T extends Integer> {
 
 	private T data;
 	private BinaryTreeNode<T> parent;
@@ -78,6 +78,29 @@ public class BinaryTreeNode<T> {
 		return maxSum.get();
 	}
 
+	public void insert(T value)
+	{
+	        insertHelper(this, value);
+	}
+	 
+	private void insertHelper(BinaryTreeNode<T> node, T value)
+	{
+	    if (value< node.data)
+	    {
+	        if (node.left == null)
+	            node.left = new BinaryTreeNode<T>(value);
+	        else
+	            insertHelper(node.left, value);
+	    }
+	    else
+	    {
+	        if (node.right == null)
+	            node.right = new BinaryTreeNode<T>(value);
+	        else
+	            insertHelper(node.right, value);
+	    }
+	}
+	
 	private Integer sumInAPath(AtomicReference<T> sum, AtomicReference<T> maxSum) {
 
 		Integer leftSum = (this.left != null ? this.left.sumInAPath(sum, maxSum)
@@ -89,8 +112,13 @@ public class BinaryTreeNode<T> {
 				+ (this.right != null ? this.right.sumInAPath(sum, maxSum) : 0)
 				+ (Integer) this.data;
 
-//		maxSum.set( Math.max(leftSum, rightSum));
-		return 0;
+		Integer localMax =  Math.max(Math.max(leftSum, rightSum),totalSum);
+		
+		if(localMax > (Integer)maxSum.get()){
+			maxSum.set((T)(Object)Math.max(Math.max(leftSum, rightSum),totalSum));	
+		}
+		
+		return Math.max(leftSum, rightSum);
 	}
 
 }

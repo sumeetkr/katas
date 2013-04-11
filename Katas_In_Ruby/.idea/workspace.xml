@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="435c0da1-a8e7-4f2a-bdb3-460b5a249c0b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Katas_in_Java/Katas/src/katas/SequenceAlignmentEvaluator.java" afterPath="$PROJECT_DIR$/../Katas_in_Java/Katas/src/katas/SequenceAlignmentEvaluator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Katas_in_Java/Katas/test/SequenceAlignmentEvaluatorTest.java" afterPath="$PROJECT_DIR$/../Katas_in_Java/Katas/test/SequenceAlignmentEvaluatorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Katas_in_Java/Katas/src/katas/BinaryTreeNode.java" afterPath="$PROJECT_DIR$/../Katas_in_Java/Katas/src/katas/BinaryTreeNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Katas_in_Java/Katas/test/BinaryTreeNodeTest.java" afterPath="$PROJECT_DIR$/../Katas_in_Java/Katas/test/BinaryTreeNodeTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Katas/dijkstra_shortest_path_finder.rb" afterPath="$PROJECT_DIR$/Katas/dijkstra_shortest_path_finder.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/dijkstra_shortest_path_fnder_spec.rb" afterPath="$PROJECT_DIR$/spec/dijkstra_shortest_path_fnder_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/plates_stacking_spec.rb" afterPath="$PROJECT_DIR$/spec/plates_stacking_spec.rb" />
     </list>
     <ignored path="Katas_In_Ruby.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,7 +53,7 @@
       <file leaf-file-name="rover.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Katas/mars_rover_kata/rover.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="36" selection-start="516" selection-end="516" vertical-scroll-proportion="0.47610295">
+            <state line="8" column="5" selection-start="217" selection-end="217" vertical-scroll-proportion="0.16393442">
               <folding />
             </state>
           </provider>
@@ -179,7 +176,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -244,20 +240,39 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Katas_In_Ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Katas_In_Ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Katas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mars_rover_kata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$USER_HOME$/RubymineProjects/lifelogger" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/RubymineProjects/lifelogger" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -574,12 +589,12 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="RSpec.Heap problems behaviour" />
-      <item index="2" class="java.lang.String" itemvalue="IRB console.IRB console" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.MarsRover behaviour" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.MinimumSpanningTreeSolver" />
-      <item index="5" class="java.lang.String" itemvalue="RSpec.dijkstra shortest path finder behaviour" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.Heap problems behaviour" />
+      <item index="1" class="java.lang.String" itemvalue="IRB console.IRB console" />
+      <item index="2" class="java.lang.String" itemvalue="RSpec.MarsRover behaviour" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.MinimumSpanningTreeSolver" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.dijkstra shortest path finder behaviour" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.Unnamed" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -733,13 +748,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1276" height="778" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30650407" sideWeight="0.23788546" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3406504" sideWeight="0.9030837" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34634146" sideWeight="0.9030837" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37004405" sideWeight="0.9991896" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30650407" sideWeight="0.23788546" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.50406504" order="7" side_tool="true" content_ui="tabs" />
@@ -912,16 +927,12 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/spec/inversions_in_array_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Katas/max_weight_independent_set_finder.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/max_weight_independent_set_finder_spec.rb">
@@ -933,9 +944,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/minimum_spanning_tree_solver_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="120" selection-end="128" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="4" column="5" selection-start="120" selection-end="128" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/dijkstra_shortest_path_fnder_spec.rb">
@@ -947,9 +956,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/mars_rover2_kata_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/plates_stacking_spec.rb">
@@ -1017,7 +1024,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Katas/mars_rover_kata/rover.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="36" selection-start="516" selection-end="516" vertical-scroll-proportion="0.47610295">
+        <state line="8" column="5" selection-start="217" selection-end="217" vertical-scroll-proportion="0.16393442">
           <folding />
         </state>
       </provider>
