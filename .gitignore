@@ -12,6 +12,7 @@ TestResults
 *.suo
 *.user
 *.sln.docstates
+*.prefs
 
 # Build results
 [Dd]ebug/
@@ -38,6 +39,7 @@ x64/
 .builds
 *.class
 *.jar
+*.DS_Store
 
 # Visual C++ cache files
 ipch/
