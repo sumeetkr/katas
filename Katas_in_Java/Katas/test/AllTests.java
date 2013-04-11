@@ -4,7 +4,7 @@ import org.junit.runners.Suite.SuiteClasses;
 
 
 @RunWith(Suite.class)
-@SuiteClasses({ MinimumSpanningTreesTest.class })
+@SuiteClasses({ MinimumSpanningTreesTest.class, BinaryTreeNodeTest.class })
 public class AllTests {
 
 }

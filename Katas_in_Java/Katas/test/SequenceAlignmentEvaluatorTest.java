@@ -16,11 +16,31 @@ public class SequenceAlignmentEvaluatorTest {
 
 	@Before
 	public void setUp() throws Exception {
+		this.evaluator = new SequenceAlignmentEvaluator();
 	}
 
 	@Test
-	public void testPenalty() {
-		fail("Not yet implemented");
+	public void testCalculatePenaltyWithNoDifference() {
+		String first = "ABCDEFG";
+		String second = "ABCDEFG";
+		
+		assertTrue(this.evaluator.calculatePenaltyBasedOnDiffernceOfAlignment(first, second) == 0);
+	}
+	
+	@Test
+	public void testCalculatePenaltyWithOneLesserCharacter() {
+		String first = "ABCDEFG";
+		String second = "ABCDEF";
+		
+		assertTrue(this.evaluator.calculatePenaltyBasedOnDiffernceOfAlignment(first, second) == 1);
+	}
+	
+	@Test
+	public void testCalculatePenaltyWithOneUnmatchedCharacter() {
+		String first = "ABCDEFG";
+		String second = "ABCDEFH";
+		
+		assertTrue(this.evaluator.calculatePenaltyBasedOnDiffernceOfAlignment(first, second) == 2);
 	}
 
 }

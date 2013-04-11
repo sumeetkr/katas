@@ -15,6 +15,52 @@ describe "dijkstra shortest path finder behaviour" do
 #graph. If there is no path between a vertex v and vertex 1, we'll define the shortest-path distance
 #between 1 and v to be 1000000.
 
+  context "Node" do
+    subject { Node.new(1) }
+
+    it { should respond_to(:shortest_path_distance_from_1st_node) }
+    it { should respond_to (:number) }
+    it { should respond_to(:edges) }
+    it { should respond_to(:is_covered) }
+  end
+
+  context "Edge" do
+    subject { Edge.new(1, 2, 5) }
+
+    it { should respond_to(:weight) }
+    it { should respond_to(:first_node_number) }
+    it { should respond_to(:second_node_number) }
+  end
+
+  context "Graph" do
+    before do
+      @graph = Graph.new
+    end
+
+    subject { @graph }
+
+    it "should allow to insert nodes" do
+      lambda {
+        @graph.create_edge(10, 5, 10)
+      }.should change(@graph, :nodes_count).by(2)
+
+      lambda {
+        @graph.create_edge(10, 4, 10)
+      }.should change(@graph, :nodes_count).by(1)
+
+      lambda {
+        @graph.create_edge(4, 5, 10)
+      }.should change(@graph, :nodes_count).by(0)
+
+    end
+
+    it "should allow to find a node" do
+
+    end
+
+
+  end
+
   context "dijkstra_shortest path finder" do
 
     it "should initialize graph with 200 nodes" do
@@ -42,7 +88,7 @@ describe "dijkstra shortest path finder behaviour" do
       first_node = graph.nodes_hash[1]
 
       finder.expand_covered_graph(graph, first_node)
-      finder.covered_nodes.count.should == graph.nodes_count.should
+      finder.covered_nodes.count.should == graph.nodes_count
     end
   end
 
@@ -160,52 +206,5 @@ describe "dijkstra shortest path finder behaviour" do
       array_shortest_distance[5].should== 11
     end
   end
-
-  context "Node" do
-    subject { Node.new(1) }
-
-    it { should respond_to(:shortest_path_distance_from_1st_node) }
-    it { should respond_to (:number) }
-    it { should respond_to(:edges) }
-    it { should respond_to(:is_covered) }
-  end
-
-  context "Edge" do
-    subject { Edge.new(1, 2, 5) }
-
-    it { should respond_to(:weight) }
-    it { should respond_to(:first_node_number) }
-    it { should respond_to(:second_node_number) }
-  end
-
-  context "Graph" do
-    before do
-      @graph = Graph.new
-    end
-
-    subject { @graph }
-
-    it "should allow to insert nodes" do
-      lambda {
-        @graph.create_edge(10, 5, 10)
-      }.should change(@graph, :nodes_count).by(2)
-
-      lambda {
-        @graph.create_edge(10, 4, 10)
-      }.should change(@graph, :nodes_count).by(1)
-
-      lambda {
-        @graph.create_edge(4, 5, 10)
-      }.should change(@graph, :nodes_count).by(0)
-
-    end
-
-    it "should allow to find a node" do
-
-    end
-
-
-  end
-
 
 end
