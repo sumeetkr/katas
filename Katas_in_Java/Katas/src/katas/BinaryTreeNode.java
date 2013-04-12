@@ -15,14 +15,6 @@ public class BinaryTreeNode<T extends Integer> {
 		this.data = data;
 	}
 
-	// public BinaryTreeNode(int[] datas){
-	// // int [] datas = new int[] {2, 4, 10, 8,6,1};
-	//
-	// for(int data:datas){
-	//
-	// }
-	// }
-
 	public T getData() {
 		return data;
 	}
@@ -82,7 +74,37 @@ public class BinaryTreeNode<T extends Integer> {
 	{
 	        insertHelper(this, value);
 	}
-	 
+
+	public int findLowestCommonAncestor(BinaryTreeNode<T> root, int a, int b){
+		AtomicReference<BinaryTreeNode<T>> matched = new AtomicReference<BinaryTreeNode<T>>();
+
+	    traverse(root, a, b, matched);
+
+	    return matched.get().data;
+	}
+	
+	private boolean traverse(BinaryTreeNode<T> node, int a, int b, AtomicReference<BinaryTreeNode<T>> matched){
+
+	    boolean found = false;
+
+	    if(node == null || matched.get() != null) {
+	        return false;
+	    }
+
+	    if(node.data == a || node.data == b){
+	        found = true;
+	    }
+
+	    boolean foundOnLeft = traverse(node.left, a, b, matched);
+	    boolean foundOnRight = traverse(node.right, a, b, matched);
+
+	    if( (foundOnLeft && foundOnRight) || (foundOnLeft && found) || (foundOnRight && found)){
+	       matched.set(node);
+	     }
+
+	    return found;
+	}
+	
 	private void insertHelper(BinaryTreeNode<T> node, T value)
 	{
 	    if (value< node.data)
