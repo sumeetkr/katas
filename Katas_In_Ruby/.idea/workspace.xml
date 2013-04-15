@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="435c0da1-a8e7-4f2a-bdb3-460b5a249c0b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Katas_in_Java/Katas/src/katas/BinaryTreeNode.java" afterPath="$PROJECT_DIR$/../Katas_in_Java/Katas/src/katas/BinaryTreeNode.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Katas_in_Java/Katas/test/BinaryTreeNodeTest.java" afterPath="$PROJECT_DIR$/../Katas_in_Java/Katas/test/BinaryTreeNodeTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Katas/plates_stacking.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/spec/plates_stacking_spec.rb" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Katas_in_Java/Katas/src/katas/SlidingWindowMaximumFinder.java" afterPath="$PROJECT_DIR$/../Katas_in_Java/Katas/src/katas/SlidingWindowMaximumFinder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Katas_in_Java/Katas/test/SlidingWindowMaximumFinderTest.java" afterPath="$PROJECT_DIR$/../Katas_in_Java/Katas/test/SlidingWindowMaximumFinderTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Katas_In_Ruby.iws" />
@@ -23,26 +25,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="plates_stacking_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/plates_stacking_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dijkstra_shortest_path_finder.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/dijkstra_shortest_path_finder.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="149" column="18" selection-start="4038" selection-end="4038" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="array_problems_solver.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/array_problems_solver.rb">
+      <file leaf-file-name="misc_problems_solver_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/misc_problems_solver_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -50,17 +34,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="rover.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Katas/mars_rover_kata/rover.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="5" selection-start="217" selection-end="217" vertical-scroll-proportion="0.16393442">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="command.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/mars_rover_kata/command.rb">
+      <file leaf-file-name="merge_sort_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/merge_sort_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -68,8 +43,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="turn_left_command.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/mars_rover_kata/turn_left_command.rb">
+      <file leaf-file-name="max_weight_independent_set_finder_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/max_weight_independent_set_finder_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -77,8 +52,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="turn_right_command.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/mars_rover_kata/turn_right_command.rb">
+      <file leaf-file-name="matrix_problems_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/matrix_problems_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -86,8 +61,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="move_forward_command.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/mars_rover_kata/move_forward_command.rb">
+      <file leaf-file-name="linked_list_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/linked_list_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -95,8 +70,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="move_backward_command.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/mars_rover_kata/move_backward_command.rb">
+      <file leaf-file-name="knap_sack_problem_solver_spec.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spec/knap_sack_problem_solver_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -104,8 +79,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="find_longest_word_made_of_other_words.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Katas/find_longest_word_made_of_other_words.rb">
+      <file leaf-file-name="heap_problems_solver_spec.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/heap_problems_solver_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="string_problems.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Katas/string_problems.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strongly_connected_component_in_graph_finder.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Katas/strongly_connected_component_in_graph_finder.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="knap_sack_problem_solver.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Katas/knap_sack_problem_solver.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -237,24 +239,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Katas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_In_Ruby" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas_In_Ruby" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mars_rover_kata" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -589,12 +573,12 @@
       <method />
     </configuration>
     <list size="6">
-      <item index="0" class="java.lang.String" itemvalue="RSpec.Heap problems behaviour" />
-      <item index="1" class="java.lang.String" itemvalue="IRB console.IRB console" />
-      <item index="2" class="java.lang.String" itemvalue="RSpec.MarsRover behaviour" />
-      <item index="3" class="java.lang.String" itemvalue="RSpec.MinimumSpanningTreeSolver" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.dijkstra shortest path finder behaviour" />
-      <item index="5" class="java.lang.String" itemvalue="RSpec.Unnamed" />
+      <item index="0" class="java.lang.String" itemvalue="RSpec.Unnamed" />
+      <item index="1" class="java.lang.String" itemvalue="RSpec.Heap problems behaviour" />
+      <item index="2" class="java.lang.String" itemvalue="IRB console.IRB console" />
+      <item index="3" class="java.lang.String" itemvalue="RSpec.MarsRover behaviour" />
+      <item index="4" class="java.lang.String" itemvalue="RSpec.MinimumSpanningTreeSolver" />
+      <item index="5" class="java.lang.String" itemvalue="RSpec.dijkstra shortest path finder behaviour" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -925,75 +909,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/inversions_in_array_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/max_weight_independent_set_finder.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/max_weight_independent_set_finder_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/minimum_spanning_tree_solver_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="120" selection-end="128" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/dijkstra_shortest_path_fnder_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="2024" selection-end="2024" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/mars_rover2_kata_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/plates_stacking_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="174" selection-end="174" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/find_longest_word_made_of_other_words.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/dijkstra_shortest_path_finder.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="149" column="18" selection-start="4038" selection-end="4038" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/array_problems_solver.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/mars_rover_kata/command.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Katas/mars_rover_kata/move_backward_command.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1024,7 +939,84 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Katas/mars_rover_kata/rover.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="217" selection-end="217" vertical-scroll-proportion="0.16393442">
+        <state line="8" column="5" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Katas/stack_problems_solver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Katas/string_problems.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Katas/strongly_connected_component_in_graph_finder.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Katas/knap_sack_problem_solver.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/misc_problems_solver_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/merge_sort_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/max_weight_independent_set_finder_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/matrix_problems_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/linked_list_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/knap_sack_problem_solver_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/heap_problems_solver_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>

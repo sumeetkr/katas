@@ -6,24 +6,24 @@ public class SlidingWindowMaximumFinder {
 		int[] maxValues = new int[values.length - windowSize + 1];
 
 		int maxValue = findMax(values, 0, windowSize - 1);
-		int secondMaxValue = 0;
+		int secondMaxValue = maxValue;
 
 		int windowStartIndex = 0;
 		int windowEndIndex = windowStartIndex + windowSize - 1;
 
 		while (windowStartIndex < maxValues.length) {
-			// changes because of new entry
-			// int valueOfNewEntry = values[windowStartIndex + windowSize];
-			// if (valueOfNewEntry > maxValue) {
-			// secondMaxValue = maxValue;
-			// maxValue = valueOfNewEntry;
-			// } else if (valueOfNewEntry > secondMaxValue) {
-			// secondMaxValue = valueOfNewEntry;
-			// }
+//			// changes because of new entry
+//			int valueOfNewEntry = values[windowStartIndex + windowSize -1];
+//			if (valueOfNewEntry > maxValue) {
+//				secondMaxValue = maxValue;
+//				maxValue = valueOfNewEntry;
+//			} else if (valueOfNewEntry > secondMaxValue) {
+//				secondMaxValue = valueOfNewEntry;
+//			}
 
-			maxValue = findMax(values, windowStartIndex, windowStartIndex
-					+ windowSize - 1);
-			
+			 maxValue = findMax(values, windowStartIndex, windowStartIndex
+			 + windowSize - 1);
+
 			maxValues[windowStartIndex] = maxValue;
 			windowStartIndex++;
 		}
