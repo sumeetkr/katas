@@ -108,12 +108,12 @@ class ArrayProblemsSolver
     current_index = (array.length - 1)/2
     left_index = 0
     right_index = array.length - 1
-    slope = get_slope(array, current_index)
 
     #  if slope is negative, traverse in left direction, else traverse in right
     #  in every step remove half of the array
 
-    until slope ==0
+    slope = get_slope(array, current_index)
+    until slope == 0
 
       if (slope > 0)
         left_index = current_index
@@ -135,15 +135,9 @@ class ArrayProblemsSolver
     left = array[index -1]
     right = array[index +1]
 
-    if (left < mid && mid < right)
-      return 1
-    else
-      if (left > mid && mid > right)
-        return -1
-      else
-        return 0
-      end
-    end
+    return 1 if (left < mid && mid < right)
+    return -1 if (left > mid && mid > right)
+    return 0
   end
 
   def self.select_ith_order_statistics(array, ith_order)

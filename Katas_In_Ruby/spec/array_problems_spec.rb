@@ -35,26 +35,29 @@ describe "Array behaviour" do
 
   end
 
-  context "rotate an array in place k times" do
-    it " should rotate the array partially" do
+  context "reverse an array in place k times" do
+    it " should reverse the array partially" do
       arr = ["a", "b", "c", "d", "e", "f", "g"]
 
       ArrayProblemsSolver.reverse_an_array(arr, 3, arr.length - 1)
       arr.should == ["a", "b", "c", "g", "f", "e", "d"]
     end
 
-    it " should rotate the entire array" do
+    it " should reverse the entire array" do
       arr = ["a", "b", "c", "d", "e", "f", "g", "h"]
       ArrayProblemsSolver.reverse_an_array(arr, 0, arr.length - 1)
-      arr.length == 8
+      arr.length.should == 8
+#      arr.should == ["h", "b", "c", "d", "e", "f", "g", "h"]
     end
 
-    it " should rotate partial array" do
+    it " should reverse partial array" do
       arr = ["a", "b", "c", "d", "e", "f", "g", "h"]
       ArrayProblemsSolver.reverse_an_array(arr, 1, arr.length - 2)
       arr[6].should == "b"
     end
+  end
 
+  context "rotate an array in place k times" do
     it "should rotate an array in place k times" do
       arr = ["a", "b", "c", "d", "e", "f", "g"]
       k = 4

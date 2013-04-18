@@ -7,6 +7,7 @@
     <list default="true" id="435c0da1-a8e7-4f2a-bdb3-460b5a249c0b" name="Default" comment="Fixed bugs, added test cases for  dijkstra graph problem">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Katas/array_problems_solver.rb" afterPath="$PROJECT_DIR$/Katas/array_problems_solver.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/array_problems_spec.rb" afterPath="$PROJECT_DIR$/spec/array_problems_spec.rb" />
     </list>
     <ignored path="Katas_In_Ruby.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +29,7 @@
       <file leaf-file-name="array_problems_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/array_problems_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="0" selection-start="3770" selection-end="3770" vertical-scroll-proportion="3.5172415">
+            <state line="12" column="76" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -37,7 +38,7 @@
       <file leaf-file-name="array_problems_solver.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Katas/array_problems_solver.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="4" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
+            <state line="60" column="0" selection-start="2205" selection-end="2205" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -692,11 +693,11 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32452276" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30650407" sideWeight="0.23788546" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28536585" sideWeight="0.6784141" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28536585" sideWeight="0.7709251" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37004405" sideWeight="0.9991896" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30650407" sideWeight="0.23788546" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.50406504" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3215859" sideWeight="0.9634146" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2290749" sideWeight="0.9634146" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -960,14 +961,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Katas/array_problems_solver.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="4" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
+        <state line="60" column="0" selection-start="2205" selection-end="2205" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/array_problems_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="0" selection-start="3770" selection-end="3770" vertical-scroll-proportion="3.5172415">
+        <state line="12" column="76" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
