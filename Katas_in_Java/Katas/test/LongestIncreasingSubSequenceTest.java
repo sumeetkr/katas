@@ -16,7 +16,7 @@ public class LongestIncreasingSubSequenceTest {
 	}
 
 	@Test
-	public void testFind() {
+	public void testFindLength() {
 		int[] inputSequence = {5,3,7,1,8,4,0};
 		int lengthOfMaxSubSequence = this.finder.findLength(inputSequence);
 		assertEquals(3, lengthOfMaxSubSequence);

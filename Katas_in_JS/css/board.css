@@ -1,0 +1,38 @@
+/* 
+    Document   : board
+    Created on : Mar 25, 2013, 9:46:55 PM
+    Author     : sumeet
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body
+{
+    font-size: 10pt;
+    font-family: verdana, arial, sans-serif;
+}
+select
+{
+    font-size: 10pt;
+}
+div#params
+{
+    margin: 10px;
+}
+canvas
+{
+    border-color: Gray;
+    border-width: thin;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#canvas2
+{
+    background-color: #f5f5f5;
+}
+button
+{
+    width: 80px;
+    color: #393939;
+}

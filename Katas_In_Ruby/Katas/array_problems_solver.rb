@@ -47,10 +47,8 @@ class ArrayProblemsSolver
 
   def self.rotate_an_array_k_times(array, times_to_be_rotated)
 
-    k = times_to_be_rotated
-
-    reverse_an_array(array, 0, k)
-    reverse_an_array(array, k + 1, array.height - 1)
+    reverse_an_array(array, 0, times_to_be_rotated - 2)
+    reverse_an_array(array, times_to_be_rotated - 1, array.length - 1)
     reverse_an_array(array, 0, array.length - 1)
 
   end
@@ -73,10 +71,10 @@ class ArrayProblemsSolver
   #if you sorted elements m through n, the entire array would be sorted.
   # Minimize n - m (that is, find the smallest such sequence).
 
-  def get_closest_indices_to_sort(array)
+  def self.get_closest_indices_to_sort(array)
 
     start_index = 0
-    end_index = array.height -1
+    end_index = array.length - 1
 
 
     while start_index < array.length && array[start_index]< array[start_index+1]
@@ -91,14 +89,6 @@ class ArrayProblemsSolver
 
   end
 
-  def self.select_ith_order_statistics(array, ith_order)
-    #the 3rd order statistics of array = [8, 3, 2, 5] is 5
-    #  use the idea of quicksort, the pivot gets placed ate the right position
-    #  the solution is linear time :)
-
-
-  end
-
   def self.get_max_element_of_unimodal_array(array)
 
     #  Problem description
@@ -107,26 +97,24 @@ class ArrayProblemsSolver
     #  after which its elements are in decreasing order. Give an algorithm to compute
     #  the maximum element that runs in O(log n) time.
 
-    current_index = (array.height - 1)/2
-    last_left_index = 0
-    last_right_index = array.length - 1
-    slope = 1
-    last_slope = 1
+    current_index = (array.length - 1)/2
+    left_index = 0
+    right_index = array.length - 1
+    slope = get_slope(array, current_index)
 
-    #  if slope is negative, traverse in left direction, else move right
+    #  if slope is negative, traverse in left direction, else traverse in right
     #  in every step remove half of the array
 
     until slope ==0
 
       if (slope > 0)
-        last_left_index = current_index
-        current_index = (current_index + last_right_index)/2
+        left_index = current_index
+        current_index = (current_index + right_index)/2
       else
-        last_right_index = index
-        current_index = (current_index + last_left_index)/2
+        right_index = current_index
+        current_index = (current_index + left_index)/2
       end
 
-      last_slope = slope
       slope = get_slope(array, current_index)
     end
 
@@ -143,11 +131,16 @@ class ArrayProblemsSolver
       return 1
     else
       if (left > mid && mid > right)
-        return 1
+        return -1
       else
         return 0
       end
     end
   end
 
+  def self.select_ith_order_statistics(array, ith_order)
+    #the 3rd order statistics of array = [8, 3, 2, 5] is 5
+    #  use the idea of quicksort, the pivot gets placed ate the right position
+    #  the solution is linear time :)
+  end
 end
