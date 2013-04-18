@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="435c0da1-a8e7-4f2a-bdb3-460b5a249c0b" name="Default" comment="Fixed bugs, added test cases for  dijkstra graph problem">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Katas_in_Java/Katas/src/katas/MarsRover.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/../Katas_in_Java/Katas/test/MinimumSpanningTreesTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Katas_in_Java/Katas/test/LongestIncreasingSubSequenceTest.java" afterPath="$PROJECT_DIR$/../Katas_in_Java/Katas/test/LongestIncreasingSubSequenceTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Katas/array_problems_solver.rb" afterPath="$PROJECT_DIR$/Katas/array_problems_solver.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Katas/heap_problems_solver.rb" afterPath="$PROJECT_DIR$/Katas/heap_problems_solver.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/array_problems_spec.rb" afterPath="$PROJECT_DIR$/spec/array_problems_spec.rb" />
     </list>
     <ignored path="Katas_In_Ruby.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,19 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="array_problems_spec.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="array_problems_spec.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spec/array_problems_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="0" selection-start="0" selection-end="5963" vertical-scroll-proportion="0.0">
+            <state line="102" column="0" selection-start="3770" selection-end="3770" vertical-scroll-proportion="3.5172415">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="array_problems_solver.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="array_problems_solver.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Katas/array_problems_solver.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="0" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.41416892">
+            <state line="39" column="4" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,8 +70,8 @@
         <option value="$PROJECT_DIR$/spec/dijkstra_shortest_path_fnder_spec.rb" />
         <option value="$PROJECT_DIR$/spec/plates_stacking_spec.rb" />
         <option value="$PROJECT_DIR$/Katas/heap_problems_solver.rb" />
-        <option value="$PROJECT_DIR$/Katas/array_problems_solver.rb" />
         <option value="$PROJECT_DIR$/spec/array_problems_spec.rb" />
+        <option value="$PROJECT_DIR$/Katas/array_problems_solver.rb" />
       </list>
     </option>
   </component>
@@ -963,16 +958,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spec/array_problems_spec.rb">
+    <entry file="file://$PROJECT_DIR$/Katas/array_problems_solver.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="0" selection-start="0" selection-end="5963" vertical-scroll-proportion="0.0">
+        <state line="39" column="4" selection-start="1459" selection-end="1459" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Katas/array_problems_solver.rb">
+    <entry file="file://$PROJECT_DIR$/spec/array_problems_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="0" selection-start="1865" selection-end="1865" vertical-scroll-proportion="0.41416892">
+        <state line="102" column="0" selection-start="3770" selection-end="3770" vertical-scroll-proportion="3.5172415">
           <folding />
         </state>
       </provider>

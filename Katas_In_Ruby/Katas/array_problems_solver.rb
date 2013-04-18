@@ -28,6 +28,7 @@ class ArrayProblemsSolver
   def self.two_sum_problem(array, sum, hash = nil)
     is_there_a_solution = false
 
+    #initialize with false => not yet counted
     if (hash.nil?)
       hash = Hash.new
 
@@ -36,20 +37,27 @@ class ArrayProblemsSolver
       end
     end
 
+    is_there_a_solution = are_there_two_numbers_with_correct_sum(array, hash, sum)
+
+    return is_there_a_solution #as a pair will be counted twice
+  end
+
+  def self.are_there_two_numbers_with_correct_sum(array, hash, sum)
     for number in array
       if (number != (sum - number)) && hash.has_key?(sum - number)
         is_there_a_solution = true
       end
     end
-
-    return is_there_a_solution #as a pair will be counted twice
+    is_there_a_solution
   end
 
   def self.rotate_an_array_k_times(array, times_to_be_rotated)
 
-    reverse_an_array(array, 0, times_to_be_rotated - 2)
-    reverse_an_array(array, times_to_be_rotated - 1, array.length - 1)
+    #the trick is to reverse it once, reverse 0 to k and then reverse k to last,
+    # this makes it rotate k times
     reverse_an_array(array, 0, array.length - 1)
+    reverse_an_array(array, 0, times_to_be_rotated - 1)
+    reverse_an_array(array, times_to_be_rotated, array.length - 1)
 
   end
 
