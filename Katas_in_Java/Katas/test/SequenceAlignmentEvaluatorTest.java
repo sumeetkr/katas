@@ -42,5 +42,7 @@ public class SequenceAlignmentEvaluatorTest {
 		
 		assertTrue(this.evaluator.calculatePenaltyBasedOnDiffernceOfAlignment(first, second) == 2);
 	}
+	
+	
 
 }

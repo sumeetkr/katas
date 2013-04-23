@@ -68,7 +68,7 @@ class ArrayProblemsSolver
       #  swap i with , end_index - i
       tmp = array[i]
       array[i] = array[start_index + end_index - i]
-      array[end_index + start_index - i] = tmp
+      array[start_index+end_index - i] = tmp
 
       i += 1
     end
