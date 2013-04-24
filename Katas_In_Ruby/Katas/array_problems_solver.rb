@@ -145,4 +145,26 @@ class ArrayProblemsSolver
     #  use the idea of quicksort, the pivot gets placed ate the right position
     #  the solution is linear time :)
   end
+
+  def self.find_longest_consecutive_sequence(sequence)
+    return 0 if sequence.nil?
+
+    sorted_seq = sequence.sort
+
+    max_seq_length = 0
+    seq_length = 1
+
+    last_number = sequence[0]
+    for number in sorted_seq
+      if (number == last_number + 1)
+        seq_length = seq_length + 1
+      else
+        max_seq_length = seq_length if seq_length > max_seq_length
+        seq_length = 1
+      end
+      last_number = number
+    end
+
+    return max_seq_length
+  end
 end

@@ -174,4 +174,26 @@ describe "Array behaviour" do
     #ith_order_statistics.should == 5
   end
 
+  context "Longest Consecutive Sequence" do
+    #Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
+    #For example,
+    #Given [100, 4, 200, 1, 3, 2],
+    #The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
+    #Your algorithm should run in O(n) complexity.
+
+    it "should find the max cons seq length - case 1" do
+      seq = [100, 4, 200, 1, 3, 2]
+      count = ArrayProblemsSolver.find_longest_consecutive_sequence(seq)
+
+      count.should == 4
+    end
+
+    it "should find the max cons seq length - case 2" do
+      seq = [100, 4, 200, 1, 3, 2, 8, 6, 5]
+      count = ArrayProblemsSolver.find_longest_consecutive_sequence(seq)
+
+      count.should == 6
+    end
+  end
+
 end
