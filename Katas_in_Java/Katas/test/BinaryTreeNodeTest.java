@@ -102,4 +102,9 @@ public class BinaryTreeNodeTest {
 		assertTrue(root.findLowestCommonAncestor(root, 2, 3) == 2);
 		assertTrue(root.findLowestCommonAncestor(root, 2, 7) == 5);
 	}
+	
+	@Test
+	public void testIsTreeSymmetric(){
+		
+	}
 }
