@@ -1,5 +1,7 @@
 package katas;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
 import sun.tools.tree.ThisExpression;
@@ -70,76 +72,115 @@ public class BinaryTreeNode<T extends Integer> {
 		return maxSum.get();
 	}
 
-	public void insert(T value)
-	{
-	        insertHelper(this, value);
+	public void insert(T value) {
+		insertHelper(this, value);
 	}
 
-	public int findLowestCommonAncestor(BinaryTreeNode<T> root, int a, int b){
+	public int findLowestCommonAncestor(BinaryTreeNode<T> root, int a, int b) {
 		AtomicReference<BinaryTreeNode<T>> matched = new AtomicReference<BinaryTreeNode<T>>();
 
-	    traverse(root, a, b, matched);
+		traverse(root, a, b, matched);
 
-	    return matched.get().data;
+		return matched.get().data;
 	}
-	
-	private boolean traverse(BinaryTreeNode<T> node, int a, int b, AtomicReference<BinaryTreeNode<T>> matched){
 
-	    boolean found = false;
+	public void convertBinaryTreeInToSumBinaryTree(BinaryTreeNode root) {
 
-	    if(node == null || matched.get() != null) {
-	        return false;
-	    }
-
-	    if(node.data == a || node.data == b){
-	        found = true;
-	    }
-
-	    boolean foundOnLeft = traverse(node.left, a, b, matched);
-	    boolean foundOnRight = traverse(node.right, a, b, matched);
-
-	    if( (foundOnLeft && foundOnRight) || (foundOnLeft && found) || (foundOnRight && found)){
-	       matched.set(node);
-	     }
-
-	    return found;
 	}
-	
-	private void insertHelper(BinaryTreeNode<T> node, T value)
-	{
-	    if (value< node.data)
-	    {
-	        if (node.left == null)
-	            node.left = new BinaryTreeNode<T>(value);
-	        else
-	            insertHelper(node.left, value);
-	    }
-	    else
-	    {
-	        if (node.right == null)
-	            node.right = new BinaryTreeNode<T>(value);
-	        else
-	            insertHelper(node.right, value);
-	    }
+
+	public boolean isTreeSymmetric() {
+		// do breadth first search
+		List<BinaryTreeNode<Integer>> root = new ArrayList<BinaryTreeNode<Integer>>();
+		root.add((BinaryTreeNode<Integer>) this);
+		
+		return verifyChildNodesForSymmetry(root);
 	}
-	
+
+	private boolean verifyChildNodesForSymmetry(List<BinaryTreeNode<Integer>> nodes) {
+		boolean isSymmetric = true;
+
+		//verify symmetry
+		for (int index = 0; index < nodes.size()/2; index++) {
+			if(nodes.get(index).data != nodes.get(nodes.size() - index -1).data){
+				return false;
+			}
+		}
+		
+		List<BinaryTreeNode<Integer>> childNodes = new ArrayList<BinaryTreeNode<Integer>>();
+		for (BinaryTreeNode<Integer> binaryTreeNode : nodes) {
+			if(binaryTreeNode.left != null){
+				childNodes.add(binaryTreeNode.left);	
+			}
+			if(binaryTreeNode.right != null){
+				childNodes.add(binaryTreeNode.right);	
+			}
+		}
+		
+		if(childNodes.size()>0){
+			return verifyChildNodesForSymmetry(childNodes);
+		}
+		else {
+			return isSymmetric;
+		}
+		
+	}
+
+	private boolean traverse(BinaryTreeNode<T> node, int a, int b,
+			AtomicReference<BinaryTreeNode<T>> matched) {
+
+		boolean found = false;
+
+		if (node == null || matched.get() != null) {
+			return false;
+		}
+
+		if (node.data == a || node.data == b) {
+			found = true;
+		}
+
+		boolean foundOnLeft = traverse(node.left, a, b, matched);
+		boolean foundOnRight = traverse(node.right, a, b, matched);
+
+		if ((foundOnLeft && foundOnRight) || (foundOnLeft && found)
+				|| (foundOnRight && found)) {
+			matched.set(node);
+		}
+
+		return found;
+	}
+
+	private void insertHelper(BinaryTreeNode<T> node, T value) {
+		if (value < node.data) {
+			if (node.left == null)
+				node.left = new BinaryTreeNode<T>(value);
+			else
+				insertHelper(node.left, value);
+		} else {
+			if (node.right == null)
+				node.right = new BinaryTreeNode<T>(value);
+			else
+				insertHelper(node.right, value);
+		}
+	}
+
 	private Integer sumInAPath(AtomicReference<T> sum, AtomicReference<T> maxSum) {
 
-		Integer leftSum = (this.left != null ? this.left.sumInAPath(sum, maxSum)
-				: 0) + (Integer) this.data;
-		Integer rightSum = (this.right != null ? this.right.sumInAPath(sum, maxSum)
-				: 0) + (Integer) this.data;
-		Integer totalSum = (this.left != null ? this.left.sumInAPath(sum, maxSum)
-				: 0)
+		Integer leftSum = (this.left != null ? this.left
+				.sumInAPath(sum, maxSum) : 0) + (Integer) this.data;
+		Integer rightSum = (this.right != null ? this.right.sumInAPath(sum,
+				maxSum) : 0) + (Integer) this.data;
+		Integer totalSum = (this.left != null ? this.left.sumInAPath(sum,
+				maxSum) : 0)
 				+ (this.right != null ? this.right.sumInAPath(sum, maxSum) : 0)
 				+ (Integer) this.data;
 
-		Integer localMax =  Math.max(Math.max(leftSum, rightSum),totalSum);
-		
-		if(localMax > (Integer)maxSum.get()){
-			maxSum.set((T)(Object)Math.max(Math.max(leftSum, rightSum),totalSum));	
+		Integer localMax = Math.max(Math.max(leftSum, rightSum), totalSum);
+
+		if (localMax > (Integer) maxSum.get()) {
+			maxSum.set((T) (Object) Math.max(Math.max(leftSum, rightSum),
+					totalSum));
 		}
-		
+
 		return Math.max(leftSum, rightSum);
 	}
 

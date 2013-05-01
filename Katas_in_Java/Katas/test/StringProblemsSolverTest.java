@@ -36,4 +36,20 @@ public class StringProblemsSolverTest {
 		String longestSubSeq = StringProblemsSolver.findLongestSubSequenceWithUniqueChars(input);
 		assertEquals("asdfgqwert", longestSubSeq);
 	}
+	
+	@Test
+	public void testFindLongestSubStringWithUniqueChars_case1(){
+		String input = "asdfgasdfgqwert";
+		
+		String longestSubSeq = StringProblemsSolver.findLongestSubStringWithUniqueChars(input);
+		assertEquals("asdfgqwert", longestSubSeq);
+	}
+	
+	@Test
+	public void testFindLongestSubStringWithUniqueChars_case2(){
+		String input = "asdfgqwert";
+		
+		String longestSubSeq = StringProblemsSolver.findLongestSubStringWithUniqueChars(input);
+		assertEquals("asdfgqwert", longestSubSeq);
+	}
 }

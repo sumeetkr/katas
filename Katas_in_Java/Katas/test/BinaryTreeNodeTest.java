@@ -104,7 +104,32 @@ public class BinaryTreeNodeTest {
 	}
 	
 	@Test
-	public void testIsTreeSymmetric(){
+	public void testIsTreeSymmetric_case1(){
+		root = new BinaryTreeNode<Integer>(5);
+		root.setLeft(new BinaryTreeNode<Integer>(4));
+		root.setRight(new BinaryTreeNode<Integer>(4));
+		
+		root.getLeft().setLeft(new BinaryTreeNode<Integer>(5));
+		root.getRight().setRight(new BinaryTreeNode<Integer>(5));
+	
+		assertTrue(root.isTreeSymmetric());
+	}
+	
+	@Test
+	public void testIsTreeSymmetric_case2(){
+		root = new BinaryTreeNode<Integer>(5);
+		root.setLeft(new BinaryTreeNode<Integer>(4));
+		root.setRight(new BinaryTreeNode<Integer>(4));
+		
+		root.getLeft().setLeft(new BinaryTreeNode<Integer>(5));
+		root.getRight().setRight(new BinaryTreeNode<Integer>(6));
+	
+		assertFalse(root.isTreeSymmetric());
+	}
+	
+	
+	@Test
+	public void testConvertBinaryTreeInToSumBinaryTree(){
 		
 	}
 }
