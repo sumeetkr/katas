@@ -7,7 +7,8 @@ import org.junit.runners.Suite.SuiteClasses;
 
 
 @RunWith(Suite.class)
-@SuiteClasses({BinaryTreeNodeTest.class, SlidingWindowMaximumFinderTest.class,LongestIncreasingSubSequenceTest.class, PalindromePartitioningTest.class })
+@SuiteClasses({BinaryTreeNodeTest.class, SlidingWindowMaximumFinderTest.class,LongestIncreasingSubSequenceTest.class, 
+	PalindromePartitioningTest.class, StringProblemsSolverTest.class })
 public class AllTests {
 
 }

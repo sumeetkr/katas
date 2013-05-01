@@ -177,7 +177,7 @@ class Heap
       if second_child_index > last_index
         #  compare parent and first child only
         if compare(@array_of_nodes[first_child_index], @array_of_nodes[parent_index])
-          swap_paent_with_child(first_child_index, parent_index)
+          swap_parent_with_child(first_child_index, parent_index)
         end
 
         parent_index = first_child_index
@@ -189,7 +189,7 @@ class Heap
         #if min child is more than parent, then swap
         if compare(@array_of_nodes[min_child_index], @array_of_nodes[parent_index])
           #  swap parent and child nodes
-          swap_paent_with_child(min_child_index, parent_index)
+          swap_parent_with_child(min_child_index, parent_index)
         end
 
         parent_index = min_child_index
@@ -203,7 +203,7 @@ class Heap
 
   end
 
-  def swap_paent_with_child(child_index, parent_index)
+  def swap_parent_with_child(child_index, parent_index)
     temp = @array_of_nodes[child_index]
     @array_of_nodes[child_index] = @array_of_nodes[parent_index]
     @array_of_nodes[parent_index] = temp

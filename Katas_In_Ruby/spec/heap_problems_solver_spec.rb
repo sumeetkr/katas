@@ -220,7 +220,7 @@ describe "Heap problems behaviour" do
     #In the box below you should type the sum of these 10000 medians, modulo 10000 (i.e., only the last 4 digits).
     #That is, you should compute (m1+m2+m3+⋯+m10000)mod10000.
 
-    it "should return (k+1)/2 smallest number for sequence of k (odd) number" do
+    it "should return (k+1)/2 smallest number for sequence of k (k is odd) number" do
       median_solver = FindMedianSolver.new
       median = 0
 
@@ -231,7 +231,7 @@ describe "Heap problems behaviour" do
       median.key.should == 6
     end
 
-    it "should return (k)/2 smallest number for sequence of k (even) number" do
+    it "should return (k)/2 smallest number for sequence of k (k is even) number" do
       median_solver = FindMedianSolver.new
       median = 0
 

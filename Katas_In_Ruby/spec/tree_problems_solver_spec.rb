@@ -24,7 +24,7 @@ describe "binary tree problems behaviour" do
     it "should return the nodes in order" do
       insert_more_nodes()
       keys = BinaryTree.get_keys_in_order_traversal(@tree.root)
-      keys.should =~ [1,2,3,4,5,6,7,8,9,10]
+      keys.should match_array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])
     end
 
     it "should find if tree is symmetrical" do
@@ -44,4 +44,10 @@ describe "binary tree problems behaviour" do
     #TreeProblemsSolver.find_lowest_common_ancestor()
 
   end
+
+  attr_accessor a
+  it "bad try" do
+    a.inspect
+  end
+
 end
