@@ -127,6 +127,26 @@ public class BinaryTreeNodeTest {
 		assertFalse(root.isTreeSymmetric());
 	}
 	
+	@Test
+	public void testFindKthClosetNode(){
+	//Find the 3rd closest element in a bst.You will be given a pointer to root and a value 
+	//within the tree against which the closest has to be figured out. (closeness is in terms 
+	//of value, not by distance ) and then follow up qn: for finding the kth closest in a bst.
+		
+		
+	}
+	
+	@Test
+	public void testTraverseTreeWithoutRecousion(){
+		root = new BinaryTreeNode<Integer>(5);
+		root.setLeft(new BinaryTreeNode<Integer>(4));
+		root.setRight(new BinaryTreeNode<Integer>(4));
+		
+		root.getLeft().setLeft(new BinaryTreeNode<Integer>(5));
+		root.getRight().setRight(new BinaryTreeNode<Integer>(6));
+		
+		
+	}
 	
 	@Test
 	public void testConvertBinaryTreeInToSumBinaryTree(){

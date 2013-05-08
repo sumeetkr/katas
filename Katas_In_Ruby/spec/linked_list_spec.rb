@@ -41,4 +41,20 @@ describe "should have no duplicates" do
 
   end
 
+  context "reverse a list" do
+    it"should print list in reverse order" do
+      head = Node.new(1, Node.new(2, Node.new(3, Node.new(4, Node.new(5, Node.new(6, nil))))))
+
+      list = LinkedList.print_reverse(head)
+      list.should =~ [6,5,4,3,2,1]
+    end
+
+    it"should print list in reverse order - recursive " do
+      head = Node.new(1, Node.new(2, Node.new(3, Node.new(4, Node.new(5, Node.new(6, nil))))))
+      list = []
+      LinkedList.print_reverse_recursive(head, list)
+      list.should =~ [6,5,4,3,2,1]
+    end
+  end
+
 end

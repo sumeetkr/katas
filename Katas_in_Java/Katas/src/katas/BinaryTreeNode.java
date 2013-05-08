@@ -95,6 +95,17 @@ public class BinaryTreeNode<T extends Integer> {
 		
 		return verifyChildNodesForSymmetry(root);
 	}
+	
+	public BinaryTreeNode<Integer> findKthClosetNode(BinaryTreeNode<Integer> node){
+		//Find the 3rd closest element in a bst.You will be given a pointer to root and a value 
+		//within the tree against which the closest has to be figured out. (closeness is in terms 
+		//of value, not by distance ) and then follow up qn: for finding the kth closest in a bst.
+		BinaryTreeNode<Integer> nearestNode = new BinaryTreeNode<Integer>(0);
+		
+		
+		return nearestNode;
+			
+	}
 
 	private boolean verifyChildNodesForSymmetry(List<BinaryTreeNode<Integer>> nodes) {
 		boolean isSymmetric = true;

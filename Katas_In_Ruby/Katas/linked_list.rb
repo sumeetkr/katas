@@ -55,6 +55,30 @@ class LinkedList
     return head
 
   end
+
+  def self.print_reverse(head)
+    stack = []
+
+    current_node = head
+    while !current_node.nil?
+      stack.push(current_node.get_value)
+      current_node = current_node.next
+    end
+
+    list = []
+    while !stack.empty?
+      list << stack.pop()
+    end
+
+    return list
+  end
+
+  def self.print_reverse_recursive(head, list)
+    return if head.nil?
+
+    print_reverse_recursive(head.next, list)
+    list << head.get_value
+  end
 end
 
 class Node
@@ -77,4 +101,5 @@ class Node
   def get_value
     return @value
   end
+#
 end
