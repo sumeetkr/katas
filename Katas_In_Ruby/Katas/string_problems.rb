@@ -56,4 +56,62 @@ class StringProblems
 
     return array_of_string.join
   end
+
+  def self.is_match_contained_in_string(input_string, match)
+
+    window = input_string.sub(match.length)
+
+
+    input_string.split('').while do |char|
+
+    end
+
+  end
+
+  def self.find_palindromes(input_string)
+
+    longest_palindrome_length = 0
+    current_palindrome_length = 0
+
+    # check odd palindromes
+    for index in 0..(input_string.length - 1)
+      current_palindrome_length = self.is_odd_palindrome(input_string, index )
+      longest_palindrome_length =   current_palindrome_length if current_palindrome_length>longest_palindrome_length
+    end
+
+    return longest_palindrome_length
+  end
+
+  def self.is_odd_palindrome(input_string, index)
+    palindrome_length = 0
+
+    distance = 0
+    while index + distance < input_string.length && index - distance > -1
+      if (input_string[index + distance] != input_string[index - distance])
+        break
+      end
+      distance += 1
+    end
+
+    return distance* 2 - 1
+  end
+
+  def self.get_permutations(input_string)
+    permutations = []
+    permutations << input_string
+
+    for index in 0..(input_string.length - 1)
+       self.swap_with_other_chars(input_string, index, permutations)
+    end
+
+    return permutations
+  end
+
+  def self.swap_with_other_chars(input_string, location, permutations)
+
+    for index in location..(input_string.length -1)
+      new_string = input_string.copy
+      permutations << new_string
+    end
+  end
 end
