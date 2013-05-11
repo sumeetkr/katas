@@ -152,4 +152,20 @@ public class BinaryTreeNodeTest {
 	public void testConvertBinaryTreeInToSumBinaryTree(){
 		
 	}
+	
+	@Test
+	public void testFindPredecessor(){
+//		if you have left subtree, that it is the max of left subtree
+// else follow parent pointer till the pointer key is less than the node key 
+	}
+	
+	@Test
+	public void testDeleteNodeFromSearchTree(){
+		
+	}
+	
+	@Test
+	public void testIthOrderStatistics(){
+		
+	}
 }
