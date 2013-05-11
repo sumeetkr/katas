@@ -5,6 +5,8 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import com.sun.corba.se.impl.orbutil.graph.Node;
+
 public class BinaryTreeNodeTest {
 
 	private BinaryTreeNode<Integer> root;
@@ -128,15 +130,6 @@ public class BinaryTreeNodeTest {
 	}
 	
 	@Test
-	public void testFindKthClosetNode(){
-	//Find the 3rd closest element in a bst.You will be given a pointer to root and a value 
-	//within the tree against which the closest has to be figured out. (closeness is in terms 
-	//of value, not by distance ) and then follow up qn: for finding the kth closest in a bst.
-		
-		
-	}
-	
-	@Test
 	public void testTraverseTreeWithoutRecousion(){
 		root = new BinaryTreeNode<Integer>(5);
 		root.setLeft(new BinaryTreeNode<Integer>(4));
@@ -150,13 +143,37 @@ public class BinaryTreeNodeTest {
 	
 	@Test
 	public void testConvertBinaryTreeInToSumBinaryTree(){
+	
+		root = new BinaryTreeNode<Integer>(5);
+		int[] datas = new int[] { 2, 3, 7 };
+		insertData(datas);
 		
+		root.sum(this.root);
+		
+		assertTrue(17 == this.root.getData());
 	}
 	
 	@Test
 	public void testFindPredecessor(){
-//		if you have left subtree, that it is the max of left subtree
-// else follow parent pointer till the pointer key is less than the node key 
+	// if you have left subtree, that it is the max of left subtree
+	// else follow parent pointer till the pointer key is less than the node key 
+		
+		root = new BinaryTreeNode<Integer>(5);
+		int[] datas = new int[] { 2, 3, 7 ,6};
+		insertData(datas);
+		
+		BinaryTreeNode<Integer> predecessor = BinaryTreeNode.getPredecessor(root);
+		assertTrue(3 == predecessor.getData());
+	}
+
+	
+	@Test
+	public void testFindKthClosetNode(){
+	//Find the 3rd closest element in a bst.You will be given a pointer to root and a value 
+	//within the tree against which the closest has to be figured out. (closeness is in terms 
+	//of value, not by distance ) and then follow up qn: for finding the kth closest in a bst.
+		
+		
 	}
 	
 	@Test
@@ -167,5 +184,10 @@ public class BinaryTreeNodeTest {
 	@Test
 	public void testIthOrderStatistics(){
 		
+	}
+	
+	@Test
+	public void testMaxDistanceBetweenTwoNodes(){
+	//Max distance between two nodes of binary tree. Distance is # of branches.
 	}
 }

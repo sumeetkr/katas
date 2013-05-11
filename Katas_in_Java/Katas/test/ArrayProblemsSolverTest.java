@@ -97,6 +97,4 @@ public class ArrayProblemsSolverTest {
 		assertEquals(5, ans);
 	}
 
-
-
 }

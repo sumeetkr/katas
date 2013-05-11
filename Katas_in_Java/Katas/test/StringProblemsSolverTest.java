@@ -86,33 +86,10 @@ public class StringProblemsSolverTest {
 
 		int rowCount = 3;
 		char[] inputChars = input.toCharArray();
-		char[][] matrix = new char[inputChars.length][rowCount];
-
-		boolean isGoingDown = true;
-		boolean isGoingSlant = false;
-
-		int currentCol = 0;
-		int i = 0;
-		while (i < inputChars.length) {
-			if (isGoingDown) {
-				for (int downIndex = 0; (downIndex < rowCount) && (i < inputChars.length); downIndex++) {
-					matrix[currentCol][downIndex]= inputChars[i];
-					i++;
-				}
-				currentCol++;
-			}
-
-			if (isGoingSlant) {
-				for (int upIndex = rowCount -2; (upIndex > 0) && (i < inputChars.length); upIndex--) {
-					matrix[currentCol][upIndex]= inputChars[i];
-					i++;
-					currentCol++;
-				}
-			}
-
-			isGoingDown = !isGoingDown;
-			isGoingSlant = !isGoingSlant;
-		}
+		
+		char[][] = StringProblemsSolver.getInZigZagFormat(rowCount, inputChars);
 
 	}
+
+
 }

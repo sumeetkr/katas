@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicReference;
 
+import com.sun.corba.se.impl.orbutil.graph.Node;
+
 import sun.tools.tree.ThisExpression;
 
 public class BinaryTreeNode<T extends Integer> {
@@ -73,7 +75,8 @@ public class BinaryTreeNode<T extends Integer> {
 	}
 
 	public void insert(T value) {
-		insertHelper(this, value);
+		BinaryTreeNode<T> newNode = new BinaryTreeNode<T>(value);
+		insertHelper(this, newNode);
 	}
 
 	public int findLowestCommonAncestor(BinaryTreeNode<T> root, int a, int b) {
@@ -107,6 +110,46 @@ public class BinaryTreeNode<T extends Integer> {
 			
 	}
 
+	public int sum(BinaryTreeNode<Integer> node){
+		if(node == null) return 0;
+		int left = sum(node.getLeft());
+		int right = sum(node.getRight());
+		
+		node.setData(left+ right + node.getData());
+		return node.getData();
+	}
+	
+	public static BinaryTreeNode<Integer> getPredecessor(BinaryTreeNode<Integer> node){
+		if(node.getLeft() != null){
+			return getMaxOfLeftSubTree(node);
+		}
+		else
+		{
+			return getParentNodeWithLesserValue(node);
+		}
+	}
+	
+	private static BinaryTreeNode<Integer> getMaxOfLeftSubTree(BinaryTreeNode<Integer> node) {
+		if(node.getLeft() == null) return null;
+		
+		BinaryTreeNode<Integer> currentNode = node.getLeft();
+		while(currentNode.getRight() != null){
+			currentNode = currentNode.getRight();
+		}
+		return currentNode;
+	}
+	
+	private static BinaryTreeNode<Integer> getParentNodeWithLesserValue(BinaryTreeNode<Integer> node) {
+		if(node == null) return null;
+		
+		BinaryTreeNode<Integer> parent = node.getParent();
+		while(parent != null && parent.getData() > node.getData()){
+			parent = node.getParent();
+		}
+		
+		return parent;
+	}
+	
 	private boolean verifyChildNodesForSymmetry(List<BinaryTreeNode<Integer>> nodes) {
 		boolean isSymmetric = true;
 
@@ -160,17 +203,22 @@ public class BinaryTreeNode<T extends Integer> {
 		return found;
 	}
 
-	private void insertHelper(BinaryTreeNode<T> node, T value) {
-		if (value < node.data) {
-			if (node.left == null)
-				node.left = new BinaryTreeNode<T>(value);
+	private void insertHelper(BinaryTreeNode<T> node,BinaryTreeNode<T> newNode) {
+		
+		if (newNode.getData() < node.data) {
+			if (node.left == null){
+				node.left = newNode;
+				newNode.parent = node.left;
+			}
 			else
-				insertHelper(node.left, value);
+				insertHelper(node.left, newNode);
 		} else {
-			if (node.right == null)
-				node.right = new BinaryTreeNode<T>(value);
+			if (node.right == null){
+				node.right = newNode;
+				newNode.parent = node.right;
+			}
 			else
-				insertHelper(node.right, value);
+				insertHelper(node.right, newNode);
 		}
 	}
 
