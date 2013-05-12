@@ -129,6 +129,22 @@ public class BinaryTreeNode<T extends Integer> {
 		}
 	}
 	
+	public static void copyByTraversingInOrder(BinaryTreeNode<Integer> node, BinaryTreeNode<Integer> clonedNode){
+		if(node == null) return;
+		if(node.getLeft() != null){
+			BinaryTreeNode<Integer> leftCopy = new BinaryTreeNode<Integer>(node.getLeft().getData());	
+			clonedNode.setLeft(leftCopy);
+			copyByTraversingInOrder(node.getLeft(), leftCopy);
+		}
+		
+		if(node.getRight() != null){
+			BinaryTreeNode<Integer> rightCopy = new BinaryTreeNode<Integer>(node.getRight().getData());
+			clonedNode.setRight(rightCopy);
+			copyByTraversingInOrder(node.getRight(), rightCopy);
+		}
+		
+	}
+	
 	private static BinaryTreeNode<Integer> getMaxOfLeftSubTree(BinaryTreeNode<Integer> node) {
 		if(node.getLeft() == null) return null;
 		

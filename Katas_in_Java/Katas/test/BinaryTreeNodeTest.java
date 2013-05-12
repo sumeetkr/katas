@@ -1,4 +1,7 @@
 import static org.junit.Assert.*;
+
+import java.util.Queue;
+
 import katas.BinaryTreeNode;
 
 import org.junit.Before;
@@ -189,5 +192,17 @@ public class BinaryTreeNodeTest {
 	@Test
 	public void testMaxDistanceBetweenTwoNodes(){
 	//Max distance between two nodes of binary tree. Distance is # of branches.
+	}
+	
+	@Test
+	public void testDeepCopy(){
+		root = new BinaryTreeNode<Integer>(5);
+		int[] datas = new int[] { 2, 3, 7 ,6};
+		insertData(datas);
+		
+		BinaryTreeNode<Integer> rootCopy = new BinaryTreeNode<Integer>(5);
+		BinaryTreeNode.copyByTraversingInOrder(root, rootCopy);
+		
+		assertEquals(rootCopy.size(), 5);
 	}
 }
