@@ -195,6 +195,18 @@ public class BinaryTreeNodeTest {
 	}
 	
 	@Test
+	public void testFindMaxDepth(){
+	
+		//Given a binary tree, find its maximum height.
+		root = new BinaryTreeNode<Integer>(5);
+		int[] datas = new int[] { 2, 3, 7 ,6};
+		insertData(datas);
+		int depth = BinaryTreeNode.getDepth(root);
+		
+		assertEquals(3, depth);
+	}
+	
+	@Test
 	public void testDeepCopy(){
 		root = new BinaryTreeNode<Integer>(5);
 		int[] datas = new int[] { 2, 3, 7 ,6};

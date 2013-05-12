@@ -129,6 +129,16 @@ public class BinaryTreeNode<T extends Integer> {
 		}
 	}
 	
+	public static int getDepth(BinaryTreeNode<Integer> node){
+		if(node == null) return 0;
+		
+		int leftDepth = getDepth(node.getLeft());
+		int rightDepth = getDepth(node.getRight());
+		
+		return leftDepth>rightDepth ? leftDepth + 1: rightDepth + 1;
+		
+	}
+	
 	public static void copyByTraversingInOrder(BinaryTreeNode<Integer> node, BinaryTreeNode<Integer> clonedNode){
 		if(node == null) return;
 		if(node.getLeft() != null){
