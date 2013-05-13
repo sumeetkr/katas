@@ -1,6 +1,10 @@
 import static org.junit.Assert.*;
 
+import java.util.List;
+import java.util.PriorityQueue;
 import java.util.Queue;
+import java.util.Stack;
+import java.util.Vector;
 
 import katas.BinaryTreeNode;
 
@@ -171,7 +175,7 @@ public class BinaryTreeNodeTest {
 
 	
 	@Test
-	public void testFindKthClosetNode(){
+	public void testFindKthClosestNode(){
 	//Find the 3rd closest element in a bst.You will be given a pointer to root and a value 
 	//within the tree against which the closest has to be figured out. (closeness is in terms 
 	//of value, not by distance ) and then follow up qn: for finding the kth closest in a bst.
@@ -216,5 +220,80 @@ public class BinaryTreeNodeTest {
 		BinaryTreeNode.copyByTraversingInOrder(root, rootCopy);
 		
 		assertEquals(rootCopy.size(), 5);
+	}
+	
+	@Test
+	public void testZigZagTraversal(){
+		root = new BinaryTreeNode<Integer>(5);
+		int[] datas = new int[] { 2, 3, 7 ,6};
+		insertData(datas);
+		
+		List<Integer> zigZagPath =  zigZagTraversal(root);
+		assertTrue(zigZagPath.size() == 5);
+	}
+	
+	@Test
+	public void ConvertToLinkedLIst(){
+		//Convert a BST to a sorted circular doubly-linked list in-place. 
+		//Think of the left and right pointers as synonymous to the previous
+		//and next pointers in a doubly-linked list.
+		
+		root = new BinaryTreeNode<Integer>(5);
+		int[] datas = new int[] { 2, 3,1, 7 ,6, 8};
+		insertData(datas);
+		
+	
+		BinaryTreeNode<Integer> head = traverse(root, null);
+		assertEquals(1, (int)head.getData());
+		
+	}
+	
+	private BinaryTreeNode<Integer> traverse(BinaryTreeNode<Integer> node, BinaryTreeNode<Integer> head ){
+		if(node == null) return null;
+	
+		head = traverse(node.getLeft(), head);
+		if(head ==null){head = node;}
+		traverse(node.getRight(), head);
+		
+		if(node.getLeft()!= null){
+			node.getLeft().setRight(node);
+			node.setLeft(node.getLeft().getRight());
+			node.getLeft().getRight().setRight(node);
+		}
+		
+		if(node.getRight()!= null){
+			node.getRight().setLeft(node);
+			
+		}
+		
+		head.setLeft(node);
+		node.setRight(head);
+		
+		return head;
+	}
+	
+	private List<Integer> zigZagTraversal(BinaryTreeNode<Integer> node){
+		if(node == null) return null;
+		
+		Vector<Integer> integers = new Vector<Integer>();
+		
+		Queue<BinaryTreeNode<Integer>> path = new PriorityQueue<BinaryTreeNode<Integer>>();
+		path.add(node);
+		
+		while(path.size() != 0){
+			BinaryTreeNode<Integer> currentNode = path.poll();
+			integers.add(currentNode.getData());
+			
+			if(currentNode.getRight() != null){
+				path.add(currentNode.getRight());	
+			}
+			
+			if(currentNode.getLeft() != null){
+				path.add(currentNode.getLeft());	
+			}
+			
+		}
+		
+		return integers;
 	}
 }

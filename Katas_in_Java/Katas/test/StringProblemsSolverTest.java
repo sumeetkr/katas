@@ -87,7 +87,7 @@ public class StringProblemsSolverTest {
 		int rowCount = 3;
 		char[] inputChars = input.toCharArray();
 		
-		char[][] = StringProblemsSolver.getInZigZagFormat(rowCount, inputChars);
+		//char[][] = StringProblemsSolver.getInZigZagFormat(rowCount, inputChars);
 
 	}
 
