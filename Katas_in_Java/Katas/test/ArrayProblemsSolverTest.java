@@ -96,5 +96,20 @@ public class ArrayProblemsSolverTest {
 		int ans = ArrayProblemsSolver.findKthElementInUnionOfTwoSortedArrays(first, second, k);
 		assertEquals(5, ans);
 	}
+	
+	@Test
+	public void testMaximizeDistance() {
+	//Given an array A of integers, find the maximum of j-i subjected to the constraint of A[i] < A[j].
+		int [] input = {4, 2, 5, 2, 1, 3, 2, 3};
+		
+	}
+	
+	public int MaximizeDistanceBruteForce(int [] input) {
+		int maxDistance = 0;
+		
+		
+		
+		return maxDistance;
+	}
 
 }

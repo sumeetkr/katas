@@ -1,4 +1,7 @@
 import static org.junit.Assert.*;
+
+import java.util.Iterator;
+
 import katas.DynamicProgramming;
 
 import org.junit.Before;
@@ -85,25 +88,67 @@ public class DynamicProgrammingTest {
 				new DynamicProgramming.Box(2, 5, 7)};
 		
 		
-		int [] boxesStackedForSubProblems = new int [boxes.length];
-		boxesStackedForSubProblems[0] = 1;
-		
-		for (int i = 1; i < boxes.length; i++) {
-			
-			int max =1;
-			for (int j = 0; j < i; j++) {
-				if(DynamicProgramming.Box.isSecondSmaller(boxes[j],boxes[i]) && max < boxesStackedForSubProblems[j] +1){
-					max = boxesStackedForSubProblems[j] +1;
-				}
-			}
-			boxesStackedForSubProblems[i] = max;
-		}
+		int[] boxesStackedForSubProblems = DynamicProgramming.findTallestStack(boxes);
 	
 		assertEquals(4, boxesStackedForSubProblems[4]);
 		
 		
 	}
+
+	@Test
+	public void testBuildBridges(){
+		//Building Bridges. Consider a 2-D map with a horizontal river passing through its center. 
+		//There are n cities on the southern bank with x-coordinates a(1) ... a(n) and n cities on 
+		//the northern bank with x-coordinates b(1) ... b(n). You want to connect as many north-south 
+		//pairs of cities as possible with bridges such that no two bridges cross. When connecting cities, 
+		//you can only connect city i on the northern bank to city i on the southern bank.
+		
+		int [] citiAXCoords = {5,2,3,1,4};
+		int [] citiBXCoords = {1,2,3,4,5};
+		String cities = DynamicProgramming.buildBridgesAcrossCities(citiAXCoords);
+		
+		assertEquals("234", cities);
+	}
+
+	@Test
+	public void testFillknapSack() {
+		int [] values = {1,3,6,3,1,8,5};
+		int [] weights = {3,1,6,4,7,5,8};
+		int sackCapacity = 15;
+		
+		fillKnapSackWithMaximumValue(values, weights, sackCapacity);
+		
+		
+	}
 	
+	private  boolean [] fillKnapSackWithMaximumValue(int [] values, int [] weights, int sackCapacity ){
+		boolean [] presentValues = new boolean[values.length];
+		
+		//
+		int value = getSackValue(sackCapacity, values.length -1, weights, values);
+		
+		return presentValues;
+	}
+	
+	private int getSackValue(int capacity, int index, int [] weights, int [] values) {
+		if(capacity == 0) return 0;
+		if(capacity < 0) return -100;
+		if(index <0) return -100;
+		
+		int value = Math.max(values[index] + getSackValue(capacity - weights[index], index -1, weights, values),
+				getSackValue(capacity, index -1, weights, values) );
+		
+		return value;
+	}
+	
+	@Test
+	public void findBalancedPartition(){
+		//You have a set of n integers each in the range 0 ... K. Partition these integers 
+		//into two subsets such that you minimize |S1 - S2|, where S1 and S2 denote the sums of the
+		//elements in each of the two subsets.
+		
+		
+	}
 	
 	@Test
 	public void findMaxPairsOfZeroAndOne(){

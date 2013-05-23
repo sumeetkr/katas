@@ -1,5 +1,7 @@
 package katas;
 
+import static org.junit.Assert.assertEquals;
+
 import java.util.PriorityQueue;
 
 public class DynamicProgramming {
@@ -51,6 +53,23 @@ public class DynamicProgramming {
 
 	}
 	
+	public static int[] findTallestStack(DynamicProgramming.Box[] boxes) {
+		int [] boxesStackedForSubProblems = new int [boxes.length];
+		boxesStackedForSubProblems[0] = 1;
+		
+		for (int i = 1; i < boxes.length; i++) {
+			
+			int max =1;
+			for (int j = 0; j < i; j++) {
+				if(DynamicProgramming.Box.isSecondSmaller(boxes[j],boxes[i]) && max < boxesStackedForSubProblems[j] +1){
+					max = boxesStackedForSubProblems[j] +1;
+				}
+			}
+			boxesStackedForSubProblems[i] = max;
+		}
+		return boxesStackedForSubProblems;
+	}
+	
 	public static int[] findMaxValueContigousSum(int[] sequence) {
 		int [] maxValues = new int[sequence.length];
 		maxValues[0] = sequence[0];
@@ -61,6 +80,40 @@ public class DynamicProgramming {
 		return maxValues;
 	}
 
+	public static String buildBridgesAcrossCities(int[] citiAXCoords) {
+		String [] cities = new String[citiAXCoords.length];
+		
+		// need to find the longest increasing subsequence of A
+		int [] subProblemsSolution = new int[5];
+		subProblemsSolution[0] = 1;
+		cities[0] = Integer.toString(citiAXCoords[0]);
+		
+		for (int i = 1; i < citiAXCoords.length; i++) {
+			int maxCount = 1;
+			String city ="";
+			for (int j = 0; j < i; j++) {
+				if(citiAXCoords[j] < citiAXCoords[i] && maxCount< subProblemsSolution[j] + 1) {
+					maxCount = subProblemsSolution[j] + 1;
+					city = cities[j];
+				}
+			}
+			subProblemsSolution[i] = maxCount;
+			cities[i] = city + citiAXCoords[i];
+		}
+		
+		
+		int maxLength = 0;
+		String citiesForBridges = "";
+		for (String s : cities) {
+			if(s.length() > maxLength) {
+				maxLength = s.length();
+				citiesForBridges = s;
+			}
+		}
+		
+		return citiesForBridges;
+	}
+	
 	public static class Box{
 		private int length = 0;
 		private int width = 0;

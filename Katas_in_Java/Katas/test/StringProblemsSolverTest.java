@@ -91,5 +91,12 @@ public class StringProblemsSolverTest {
 
 	}
 
+	@Test
+	public void testFindSubstring() {
+		String subString = "bat";
+		String mainString = "aaaabat";
+		
+		assertTrue(StringProblemsSolver.hasSubString(mainString, subString));
+	}
 
 }

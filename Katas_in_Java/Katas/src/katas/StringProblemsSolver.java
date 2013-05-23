@@ -98,4 +98,26 @@ public class StringProblemsSolver {
 		
 		return matrix;
 	}
+	
+	public static boolean hasSubString(String mainString, String subString) {
+		boolean isThere = false;
+		
+		char [] chars = mainString.toCharArray();
+		char [] subStringChars = subString.toCharArray();
+		
+		for (int i = 0; i < chars.length; i++) {
+			
+			isThere = true;
+			for (int j = 0; j < subStringChars.length; j++) {
+				if(i+j > chars.length || chars[i+j] != subStringChars[j]) {
+					isThere = false;
+					break;
+				}
+			}
+			
+			if(isThere) break; 
+		}
+		
+		return isThere;
+	}
 }
