@@ -1,4 +1,8 @@
 import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import katas.ArrayProblemsSolver;
 import org.junit.Test;
 
@@ -106,6 +110,16 @@ public class ArrayProblemsSolverTest {
 	
 	public int MaximizeDistanceBruteForce(int [] input) {
 		int maxDistance = 0;
+		
+		//find possible starting points
+		List<Integer> possibleStartingIndexes  = new ArrayList<Integer>();
+		int min = input[0];
+		for (int i = 0; i < input.length; i++) {
+			if(input[i] < min) {
+				possibleStartingIndexes.add(i);
+				min = input[i];
+			}
+		}
 		
 		
 		
