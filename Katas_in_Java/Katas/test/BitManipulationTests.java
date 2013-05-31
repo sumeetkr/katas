@@ -36,4 +36,21 @@ public class BitManipulationTests {
 		int a = 8;
 		int b = BitManipulation.swapBits(a);
 	}
+	
+	@Test
+	public void testReverseBitsOfUnsignedInteger() {
+		
+	//  100100 -> 011011  : 36 --> 27
+	//	111111 XOR
+		int i = 36;
+		int j = 27;
+		
+		//There are a number of ways, check http://graphics.stanford.edu/~seander/bithacks.html#BitReverseObvious
+		
+	}
+	
+	@Test
+	public void testNextPowerOfTwo() {
+		
+	}
 }

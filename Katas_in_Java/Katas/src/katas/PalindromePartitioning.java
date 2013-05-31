@@ -32,4 +32,41 @@ public class PalindromePartitioning {
 
 		return isPalidrome;
 	}
+	
+	public static boolean isIntegerAPalindrome(int input) {
+		int inputCopy = input;
+		int reverse=0;
+		while(input > 0) {
+			reverse = reverse*10 + input % 10;
+			input = (input - input % 10)/10;
+		}
+		
+		return inputCopy == reverse;
+	}
+	
+	public static boolean isIntegerAPalindrome2(int input) {
+		boolean isPalindrome = true;
+		
+		int div =1;
+		while(div*10 < input) {
+			div *= 10;
+		}
+		
+		while(input > 0) {
+			int maxDig = input/div;
+			int minDig = input % 10;
+			
+			if(maxDig != minDig) {
+				isPalindrome = false;
+				break;
+			}
+			
+			input = (input %div)/10;
+			div = div/100;
+		}
+		
+		return isPalindrome;
+		
+	}
+
 }

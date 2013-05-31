@@ -114,3 +114,7 @@ UpgradeLog*.XML
 /NewFolder/Katas/build/
 /Katas_in_JS/nbproject/private/
 /Katas_in_JavaScript/nbproject/private/
+/Katas_in_Java/nbproject/private/
+/Katas_in_Java/Katas/dist/
+/Katas_in_Java/dist/
+/Katas_in_Java/build/

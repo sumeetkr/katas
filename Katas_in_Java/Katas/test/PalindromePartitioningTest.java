@@ -81,4 +81,23 @@ public class PalindromePartitioningTest extends TestCase {
 	    //["a","a","b"]
 	  //]
 	
+	@Test
+	public void testIsIntegerAPalindrome_case1() {
+		int a = 11211;
+		
+		assertTrue(PalindromePartitioning.isIntegerAPalindrome2(a));
+	}
+	
+	public void testIsIntegerAPalindrome_case2() {
+		int a = 11211211;
+		
+		assertTrue(PalindromePartitioning.isIntegerAPalindrome2(a));
+	}
+	
+	public void testIsIntegerAPalindrome_case3() {
+		int a = 11211213;
+		
+		assertFalse(PalindromePartitioning.isIntegerAPalindrome2(a));
+	}
+	
 }
